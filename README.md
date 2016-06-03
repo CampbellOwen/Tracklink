@@ -1,8 +1,13 @@
-![Logo](images/logo.png)
+<p align="center">
+<img src="images/logo.png" width="500" />
+</p>
 # Project Proposal
+
 Group 10
-CMPT 276-D1
+
+CMPT 276-D1 
 Summer 2016
+
 ---
 ## Abstract
 Tracklink empowers users by giving them detailed information about their commute, allowing them to hold Translink accountable. It keeps track of when transit vehicles are expected to arrive both according to schedule and GPS data. In addition, it provides neatly-presented historical data allowing it to inform the user about how late or early a bus tends to be and how likely it is to be cancelled. If a bus is late, doesn't arrive, or if the user has a negative experience, they can easily let Translink know. At the end of a trip, the user can specify the bus they were on and tweet @Translink with feedback. Commuters can sign up to save their favorite transit lines and stops. Tracklink leverages the Translink Open API to provide users with the most accurate information available, its historical graphing functionality is powered by the d3 API, and its Twitter integration is powered by the Twitter API.
