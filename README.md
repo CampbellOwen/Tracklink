@@ -1,4 +1,4 @@
-![Logo](./images/logo.png)
+![Logo](images/logo.png)
 # Project Proposal
 Group 10
 CMPT 276-D1
