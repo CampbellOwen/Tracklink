@@ -7,4 +7,19 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     #debugger
   end
+
+  def create
+    @user = User.new(user_params)
+    if @user.save
+        render 'new'
+    else
+        render 'new'
+    end
+  end
+
+  private
+
+    def user_params
+        params.require(:user).permit(:email, :password, :password_confirmation)
+    end
 end
