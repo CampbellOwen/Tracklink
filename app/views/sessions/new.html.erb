@@ -1,20 +1,47 @@
-<h1>Login</h1>
+<h1>login</h1>
 
 <div>
     <%= form_for(:session, url: login_path) do |f| %>
-        <%= f.label :email %>
-        <%= f.email_field :email %>
-
-        <%= f.label :password %>
-        <%= f.password_field :password %>
-
-        <%= f.label :remember_me do %>
-            <%= f.check_box :remember_me %>
-            <span>Remember me on this computer</span>
-        <% end %>
-
-        <%= f.submit "Log In" %>
+        <table>
+            <tr>
+                <td>
+                    No Account?
+                </td>
+                <td>
+                     <%= link_to "Sign Up", signup_path %>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <%= f.label :email %>
+                </td>
+                <td>
+                    <%= f.email_field :email %>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <%= f.label :password %>
+                </td>
+                <td>
+                    <%= f.password_field :password %>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Remember Me
+                </td>
+                <td>
+                    <%= f.label :remember_me do %>
+                        <%= f.check_box :remember_me %>
+                    <% end %>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <%= f.submit "Log In" %>
+                </td>
+            </tr>
+        </table>
     <% end %>
-
-    <p>No account? <%= link_to "Sign up", signup_path %></p>
 </div>
