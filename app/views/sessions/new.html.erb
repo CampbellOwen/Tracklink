@@ -1,8 +1,8 @@
 <h1>Login</h1>
 
-<div>
+<div class="logsign_cont">
     <%= form_for(:session, url: login_path) do |f| %>
-        <table>
+        <table id="login">
             <tr>
                 <td>
                     No Account?
@@ -39,7 +39,7 @@
             </tr>
             <tr align="center">
                 <td colspan="2">
-                    <%= f.submit "Log In" %>
+                    <%= f.submit "Login" %>
                 </td>
             </tr>
         </table>

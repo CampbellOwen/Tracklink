@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+body{
+ 	background-color: black;
+ 	font-family: 'Roboto', sans-serif;
+ 	font-weight : 300;
+ }
+h1{
+	color: #0060a8;
+}
+.logsign_cont{
+	color: white;
+
+}
+a{
+	color: #0060a8;
+	text-decoration: none;
+}
+.reg_button{
+	background-color: #0060a8;
+	color: white;
+	border: 0;
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+#login{
+	padding:10px;
+	margin: 5px;
+	
+}

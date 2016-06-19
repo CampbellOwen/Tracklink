@@ -1,45 +1,46 @@
-<h1>User Signup</h1>
+<h1>Signup</h1>
 
-<%= form_for(@user) do |f| %>
-    <%= render 'shared/error_messages' %>
-
-	<table>
-			<tr>
-                <td>
-                    Have an Account?
-                </td>
-                <td>
-                     <%= link_to "Login", login_path %>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <%= f.label :email %>
-                </td>
-                <td>
-                    <%= f.email_field :email %>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <%= f.label :password %>
-                </td>
-                <td>
-                    <%= f.password_field :password %>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <%= f.label :password_confirmation, "Confirm Password" %>
-                </td>
-                <td>
-                    <%= f.password_field :password_confirmation %>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <%= f.submit "Create My Account" %>
-                </td>
-            </tr>
-        </table>
-<% end %>
+<div class="logsign_cont">
+	<%= form_for(@user) do |f| %>
+	    <%= render 'shared/error_messages' %>
+		<table>
+				<tr>
+	                <td>
+	                    Have an Account?
+	                </td>
+	                <td>
+	                     <%= link_to "Login", login_path %>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    <%= f.label :email %>
+	                </td>
+	                <td>
+	                    <%= f.email_field :email %>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    <%= f.label :password %>
+	                </td>
+	                <td>
+	                    <%= f.password_field :password %>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    <%= f.label :password_confirmation, "Confirm Password" %>
+	                </td>
+	                <td>
+	                    <%= f.password_field :password_confirmation %>
+	                </td>
+	            </tr>
+	            <tr align="center">
+	                <td colspan="2">
+	                    <%= f.submit "Create My Account", :class => 'reg_button' %>
+	                </td>
+	            </tr>
+	        </table>
+	<% end %>
+</div>
