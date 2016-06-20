@@ -142,9 +142,6 @@ td#buttonbox{
 	font-size: 25px;
 	font-weight: 500;
 }
-iframe{
-	height:100%;
-}
 @media screen and (max-width: 1050px){
 	.right{
 		width: 100% !important;
