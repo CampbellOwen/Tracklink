@@ -70,6 +70,10 @@ a{
 	margin: auto;
 
 }
+#busses{
+	background-color: #0060a8;
+	border-collapse: collapse;
+}
 td {
 	padding: 20px 20px 20px 20px;
 	border-style: solid;
@@ -93,9 +97,48 @@ td#buttonbox{
 #nav_cont{
 	text-align: center;
 	word-spacing:20px;
+	padding: 0 0 20px 0;
 }
 .reg_field{
 	width:80%;
+}
+#busnum{
+	text-align: center;
+	font-size: 40px;
+}
+#businfo{
+	text-align: center;
+	font-size: 25px;
+	color: black;
+}
+#busscroll{
+	overflow: auto;
+	max-height: 70%;
+	margin: auto;
+	width: 90%;
+}
+#reverse{
+	text-align: center;
+	font-size: 25px;
+}
+#search{
+	background-color: white;
+	color: black;
+	text-align: left;
+	font-size: 25px;
+	padding: 5px;
+	font-weight: 500;
+}
+#searchbutton{
+	background-color: #0060a8;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding:5px;
+	font-weight: 500;
+}
+iframe{
+	height:100%;
 }
 @media screen and (max-width: 1050px){
 	.right{
