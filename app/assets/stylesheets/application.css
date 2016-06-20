@@ -17,11 +17,11 @@ html, body{
  	font-family: 'Roboto', sans-serif;
  	font-weight: 500;
  	font-size: 20px;
- 	/*display: table;*/
  	height: 100%;
  	width: 100%;
  	background-color: white;
  	margin: 0px;
+ 	display:table;
 }
 #spacer{
 	padding:30px;
@@ -33,21 +33,21 @@ h1{
 }
 .logsign_cont{
 	color: white;
-	padding: 0px 30px 0px 30px;
-	width: 25%;
+	padding: 0px 0px 0px 0px;
+	width: 30%;
  	background-color: black;
  	float:left;
  	display: table-cell;
   	height: 100%;
 }
 .right{
-	padding: 30px 30px 30px 30px;
-	width:65%;
-	background-color: white;
+	padding: 0px 0px 0px 0px;
+	width:70%;
 	display: table-cell;
-	/*height: 100%;*/
- 	float:left;
+	height: 100%;
+ 	float:right;
 }
+
 a{
 	color: black;
 	text-decoration: none;
@@ -59,6 +59,7 @@ a{
 	padding: 5px 10px 5px 10px;
 	text-align: center;
 	text-decoration: none;
+	font-weight:700;
 	font-size: 20px;
 	width: 100%;
 	height: 50px;
@@ -70,7 +71,7 @@ a{
 
 }
 td {
-	padding: 10px 10px 10px 10px;
+	padding: 20px 20px 20px 20px;
 	border-style: solid;
 	border-width: 6px 0px 0px 0px;
 	border-color: black;
@@ -79,8 +80,33 @@ td#buttonbox{
 	padding: 0px;
 }
 #logo{
-	width: 300px;
+	width: auto;
+	max-width: 70%;
 }
 #logo_container{
 	text-align: center;
+}
+.reg_field{
+	width:80%;
+}
+@media screen and (max-width: 1050px){
+	.right{
+		width: 100% !important;
+		height: 500px !important;
+		display: inline-block !important;
+		float: left !important;
+	}
+	.logsign_cont{
+		width: 100% !important;
+		height:auto !important;
+		padding-bottom:30px;
+		display: inline-block !important;
+		float: left !important;
+	}
+	html, body{
+		display: block !important;
+	}
+	#spacer{
+		padding:30px 0px 0px 0px;
+	}
 }
