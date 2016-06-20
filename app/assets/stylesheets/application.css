@@ -86,6 +86,14 @@ td#buttonbox{
 #logo_container{
 	text-align: center;
 }
+.nav{
+	color: white;
+	font-size: 30px;
+}
+#nav_cont{
+	text-align: center;
+	word-spacing:20px;
+}
 .reg_field{
 	width:80%;
 }
