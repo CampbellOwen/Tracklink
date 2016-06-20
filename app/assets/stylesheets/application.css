@@ -112,8 +112,12 @@ td#buttonbox{
 	color: black;
 }
 #busscroll{
-	overflow: auto;
-	max-height: 70%;
+	overflow-y: scroll;
+	margin: auto;
+	width: 90%;
+	max-height: 600px;
+}
+#searchbox{
 	margin: auto;
 	width: 90%;
 }
@@ -124,9 +128,10 @@ td#buttonbox{
 #search{
 	background-color: white;
 	color: black;
+	margin: auto;
+	width: 90%;
 	text-align: left;
 	font-size: 25px;
-	padding: 5px;
 	font-weight: 500;
 }
 #searchbutton{
@@ -134,7 +139,6 @@ td#buttonbox{
 	color: white;
 	text-align: center;
 	font-size: 25px;
-	padding:5px;
 	font-weight: 500;
 }
 iframe{
