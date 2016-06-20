@@ -46,6 +46,7 @@ h1{
 	display: table-cell;
 	height: 100%;
  	float:right;
+ 	background-color: black;
 }
 
 a{
