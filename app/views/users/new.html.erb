@@ -1,15 +1,19 @@
-<h1>Signup</h1>
-
 <div class="logsign_cont">
+    <div id="spacer">
+    </div>
+    <div id="logo_container">
+        <img src="logo.png" id="logo"/>
+    </div>
+	<h1>sign up</h1>
 	<%= form_for(@user) do |f| %>
 	    <%= render 'shared/error_messages' %>
-		<table>
+		<table id="login">
 				<tr>
 	                <td>
 	                    Have an Account?
 	                </td>
 	                <td>
-	                     <%= link_to "Login", login_path %>
+	                     <%= link_to "Login Here", login_path %>
 	                </td>
 	            </tr>
 	            <tr>
@@ -43,4 +47,9 @@
 	            </tr>
 	        </table>
 	<% end %>
+</div>
+<div class="right">
+    <div id="spacer">
+    </div>
+    Placeholder Div!
 </div>

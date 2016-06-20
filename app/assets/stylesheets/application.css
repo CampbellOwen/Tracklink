@@ -13,20 +13,43 @@
  *= require_tree .
  *= require_self
  */
-body{
- 	background-color: black;
+html, body{
  	font-family: 'Roboto', sans-serif;
- 	font-weight : 300;
- }
+ 	font-weight: 500;
+ 	font-size: 20px;
+ 	/*display: table;*/
+ 	height: 100%;
+ 	width: 100%;
+ 	background-color: white;
+ 	margin: 0px;
+}
+#spacer{
+	padding:30px;
+	width:100%;
+}
 h1{
-	color: #0060a8;
+	color: white;
+	text-align: center;
 }
 .logsign_cont{
 	color: white;
-
+	padding: 0px 30px 0px 30px;
+	width: 25%;
+ 	background-color: black;
+ 	float:left;
+ 	display: table-cell;
+  	height: 100%;
+}
+.right{
+	padding: 30px 30px 30px 30px;
+	width:65%;
+	background-color: white;
+	display: table-cell;
+	/*height: 100%;*/
+ 	float:left;
 }
 a{
-	color: #0060a8;
+	color: black;
 	text-decoration: none;
 }
 .reg_button{
@@ -36,10 +59,28 @@ a{
 	padding: 5px 10px 5px 10px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 20px;
+	width: 100%;
+	height: 50px;
 }
 #login{
-	padding:10px;
-	margin: 5px;
-	
+	background-color: #0060a8;
+	border-collapse: collapse;
+	margin: auto;
+
+}
+td {
+	padding: 10px 10px 10px 10px;
+	border-style: solid;
+	border-width: 6px 0px 0px 0px;
+	border-color: black;
+}
+td#buttonbox{
+	padding: 0px;
+}
+#logo{
+	width: 300px;
+}
+#logo_container{
+	text-align: center;
 }

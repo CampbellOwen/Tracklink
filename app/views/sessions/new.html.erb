@@ -1,6 +1,10 @@
-<h1>Login</h1>
-
 <div class="logsign_cont">
+    <div id="spacer">
+    </div>
+    <div id="logo_container">
+        <img src="logo.png" id="logo"/>
+    </div>
+    <h1>login</h1>
     <%= form_for(:session, url: login_path) do |f| %>
         <table id="login">
             <tr>
@@ -37,11 +41,16 @@
                     <% end %>
                 </td>
             </tr>
-            <tr align="center">
+            <tr align="center" id="buttonbox">
                 <td colspan="2">
-                    <%= f.submit "Login" %>
+                    <%= f.submit "Login", :class => 'reg_button'  %>
                 </td>
             </tr>
         </table>
     <% end %>
+</div>
+<div class="right">
+    <div id="spacer">
+    </div>
+    Placeholder div
 </div>
