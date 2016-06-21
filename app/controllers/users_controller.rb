@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
+
   def new
       @user = User.new
+  end
+
+  def index
+    @users = User.all
   end
 
   def show
@@ -16,6 +21,12 @@ class UsersController < ApplicationController
     else
         render 'new'
     end
+  end
+
+  def destroy
+      @user = User.find(params[:id])
+      @user.destroy
+      redirect_to :action => :index, status: 303
   end
 
   private

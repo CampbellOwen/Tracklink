@@ -1,0 +1,121 @@
+
+                <div class="logsign_cont">
+                    <div id="spacer">
+                    </div>
+                    <div id="logo_container">
+                        <%= image_tag("/logo.png", :alt => "tracklink logo", :id => "logo") %>
+                    </div>
+                    <div id="nav_cont">
+	                    <% if logged_in? %>
+	                    	<%#= link_to "Busses", '#', :class => "nav" %>
+			                <%= link_to "Users", '#', :class => "nav" %>
+			                <%= link_to "History", '#', :class => "nav" %>
+			                <%#= link_to "Profile", current_user, :class => "nav"  %>
+			                <%#= link_to "Settings", '#', :class => "nav"  %>
+			                <%= link_to "Logout", logout_path, method: "delete", :class => "nav"  %>
+			            <% else %>
+			                <%= link_to "Login", login_path, :class => "nav"  %>
+			                <%= link_to "Signup", signup_path, :class => "nav" %>
+			            <% end %>
+			        </div>
+			        <div id="searchbox">
+				        <table id="busses">
+				        	<tr>
+						        <td id="search">
+						      		Enter Stop
+						        </td>
+						       <td id="searchbutton">
+						        	Search
+						        </td>
+						    </tr>
+				        </table>
+			    	</div>
+			        <div id="busscroll">
+				        <table id="busses">
+					        
+				        	<tr>
+				        		<td id="busnum">145
+				        		</td>
+				        		<td id="businfo">Somewhere<br>Somewhere Else
+				        		</td>
+				        		<td id="reverse">Reverse
+				        		</td>
+				        	</tr>
+							<tr>
+				        		<td id="busnum">145
+				        		</td>
+				        		<td id="businfo">Somewhere<br>Somewhere Else
+				        		</td>
+				        		<td id="reverse">Reverse
+				        		</td>
+				        	</tr>
+				        	<tr>
+				        		<td id="busnum">145
+				        		</td>
+				        		<td id="businfo">Somewhere<br>Somewhere Else
+				        		</td>
+				        		<td id="reverse">Reverse
+				        		</td>
+				        	</tr>
+				        	<tr>
+				        		<td id="busnum">145
+				        		</td>
+				        		<td id="businfo">Somewhere<br>Somewhere Else
+				        		</td>
+				        		<td id="reverse">Reverse
+				        		</td>
+				        	</tr>
+				        	<tr>
+				        		<td id="busnum">145
+				        		</td>
+				        		<td id="businfo">Somewhere<br>Somewhere Else
+				        		</td>
+				        		<td id="reverse">Reverse
+				        		</td>
+				        	</tr>
+				        	<tr>
+				        		<td id="busnum">145
+				        		</td>
+				        		<td id="businfo">Somewhere<br>Somewhere Else
+				        		</td>
+				        		<td id="reverse">Reverse
+				        		</td>
+				        	</tr>
+				        	<tr>
+				        		<td id="busnum">145
+				        		</td>
+				        		<td id="businfo">Somewhere<br>Somewhere Else
+				        		</td>
+				        		<td id="reverse">Reverse
+				        		</td>
+				        	</tr>
+				        	<tr>
+				        		<td id="busnum">145
+				        		</td>
+				        		<td id="businfo">Somewhere<br>Somewhere Else
+				        		</td>
+				        		<td id="reverse">Reverse
+				        		</td>
+				        	</tr>
+				        	<tr>
+				        		<td id="busnum">145
+				        		</td>
+				        		<td id="businfo">Somewhere<br>Somewhere Else
+				        		</td>
+				        		<td id="reverse">Reverse
+				        		</td>
+				        	</tr>
+			    		</table>
+				    </div>
+	            </div>
+                <div class="right">
+                    
+                    <table>
+                        <% @users.each do |user| %>
+                            <tr>
+                                <td><%= user.email %></td>
+                                <td><%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                        <% end %>
+                    </table>
+
+                </div>

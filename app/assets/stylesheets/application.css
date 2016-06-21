@@ -112,7 +112,7 @@ td#buttonbox{
 	font-size: 25px;
 	color: black;
 }
-#busscroll{
+#busscroll, #userscroll{
 	overflow-y: scroll;
 	margin: auto;
 	width: 90%;
