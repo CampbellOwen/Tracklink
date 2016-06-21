@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get       'users'  => 'users#index'
   get       'history'  => 'home#history'
   delete    'users'  => 'users#destroy'
+  post      'users'  => 'users#create'
   get       'signup' => 'users#new'
   get       'login'  => 'sessions#new'
   post      'login'  => 'sessions#create'
