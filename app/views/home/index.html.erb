@@ -7,7 +7,9 @@
 	<div id="nav_cont">
 		<% if logged_in? %>
 			<%#= link_to "Busses", '#', :class => "nav" %>
-			<%= link_to "Users", 'users', :class => "nav" %>
+            <% if admin? %>
+                <%= link_to "Users", 'users', :class => "nav" %>
+            <% end %>
 			<%= link_to "History", 'history', :class => "nav" %>
 			<%= link_to "Profile", current_user, :class => "nav"  %>
 			<%#= link_to "Settings", '#', :class => "nav"  %>
