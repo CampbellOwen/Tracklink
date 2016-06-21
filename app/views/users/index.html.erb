@@ -20,6 +20,14 @@
                 </div>
                 <div class="right">
                         <table id="bushist">
+                            <tr>
+                                <td id="search" colspan="3">
+                                    Enter User
+                                </td>
+                                <td id="searchbutton" colspan="2">
+                                    Search
+                                </td>
+                            </tr>   
                             <% @users.each do |user| %>
                                 <tr>
                                     <td><%= user.email %></td>
@@ -27,6 +35,7 @@
                                     <td><%= user.admin? ? "Admin" : "User" %></td>
                                     <td><%= button_to "Promote to Admin",:controller => "users", :action => "promote", :id => user.id %></td>
                                     <td><%= button_to "Demote to User",:controller => "users", :action => "demote", :id => user.id %></td>
+                                </tr>
                             <% end %>
                         </table>
                 </div>
