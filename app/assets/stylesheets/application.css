@@ -74,9 +74,11 @@ a{
 #busses{
 	background-color: #0060a8;
 	border-collapse: collapse;
+	width: 100%;
+	margin: auto;
 }
 td {
-	padding: 20px 20px 20px 20px;
+	padding: 10px 10px 10px 10px;
 	border-style: solid;
 	border-width: 6px 0px 0px 0px;
 	border-color: black;
@@ -108,15 +110,14 @@ td#buttonbox{
 }
 #busnum{
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 }
 #businfo{
-	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
 	color: black;
 }
 #busscroll, #userscroll{
-	overflow-y: scroll;
+	overflow-y: auto;
 	margin: auto;
 	width: 90%;
 	max-height: 600px;
@@ -127,7 +128,9 @@ td#buttonbox{
 }
 #reverse{
 	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
+	background-color: white;
+	color: #0060a8;
 }
 #search{
 	background-color: white;
