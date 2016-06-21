@@ -1,5 +1,17 @@
 class UsersController < ApplicationController
 
+   def promote
+       @user = User.find(params[:id])
+       puts(@user.inspect)
+       @user.update_attribute(:admin, true)
+       redirect_to :action => :index, status: 303
+   end
+   def demote
+       @user = User.find(params[:id])
+       puts(@user.inspect)
+       @user.update_attribute(:admin, false)
+       redirect_to :action => :index, status: 303
+   end
   def new
       @user = User.new
   end
@@ -35,6 +47,6 @@ class UsersController < ApplicationController
   private
 
     def user_params
-        params.require(:user).permit(:email, :password, :password_confirmation)
+        params.require(:user).permit(:email, :password, :password_confirmation, :admin)
     end
 end
