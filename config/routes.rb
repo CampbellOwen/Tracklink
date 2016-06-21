@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get       'users/new'
   get       'users'  => 'users#index'
+  get       'history'  => 'home#history'
   delete    'users'  => 'users#destroy'
   get       'signup' => 'users#new'
   get       'login'  => 'sessions#new'
