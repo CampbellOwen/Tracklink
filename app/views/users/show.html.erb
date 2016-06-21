@@ -5,6 +5,7 @@
                         <%= link_to image_tag("/logo.png", :alt => "tracklink logo", :id => "logo"), root_path %>
                     </div>
                     <div id="nav_cont">
+                        <%= link_to "Index", root_path, :class => "nav" %>
 	                    <% if logged_in? %>
 	                    	<%#= link_to "Busses", '#', :class => "nav" %>
                             <% if admin? %>
