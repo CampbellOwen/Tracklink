@@ -164,9 +164,6 @@ td#buttonbox{
     border-collapse: collapse;
 }
 
-.users {
-    width:100%;
-}
 @media screen and (max-width: 1050px){
 	.right{
 		width: 100% !important;
