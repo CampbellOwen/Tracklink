@@ -39,6 +39,16 @@
 	                    <%= f.password_field :password_confirmation, :class => 'reg_field'   %>
 	                </td>
 	            </tr>
+                <tr>
+                    <td>
+                        Admin
+                    </td>
+                    <td>
+                        <%= f.label :admin do %>
+                            <%= f.check_box :admin %>
+                        <% end %>
+                    </td>
+                </tr>
 	            <tr align="center">
 	                <td colspan="2">
 	                    <%= f.submit "Create My Account", :class => 'reg_button' %>
