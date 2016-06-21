@@ -6,171 +6,245 @@
 	</div>
 	<div id="nav_cont">
 		<% if logged_in? %>
-			<%= link_to "Index", 'index', :class => "nav" %>
-			<%= link_to "Users", 'users', :class => "nav" %>
-			<%= link_to "Profile", current_user, :class => "nav"  %>
-			<%= link_to "Logout", logout_path, method: "delete", :class => "nav"  %>
-		<% else %>
-			<%= link_to "Login", login_path, :class => "nav"  %>
-			<%= link_to "Signup", signup_path, :class => "nav" %>
-		<% end %>
-	</div>
-	<div id="searchbox">
-		<table id="busses">
-			<tr>
-				<td id="search">
-					Enter Stop
-				</td>
-				<td id="searchbutton">
-					Search
-				</td>
-			</tr>
-		</table>
-	</div>
-	<div id="busscroll">
-		<table id="busses">
-							
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-		</table>
+	                    	<%#= link_to "Busses", '#', :class => "nav" %>
+			                <%= link_to "Users", users_path, :class => "nav" %>
+			                <%= link_to "History", history_path, :class => "nav" %>
+			                <%#= link_to "Profile", current_user, :class => "nav"  %>
+			                <%#= link_to "Settings", '#', :class => "nav"  %>
+			                <%= link_to "Logout", logout_path, method: "delete", :class => "nav"  %>
+			            <% else %>
+			                <%= link_to "Login", login_path, :class => "nav"  %>
+			                <%= link_to "Signup", signup_path, :class => "nav" %>
+			            <% end %>
 	</div>
 </div>
 <div class="right">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10428.092188647293!2d-122.86681195000001!3d49.200122349999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1466383588147" width="100%" height="950px" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<table id="bushist">			
+			<tr>
+				<td id="bushistnum">145
+				</td>
+				<td id="businfo">Somewhere to Somewhere Else
+				</td>
+				<td id="businfo">Hist Info Here
+				</td>
+			</tr>
+			<tr>
+				<% if logged_in? %>
+					<td id="histbutton">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">Favorite
+					</td>	                    	
+				<% else %>
+					<td id="histbutton" align="right">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">
+					</td>
+				<% end %>
+			</tr>
+		<table id="bushist">			
+			<tr>
+				<td id="bushistnum">145
+				</td>
+				<td id="businfo">Somewhere to Somewhere Else
+				</td>
+				<td id="businfo">Hist Info Here
+				</td>
+			</tr>
+			<tr>
+				<% if logged_in? %>
+					<td id="histbutton">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">Favorite
+					</td>	                    	
+				<% else %>
+					<td id="histbutton" align="right">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">
+					</td>
+				<% end %>
+			</tr>
+			<tr>
+				<td id="bushistnum">145
+				</td>
+				<td id="businfo">Somewhere to Somewhere Else
+				</td>
+				<td id="businfo">Hist Info Here
+				</td>
+			</tr>
+			<tr>
+				<% if logged_in? %>
+					<td id="histbutton">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">Favorite
+					</td>	                    	
+				<% else %>
+					<td id="histbutton" align="right">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">
+					</td>
+				<% end %>
+			</tr>
+			<tr>
+				<td id="bushistnum">145
+				</td>
+				<td id="businfo">Somewhere to Somewhere Else
+				</td>
+				<td id="businfo">Hist Info Here
+				</td>
+			</tr>
+			<tr>
+				<% if logged_in? %>
+					<td id="histbutton">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">Favorite
+					</td>	                    	
+				<% else %>
+					<td id="histbutton" align="right">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">
+					</td>
+				<% end %>
+			</tr>
+			<tr>
+				<td id="bushistnum">145
+				</td>
+				<td id="businfo">Somewhere to Somewhere Else
+				</td>
+				<td id="businfo">Hist Info Here
+				</td>
+			</tr>
+			<tr>
+				<% if logged_in? %>
+					<td id="histbutton">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">Favorite
+					</td>	                    	
+				<% else %>
+					<td id="histbutton" align="right">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">
+					</td>
+				<% end %>
+			</tr>
+			<tr>
+				<td id="bushistnum">145
+				</td>
+				<td id="businfo">Somewhere to Somewhere Else
+				</td>
+				<td id="businfo">Hist Info Here
+				</td>
+			</tr>
+			<tr>
+				<% if logged_in? %>
+					<td id="histbutton">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">Favorite
+					</td>	                    	
+				<% else %>
+					<td id="histbutton" align="right">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">
+					</td>
+				<% end %>
+			</tr>
+			<tr>
+				<td id="bushistnum">145
+				</td>
+				<td id="businfo">Somewhere to Somewhere Else
+				</td>
+				<td id="businfo">Hist Info Here
+				</td>
+			</tr>
+			<tr>
+				<% if logged_in? %>
+					<td id="histbutton">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">Favorite
+					</td>	                    	
+				<% else %>
+					<td id="histbutton" align="right">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">
+					</td>
+				<% end %>
+			</tr>
+			<tr>
+				<td id="bushistnum">145
+				</td>
+				<td id="businfo">Somewhere to Somewhere Else
+				</td>
+				<td id="businfo">Hist Info Here
+				</td>
+			</tr>
+			<tr>
+				<% if logged_in? %>
+					<td id="histbutton">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">Favorite
+					</td>	                    	
+				<% else %>
+					<td id="histbutton" align="right">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">
+					</td>
+				<% end %>
+			</tr>
+			<tr>
+				<td id="bushistnum">145
+				</td>
+				<td id="businfo">Somewhere to Somewhere Else
+				</td>
+				<td id="businfo">Hist Info Here
+				</td>
+			</tr>
+			<tr>
+				<% if logged_in? %>
+					<td id="histbutton">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">Favorite
+					</td>	                    	
+				<% else %>
+					<td id="histbutton" align="right">Reverse
+					</td>
+					<td id="histbutton">Show
+					</td>
+					<td id="histbutton">
+					</td>
+				<% end %>
+			</tr>
+		</table>
 </div>

@@ -77,6 +77,12 @@ a{
 	width: 100%;
 	margin: auto;
 }
+#bushist{
+	background-color: #0060a8;
+	border-collapse: collapse;
+	width: 100%;
+	margin: auto;
+}
 td {
 	padding: 10px 10px 10px 10px;
 	border-style: solid;
@@ -112,6 +118,9 @@ td#buttonbox{
 	text-align: center;
 	font-size: 30px;
 }
+#bushistnum{
+	font-size: 30px;
+}
 #businfo{
 	font-size: 20px;
 	color: black;
@@ -128,6 +137,11 @@ td#buttonbox{
 }
 #reverse{
 	text-align: center;
+	font-size: 20px;
+	background-color: white;
+	color: #0060a8;
+}
+#histbutton{
 	font-size: 20px;
 	background-color: white;
 	color: #0060a8;
