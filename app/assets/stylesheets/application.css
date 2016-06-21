@@ -23,6 +23,9 @@ html, body{
  	margin: 0px;
  	display:table;
 }
+.alert {
+    color:white;
+}
 #spacer{
 	padding:30px;
 	width:100%;
