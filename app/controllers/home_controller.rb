@@ -3,4 +3,7 @@ class HomeController < ApplicationController
     def index
         render "index"
     end
+    def history
+        render "history"
+    end
 end
