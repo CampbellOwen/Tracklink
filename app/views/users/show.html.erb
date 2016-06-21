@@ -18,17 +18,12 @@
 			            <% end %>
 			        </div>
                 </div>
-                <div class="users">
+                <div class="right">
                     <table id="userscroll">
                             <tr>
                                 <td><%= @user.email %></td>
-                            </tr>
-                            <tr>
-                                <td><%= @user.admin? ? "Admin" : "User" %></td>
-                            </tr>
-                            <tr>
-
-                                <td><%= link_to 'Delete', @user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                                <td><%= @user.admin? ? "Admin" : "Standard User" %></td>
+                                <td><%= link_to 'Delete Account', @user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
                             </tr>
                     </table>
                 </div>
