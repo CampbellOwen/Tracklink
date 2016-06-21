@@ -4,9 +4,7 @@
     <div id="logo_container">
         <img src="logo.png" id="logo"/>
     </div>
-    <% flash.each do |key, value| %>
-        <div class="alert <%= key %>"><%= value %></div>
-      <% end %>
+
     <%= form_for(:session, url: login_path) do |f| %>
         <table id="login">
             <tr>
@@ -48,6 +46,9 @@
                     <%= f.submit "Login", :class => 'reg_button'  %>
                 </td>
             </tr>
+            <% flash.each do |key, value| %>
+                <tr class="alert <%= key %>" style="background-color: red"><td colspan="2"><%= value %></td></tr>
+            <% end %>
         </table>
     <% end %>
 </div>
