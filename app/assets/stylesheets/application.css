@@ -95,6 +95,9 @@ td#buttonbox{
 	color: white;
 	font-size: 30px;
 }
+.nav:hover, .nav:active{
+	color: #0060a8;
+}
 #nav_cont{
 	text-align: center;
 	word-spacing:20px;
@@ -141,6 +144,25 @@ td#buttonbox{
 	text-align: center;
 	font-size: 25px;
 	font-weight: 500;
+    cursor:pointer;
+}
+#searchbutton:hover{
+    color:black;
+}
+
+#userscroll {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color:white;
+    margin-top: 10%;
+    background-color: #0060a8;
+    overflow-y:scroll;
+    border-collapse: collapse;
+}
+
+.users {
+    width:100%;
 }
 @media screen and (max-width: 1050px){
 	.right{
