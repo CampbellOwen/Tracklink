@@ -8,7 +8,7 @@
         <div class="alert <%= key %>"><%= value %></div>
       <% end %>
 	<%= form_for(@user) do |f| %>
-	    <%= render 'shared/error_messages' %>
+	    
 		<table id="login">
 				<tr>
 	                <td>
@@ -42,6 +42,7 @@
 	                    <%= f.password_field :password_confirmation, :class => 'reg_field'   %>
 	                </td>
 	            </tr>
+	            <%= render 'shared/error_messages' %>
 	            <tr align="center">
 	                <td colspan="2">
 	                    <%= f.submit "Create My Account", :class => 'reg_button' %>
