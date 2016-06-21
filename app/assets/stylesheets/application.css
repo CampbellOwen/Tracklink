@@ -80,8 +80,9 @@ a{
 #bushist{
 	background-color: #0060a8;
 	border-collapse: collapse;
-	width: 100%;
+	width: 90%;
 	margin: auto;
+	margin-top: 10%;
 }
 td {
 	padding: 10px 10px 10px 10px;
@@ -125,7 +126,7 @@ td#buttonbox{
 	font-size: 20px;
 	color: black;
 }
-#busscroll, #userscroll{
+#busscroll{
 	overflow-y: auto;
 	margin: auto;
 	width: 90%;
