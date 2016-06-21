@@ -5,6 +5,9 @@ class UsersController < ApplicationController
   end
 
   def index
+    if !admin?
+        redirect_to root_path
+    end
     @users = User.all
   end
 
