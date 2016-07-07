@@ -24,7 +24,7 @@
 		<table id="busses">
 			<tr>
 				<td id="search">
-					Enter Stop
+					Enter Route
 				</td>
 				<td id="searchbutton">
 					Search
@@ -38,17 +38,20 @@
 			<tr>
 				<td id="busnum">145
 				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
+				<td id="businfo" colspan="3"> SFU Bay 2
+					<br>Production Way Station
 				</td>
 			</tr>
 			<tr>
 				<% if logged_in? %>
+					<td id="reverse">Select
+					</td>
 					<td id="reverse">Reverse
 					</td>
-					<td id="reverse">Show
-					</td>
 					<td id="reverse">Favorite
-					</td>	                    	
+					</td>          
+					<td id="reverse">
+					</td>         	
 				<% else %>
 					<td id="reverse" align="right">Reverse
 					</td>
@@ -56,126 +59,29 @@
 					</td>
 					<td id="reverse">
 					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
 					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
+					</td>	
 				<% end %>
 			</tr>
 		</table>
 	</div>
 </div>
 <div class="right">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10428.092188647293!2d-122.86681195000001!3d49.200122349999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1466383588147" width="100%" height="1070px" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<div id="map"></div>
+	<script>
+		var map;
+	    function initMap() {
+		    map = new google.maps.Map(document.getElementById('map'), {
+		        center: {lat: -34.397, lng: 150.644},
+		        zoom: 8
+		    });
+	    }
+	</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_5saOsQDUS9U1RJJUsYI3qsZB8aCxGZc&callback=initMap"
+    async defer>
+</script>
+	<div id="disclaimer">
+		Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
+	</div>
 </div>
+

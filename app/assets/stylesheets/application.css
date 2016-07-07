@@ -140,8 +140,7 @@ td#buttonbox{
 	width: 90%;
 }
 #reverse{
-	text-align: center;
-	font-size: 20px;
+	font-size: 18px;
 	background-color: white;
 	color: #0060a8;
 }
@@ -170,7 +169,10 @@ td#buttonbox{
 #searchbutton:hover{
     color:black;
 }
-
+#disclaimer{
+	color:white;
+	font-size:15px;
+}
 #userscroll {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -180,8 +182,14 @@ td#buttonbox{
     background-color: #0060a8;
     overflow-y:scroll;
     border-collapse: collapse;
-}
 
+}
+#map{
+	height: 90%;
+	width: 100%;
+
+
+}
 @media screen and (max-width: 1050px){
 	.right{
 		width: 100% !important;
