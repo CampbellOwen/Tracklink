@@ -175,7 +175,7 @@ td#buttonbox{
 }
 #info{
 	color: white;
-	font-size:20px;
+	font-size:15px;
 }
 #latlong, #latlonginfo{
 	color:red;
@@ -193,13 +193,22 @@ td#buttonbox{
 
 }
 #map{
-	height: 90%;
-	width: 100%;
-
+	padding: 0px 0px 0px 0px;
+	width:70%;
+	display: table-cell;
+	height: 100%;
+ 	float:right;
+ 	background-color: black;
 
 }
 @media screen and (max-width: 1050px){
 	.right{
+		width: 100% !important;
+		height: 500px !important;
+		display: inline-block !important;
+		float: left !important;
+	}
+	#map{
 		width: 100% !important;
 		height: 500px !important;
 		display: inline-block !important;
