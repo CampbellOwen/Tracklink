@@ -73,6 +73,7 @@
 	</div>
 
 </div>
+<div class="right">
 	<div id="map"></div>
 	<script>
 		var map;
@@ -97,9 +98,11 @@
 	            	document.getElementById('latlong').innerHTML = pos.lat + " " + pos.lng;
 	            	map.setCenter(pos);
 	          	}, function() {
+	          		handleLocationError(true, map.getCenter());
 	          	});
 	        } else {
 	          	// Browser doesn't support Geolocation
+	          	handleLocationError(false, map.getCenter());
 	          	var marker = new google.maps.Marker({
 	          		position: center,
 	          		map: map,
@@ -109,11 +112,16 @@
 	        }
 
 	    }
-      	function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        	infoWindow.setPosition(pos);
+      	function handleLocationError(browserHasGeolocation, pos) {
+        	var marker = new google.maps.Marker({
+	          		position: center,
+	          		map: map,
+	          		draggable:true,
+	          		title:"Drag me near your bus stop of interest!"
+	        })
       	}
     </script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_5saOsQDUS9U1RJJUsYI3qsZB8aCxGZc&callback=initMap"
     async defer>
 	</script>
-
+</div>
