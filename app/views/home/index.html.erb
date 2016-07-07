@@ -24,7 +24,7 @@
 		<table id="busses">
 			<tr>
 				<td id="search">
-					Enter Route
+					Enter Stop
 				</td>
 				<td id="searchbutton">
 					Search
@@ -64,24 +64,59 @@
 				<% end %>
 			</tr>
 		</table>
+		<div id="latlonginfo"><br>Current Lat/Long (debugging): </div>
+		<div id="latlong"></div>
+		<div id="disclaimer">
+		<br>Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
+		</div>
 	</div>
+
 </div>
 <div class="right">
 	<div id="map"></div>
+	<div id="info">On the map above, the red marker will initially show your location. To the left, a list of bus lines that stop nearby will be populated according to this location. You are free to drag the marker around anywhere you wish to see bus lines in different locations.</div>
 	<script>
 		var map;
 	    function initMap() {
 		    map = new google.maps.Map(document.getElementById('map'), {
-		        center: {lat: -34.397, lng: 150.644},
-		        zoom: 8
+		        center: {lat: 49.2769, lng: -122.9148},
+		        zoom: 16
 		    });
+		    if (navigator.geolocation) {
+	          	navigator.geolocation.getCurrentPosition(function(position) {
+	            	var pos = {
+	              		lat: position.coords.latitude,
+	              		lng: position.coords.longitude
+
+	            	};
+	            	var marker = new google.maps.Marker({
+	            		position: pos,
+	            		map: map,
+	            		draggable:true,
+	            		title:"Drag me near your bus stop of interest!"
+	            	})
+	            	document.getElementById('latlong').innerHTML = pos.lat + " " + pos.lng;
+	            	map.setCenter(pos);
+	          	}, function() {
+	          	});
+	        } else {
+	          	// Browser doesn't support Geolocation
+	          	var marker = new google.maps.Marker({
+	          		position: center,
+	          		map: map,
+	          		draggable:true,
+	          		title:"Drag me near your bus stop of interest!"
+	          	})
+	        }
+
 	    }
-	</script>
+      	function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        	infoWindow.setPosition(pos);
+      	}
+    </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_5saOsQDUS9U1RJJUsYI3qsZB8aCxGZc&callback=initMap"
     async defer>
 </script>
-	<div id="disclaimer">
-		Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
-	</div>
+	
 </div>
 

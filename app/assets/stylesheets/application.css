@@ -173,6 +173,14 @@ td#buttonbox{
 	color:white;
 	font-size:15px;
 }
+#info{
+	color: white;
+	font-size:20px;
+}
+#latlong, #latlonginfo{
+	color:red;
+	font-size:20px;
+}
 #userscroll {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
