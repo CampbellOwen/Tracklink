@@ -38,17 +38,20 @@
 			<tr>
 				<td id="busnum">145
 				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
+				<td id="businfo" colspan="3"> SFU Bay 2
+					<br>Production Way Station
 				</td>
 			</tr>
 			<tr>
 				<% if logged_in? %>
+					<td id="reverse">Select
+					</td>
 					<td id="reverse">Reverse
 					</td>
-					<td id="reverse">Show
-					</td>
 					<td id="reverse">Favorite
-					</td>	                    	
+					</td>          
+					<td id="reverse">
+					</td>         	
 				<% else %>
 					<td id="reverse" align="right">Reverse
 					</td>
@@ -56,126 +59,52 @@
 					</td>
 					<td id="reverse">
 					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
 					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-				<% end %>
-			</tr>
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="2">Somewhere<br>Somewhere Else
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">Favorite
-					</td>	                    	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
+					</td>	
 				<% end %>
 			</tr>
 		</table>
+		<div id="latlonginfo"><br>Current Lat/Long (debugging): </div>
+		<div id="latlong"></div>
+		<div id="disclaimer">
+		<br>Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
+		</div>
+		<div id="info"><br>On the map above, the red marker will initially show your location. To the left, a list of bus lines that stop nearby will be populated according to this location. You are free to drag the marker around anywhere you wish to see bus lines in different locations.</div>
 	</div>
+
 </div>
 <div class="right">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10428.092188647293!2d-122.86681195000001!3d49.200122349999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1466383588147" width="100%" height="1070px" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<div id="map"></div>
+	<script>
+		var map;
+	    function initMap() {
+		    map = new google.maps.Map(document.getElementById('map'), {
+		        center: {lat: 49.2769, lng: -122.9148},
+		        zoom: 16
+		    });
+		    if (navigator.geolocation) {
+	          	navigator.geolocation.getCurrentPosition(function(position) {
+	            	var pos = {
+	              		lat: position.coords.latitude,
+	              		lng: position.coords.longitude
+
+	            	};
+	            	document.getElementById('latlong').innerHTML = pos.lat + " " + pos.lng;
+	            	map.setCenter(pos);
+	          	}, function() {
+	          		handleLocationError(true, map.getCenter());
+	          	});
+	        } else {
+	          	// Browser doesn't support Geolocation
+	          	handleLocationError(false, map.getCenter());
+	        }
+
+	    }
+      	function handleLocationError(browserHasGeolocation, pos) {
+	        document.getElementById('latlong').innerHTML = 'Error';
+      	}
+    </script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_5saOsQDUS9U1RJJUsYI3qsZB8aCxGZc&callback=initMap"
+    async defer>
+	</script>
 </div>
