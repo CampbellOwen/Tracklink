@@ -44,7 +44,7 @@
 		margin: auto;
 	}
 /* Navigation */
-	#nav_cont{
+	#navigation_container{
 		text-align: center;
 		word-spacing:20px;
 		padding-bottom: 20px;
@@ -67,37 +67,29 @@
 	.alert {
 		color:white;
 	}
-	#busnum{
-		text-align: center;
+	#bus_number_left, #bus_number_history{
 		font-size: 30px;
 	}
-	#bushistnum{
-		font-size: 30px;
-	}
-	#businfo{
+	#bus_route_info{
 		font-size: 20px;
 		color: black;
 	}
-	#explan-debug{
+	#explanation_left{
 		width: auto;
 		margin-right: 20px;
 	}
-	#reverse{
+	#usage_info_left, #translink_disclaimer{
+		color: white;
+		font-size:15px;
+	}
+	#dummy_route_buttons{
 		font-size: 18px;
 		background-color: white;
 		color: #0060a8;
 	}
-	#info{
-		color: white;
-		font-size:15px;
-	}
 	#latlong, #latlonginfo{
 		color:red;
 		font-size:20px;
-	}
-	#disclaimer{
-		color:white;
-		font-size:15px;
 	}
 	#map{
 		width:auto;

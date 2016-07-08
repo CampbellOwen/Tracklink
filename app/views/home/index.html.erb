@@ -3,16 +3,14 @@
 		<div id="logo_container">
 			<%= image_tag("/logo.png", :alt => "tracklink logo", :id => "logo") %>
 		</div>
-		<div id="nav_cont">
+		<div id="navigation_container">
 			<%= link_to "Index", root_path, :class => "nav" %>
 			<% if logged_in? %>
-				<%#= link_to "Busses", '#', :class => "nav" %>
 				<% if admin? %>
 					<%= link_to "Users", users_path, :class => "nav" %>
 				<% end %>
 				<%= link_to "History", history_path, :class => "nav" %>
 				<%= link_to "Settings", current_user, :class => "nav"  %>
-				<%#= link_to "Settings", '#', :class => "nav"  %>
 				<%= link_to "Logout", logout_path, method: "delete", :class => "nav"%>
 			<% else %>
 				<%= link_to "Login", login_path, :class => "nav"  %>
@@ -34,126 +32,126 @@
 		<div id="busscroll">
 			<table id="busses">				
 				<tr>
-					<td id="busnum">145
+					<td id="bus_number_left">145
 					</td>
-					<td id="businfo" colspan="3"> SFU Bay 2
+					<td id="bus_route_info" colspan="3"> SFU Bay 2
 						<br>Production Way Station
 					</td>
 				</tr>
 				<tr>
 					<% if logged_in? %>
-						<td id="reverse">Select
+						<td id="dummy_route_buttons">Select
 						</td>
-						<td id="reverse">Reverse
+						<td id="dummy_route_buttons">Reverse
 						</td>
-						<td id="reverse">Favorite
+						<td id="dummy_route_buttons">Favorite
 						</td>          
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>         	
 					<% else %>
-						<td id="reverse" align="right">Reverse
+						<td id="dummy_route_buttons" align="right">Reverse
 						</td>
-						<td id="reverse">Show
+						<td id="dummy_route_buttons">Show
 						</td>
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>	
 					<% end %>
 				</tr>
 				<tr>
-					<td id="busnum">145
+					<td id="bus_number_left">145
 					</td>
-					<td id="businfo" colspan="3"> SFU Bay 2
+					<td id="bus_route_info" colspan="3"> SFU Bay 2
 						<br>Production Way Station
 					</td>
 				</tr>
 				<tr>
 					<% if logged_in? %>
-						<td id="reverse">Select
+						<td id="dummy_route_buttons">Select
 						</td>
-						<td id="reverse">Reverse
+						<td id="dummy_route_buttons">Reverse
 						</td>
-						<td id="reverse">Favorite
+						<td id="dummy_route_buttons">Favorite
 						</td>          
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>         	
 					<% else %>
-						<td id="reverse" align="right">Reverse
+						<td id="dummy_route_buttons" align="right">Reverse
 						</td>
-						<td id="reverse">Show
+						<td id="dummy_route_buttons">Show
 						</td>
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>	
 					<% end %>
 				</tr>
 				<tr>
-					<td id="busnum">145
+					<td id="bus_number_left">145
 					</td>
-					<td id="businfo" colspan="3"> SFU Bay 2
+					<td id="bus_route_info" colspan="3"> SFU Bay 2
 						<br>Production Way Station
 					</td>
 				</tr>
 				<tr>
 					<% if logged_in? %>
-						<td id="reverse">Select
+						<td id="dummy_route_buttons">Select
 						</td>
-						<td id="reverse">Reverse
+						<td id="dummy_route_buttons">Reverse
 						</td>
-						<td id="reverse">Favorite
+						<td id="dummy_route_buttons">Favorite
 						</td>          
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>         	
 					<% else %>
-						<td id="reverse" align="right">Reverse
+						<td id="dummy_route_buttons" align="right">Reverse
 						</td>
-						<td id="reverse">Show
+						<td id="dummy_route_buttons">Show
 						</td>
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>	
 					<% end %>
 				</tr>
 				<tr>
-					<td id="busnum">145
+					<td id="bus_number_left">145
 					</td>
-					<td id="businfo" colspan="3"> SFU Bay 2
+					<td id="bus_route_info" colspan="3"> SFU Bay 2
 						<br>Production Way Station
 					</td>
 				</tr>
 				<tr>
 					<% if logged_in? %>
-						<td id="reverse">Select
+						<td id="dummy_route_buttons">Select
 						</td>
-						<td id="reverse">Reverse
+						<td id="dummy_route_buttons">Reverse
 						</td>
-						<td id="reverse">Favorite
+						<td id="dummy_route_buttons">Favorite
 						</td>          
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>         	
 					<% else %>
-						<td id="reverse" align="right">Reverse
+						<td id="dummy_route_buttons" align="right">Reverse
 						</td>
-						<td id="reverse">Show
+						<td id="dummy_route_buttons">Show
 						</td>
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>
-						<td id="reverse">
+						<td id="dummy_route_buttons">
 						</td>	
 					<% end %>
 				</tr>
 			</table>
 		</div>
-		<div id="explan-debug">
+		<div id="explanation_left">
 			<div id="latlonginfo"><br>Current Lat/Long (debugging): </div>
 			<div id="latlong"></div>
-			<div id="disclaimer">
+			<div id="translink_disclaimer">
 			<br>Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
 			</div>
-			<div id="info"><br>On the map above, the red marker will initially show your location. To the left, a list of bus lines that stop nearby will be populated according to this location. You are free to drag the marker around anywhere you wish to see bus lines in different locations.</div>
+			<div id="usage_info_left"><br>On the map above, the red marker will initially show your location. To the left, a list of bus lines that stop nearby will be populated according to this location. You are free to drag the marker around anywhere you wish to see bus lines in different locations.</div>
 		</div>
 
 	</div>
