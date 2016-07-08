@@ -1,27 +1,9 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 html, body{
  	font-family: 'Roboto', sans-serif;
  	font-weight: 500;
  	font-size: 20px;
- 	height: 100%;
- 	width: 100%;
  	background-color: black;
  	margin: 0px;
- 	display:table;
 }
 .alert {
     color:white;
@@ -40,15 +22,13 @@ h1{
 	width: 30%;
  	background-color: black;
  	float:left;
- 	display: table-cell;
-  	height: 100%;
+ 	display: block;
 }
 .right{
 	padding: 0px 0px 0px 0px;
 	width:70%;
-	display: table-cell;
-	height: 100%;
- 	float:right;
+	float: right;
+	display: block;
  	background-color: black;
 }
 
@@ -190,10 +170,9 @@ td#buttonbox{
     background-color: #0060a8;
     overflow-y:scroll;
     border-collapse: collapse;
-
 }
 #map{
-	width:100%;
+	width:auto;
 	height:900px;
 }
 @media screen and (max-width: 1050px){
