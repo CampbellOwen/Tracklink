@@ -25,9 +25,6 @@
 		margin: auto;
 		padding: 20px;
 	}
-	#logo_container{
-		text-align: center;
-	}
 	.left, .right, .mid{
 		color: white;
 		padding: 0px 0px 0px 0px;
@@ -46,47 +43,19 @@
 		width: 40%;
 		margin: auto;
 	}
-/* Unsorted */
-	.alert {
-		color:white;
-	}
-	.reg_button{
-		background-color: #0060a8;
-		color: white;
-		border: 0;
-		padding: 5px 10px 5px 10px;
+/* Navigation */
+	#nav_cont{
 		text-align: center;
-		text-decoration: none;
-		font-weight:700;
-		font-size: 20px;
-		width: 100%;
-		height: 50px;
+		word-spacing:20px;
+		padding-bottom: 20px;
 	}
-	#login{
-		background-color: #0060a8;
-		border-collapse: collapse;
-		width:100%;
-		margin: auto;
-	}
-	#busses{
-		background-color: #0060a8;
-		border-collapse: collapse;
-		width: 100%;
-		margin: auto;
-	}
-	#bushist{
-		background-color: #0060a8;
-		border-collapse: collapse;
-		width: 100%;
+	#logo_container{
+		text-align: center;
 	}
 	#logo{
 		width: auto;
 		max-width: 70%;
 	}
-	td#buttonbox{
-		padding: 0px;
-	}
-
 	.nav{
 		color: white;
 		font-size: 30px;
@@ -94,13 +63,9 @@
 	.nav:hover, .nav:active{
 		color: #0060a8;
 	}
-	#nav_cont{
-		text-align: center;
-		word-spacing:20px;
-		padding: 0 0 20px 0;
-	}
-	.reg_field{
-		width:80%;
+/* Informational Texts & Containers */
+	.alert {
+		color:white;
 	}
 	#busnum{
 		text-align: center;
@@ -113,20 +78,40 @@
 		font-size: 20px;
 		color: black;
 	}
-	#busscroll{
-		overflow-y: auto;
-		width: auto;
-		max-height: 400px;
-		margin-right: 20px;
-	}
 	#explan-debug{
 		width: auto;
 		margin-right: 20px;
 	}
-	#histscroll{
-		overflow-y: auto;
-		width: auto;
-		max-height: 900px;
+	#reverse{
+		font-size: 18px;
+		background-color: white;
+		color: #0060a8;
+	}
+	#info{
+		color: white;
+		font-size:15px;
+	}
+	#latlong, #latlonginfo{
+		color:red;
+		font-size:20px;
+	}
+	#disclaimer{
+		color:white;
+		font-size:15px;
+	}
+	#map{
+		width:auto;
+		height:900px;
+	}
+/* Forms & Form Containers */
+	#login{
+		background-color: #0060a8;
+		border-collapse: collapse;
+		width:100%;
+		margin: auto;
+	}
+	.reg_field{
+		width:80%;
 	}
 	#searchbox{
 		width: auto;
@@ -134,16 +119,6 @@
 	}
 	#searchbox-hist{
 		width: auto;
-	}
-	#reverse{
-		font-size: 18px;
-		background-color: white;
-		color: #0060a8;
-	}
-	#histbutton{
-		font-size: 20px;
-		background-color: white;
-		color: #0060a8;
 	}
 	#search{
 		background-color: white;
@@ -153,6 +128,28 @@
 		text-align: left;
 		font-size: 25px;
 		font-weight: 500;
+	}
+
+/* Buttons*/
+	.reg_button{
+		background-color: #0060a8;
+		color: white;
+		border: 0;
+		padding: 5px 10px 5px 10px;
+		text-align: center;
+		text-decoration: none;
+		font-weight:700;
+		font-size: 20px;
+		width: 100%;
+		height: 50px;
+	}
+	td#buttonbox{
+		padding: 0px;
+	}
+	#histbutton{
+		font-size: 20px;
+		background-color: white;
+		color: #0060a8;
 	}
 	#searchbutton{
 		background-color: #0060a8;
@@ -165,17 +162,17 @@
 	#searchbutton:hover{
 		color:black;
 	}
-	#disclaimer{
-		color:white;
-		font-size:15px;
+/* Scroll Containers */
+	#busscroll{
+		overflow-y: auto;
+		width: auto;
+		max-height: 400px;
+		margin-right: 20px;
 	}
-	#info{
-		color: white;
-		font-size:15px;
-	}
-	#latlong, #latlonginfo{
-		color:red;
-		font-size:20px;
+	#histscroll{
+		overflow-y: auto;
+		width: auto;
+		max-height: 900px;
 	}
 	#userscroll {
 		font-family: 'Roboto', sans-serif;
@@ -186,9 +183,17 @@
 		overflow-y:scroll;
 		border-collapse: collapse;
 	}
-	#map{
-		width:auto;
-		height:900px;
+/* Table Containers */
+	#busses{
+		background-color: #0060a8;
+		border-collapse: collapse;
+		width: 100%;
+		margin: auto;
+	}
+	#bushist{
+		background-color: #0060a8;
+		border-collapse: collapse;
+		width: 100%;
 	}
 /*Media Requests */ 
 	@media screen and (max-width: 1050px){
