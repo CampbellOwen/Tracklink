@@ -1,42 +1,45 @@
-                <div class="logsign_cont">
-                    <div id="spacer">
-                    </div>
-                    <div id="logo_container">
-                        <%= link_to image_tag("/logo.png", :alt => "tracklink logo", :id => "logo"), root_path %>
-                    </div>
-                    <div id="nav_cont">
-	                    <% if logged_in? %>
-                            <%= link_to "Index", root_path, :class => "nav" %>
-	                    	<%= link_to "Users", users_path, :class => "nav" %>
-			                <%= link_to "History", history_path, :class => "nav" %>
-			                <%#= link_to "Profile", current_user, :class => "nav"  %>
-			                <%#= link_to "Settings", '#', :class => "nav"  %>
-			                <%= link_to "Logout", logout_path, method: "delete", :class => "nav"  %>
-			            <% else %>
-			                <%= link_to "Login", login_path, :class => "nav"  %>
-			                <%= link_to "Signup", signup_path, :class => "nav" %>
-			            <% end %>
-			        </div>
-                </div>
-                <div class="right">
-                        <table id="bushist">
-                            <tr>
-                                <td id="search" colspan="3">
-                                    Enter User
-                                </td>
-                                <td id="searchbutton" colspan="2">
-                                    Search
-                                </td>
-                            </tr>   
-                            <% @users.each do |user| %>
-                                <tr>
-                                    <td><%= user.email %></td>
-                                    <td><%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-                                    <td><%= user.admin? ? "Admin" : "User" %></td>
-                                    <td><%= button_to "Promote to Admin",:controller => "users", :action => "promote", :id => user.id %></td>
-                                    <td><%= button_to "Demote to User",:controller => "users", :action => "demote", :id => user.id %></td>
-                                </tr>
-                            <% end %>
-                        </table>
-                </div>
-
+<div class="logsign_cont">
+    <div id="logo_container">
+        <%= link_to image_tag("/logo.png", :alt => "tracklink logo", :id => "logo"), root_path %>
+    </div>
+    <div id="nav_cont">
+	    <% if logged_in? %>
+            <%= link_to "Index", root_path, :class => "nav" %>
+	        <%= link_to "Users", users_path, :class => "nav" %>
+			<%= link_to "History", history_path, :class => "nav" %>
+			<%#= link_to "Profile", current_user, :class => "nav"  %>
+			<%#= link_to "Settings", '#', :class => "nav"  %>
+			<%= link_to "Logout", logout_path, method: "delete", :class => "nav"  %>
+        <% else %>
+			<%= link_to "Login", login_path, :class => "nav"  %>
+			<%= link_to "Signup", signup_path, :class => "nav" %>
+		<% end %>
+    </div>
+</div>
+<div class="right">
+    <div id="searchbox-hist">
+        <table id="busses">
+            <tr>
+                <td id="search">
+                    Enter User
+                </td>
+                <td id="searchbutton">
+                    Search
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="histscroll">
+        <table id="bushist">  
+            <% @users.each do |user| %>
+                <tr>
+                    <td><%= user.email %></td>
+                    <td><%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                    <td><%= user.admin? ? "Admin" : "User" %></td>
+                    <td><%= button_to "Promote to Admin",:controller => "users", :action => "promote", :id => user.id %></td>
+                    <td><%= button_to "Demote to User",:controller => "users", :action => "demote", :id => user.id %></td>
+                </tr>
+            <% end %>
+        </table>
+    </div>
+</div>
