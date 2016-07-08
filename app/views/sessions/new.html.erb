@@ -1,74 +1,71 @@
-<div align="center" class="logsign_cont">
-    <div id="spacer">
+<div class="content">
+    <div class="mid">
+        <div id="logo_container">
+            <img src="logo.png" id="logo"/>
+        </div>
+        <%= form_for(:session, url: login_path) do |f| %>
+            <table id="login">
+                <tr>
+                    <td style="background-color:red;">
+                        Admin Creds
+                    </td>
+                    <td style="background-color:red;">
+                        admin@admin.com<br>
+                        simplepass
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color:red;">
+                        Standard User Creds
+                    </td>
+                    <td style="background-color:red;">
+                        user@user.com<br>
+                        simplepass
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        No Account?
+                    </td>
+                    <td>
+                        <%= link_to "Sign Up Here", signup_path %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%= f.label :email %>
+                    </td>
+                    <td>
+                        <%= f.email_field :email, :class => 'reg_field'  %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%= f.label :password %>
+                    </td>
+                    <td>
+                        <%= f.password_field :password, :class => 'reg_field'   %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Remember Me
+                    </td>
+                    <td>
+                        <%= f.label :remember_me do %>
+                            <%= f.check_box :remember_me %>
+                        <% end %>
+                    </td>
+                </tr>
+                <tr align="center" id="buttonbox">
+                    <td colspan="2">
+                        <%= f.submit "Login", :class => 'reg_button'  %>
+                    </td>
+                </tr>
+                <% flash.each do |key, value| %>
+                    <tr class="alert <%= key %>" style="background-color: red"><td colspan="2"><%= value %></td></tr>
+                <% end %>
+            </table>
+        <% end %>
     </div>
-    <div id="logo_container">
-        <img src="logo.png" id="logo"/>
-    </div>
-
-    <%= form_for(:session, url: login_path) do |f| %>
-        <table id="login">
-            <tr>
-                <td style="background-color:red;">
-                    Admin Creds
-                </td>
-                <td style="background-color:red;">
-                    admin@admin.com<br>
-                    simplepass
-                </td>
-            </tr>
-            <tr>
-                <td style="background-color:red;">
-                    Standard User Creds
-                </td>
-                <td style="background-color:red;">
-                    user@user.com<br>
-                    simplepass
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    No Account?
-                </td>
-                <td>
-                    <%= link_to "Sign Up Here", signup_path %>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <%= f.label :email %>
-                </td>
-                <td>
-                    <%= f.email_field :email, :class => 'reg_field'  %>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <%= f.label :password %>
-                </td>
-                <td>
-                    <%= f.password_field :password, :class => 'reg_field'   %>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Remember Me
-                </td>
-                <td>
-                    <%= f.label :remember_me do %>
-                        <%= f.check_box :remember_me %>
-                    <% end %>
-                </td>
-            </tr>
-            <tr align="center" id="buttonbox">
-                <td colspan="2">
-                    <%= f.submit "Login", :class => 'reg_button'  %>
-                </td>
-            </tr>
-            <% flash.each do |key, value| %>
-                <tr class="alert <%= key %>" style="background-color: red"><td colspan="2"><%= value %></td></tr>
-            <% end %>
-        </table>
-    <% end %>
-</div>
-<div class="right">
 </div>

@@ -1,40 +1,60 @@
+/*Basic Tags*/
 html, body{
- 	font-family: 'Roboto', sans-serif;
- 	font-weight: 500;
- 	font-size: 20px;
- 	background-color: black;
- 	margin: 0px;
-}
-.alert {
-    color:white;
-}
-#content{
-	margin: auto;
-	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	background-color: black;
+	margin: 0px;
 }
 h1{
 	color: white;
 	text-align: center;
 }
-.logsign_cont{
+a{
+	color: black;
+	text-decoration: none;
+}
+td {
+	padding: 10px 10px 10px 10px;
+	border-style: solid;
+	border-width: 6px 0px 0px 0px;
+	border-color: black;
+}
+/*Main Containers*/
+.content{
+	margin: auto;
+	padding: 20px;
+}
+.left{
 	color: white;
 	padding: 0px 0px 0px 0px;
 	width: 30%;
- 	background-color: black;
- 	float:left;
- 	display: block;
+	background-color: black;
+	float:left;
+	display: block;
 }
 .right{
 	padding: 0px 0px 0px 0px;
 	width:70%;
 	float: right;
 	display: block;
- 	background-color: black;
+	background-color: black;
+}
+.mid{
+	padding: 0px 0px 0px 0px;
+	width:40%;
+	margin: auto;
+	display:block;
+	background-color: black;
+}
+#logo_container{
+	text-align: center;
 }
 
-a{
-	color: black;
-	text-decoration: none;
+
+
+.alert {
+	color:white;
 }
 .reg_button{
 	background-color: #0060a8;
@@ -51,8 +71,8 @@ a{
 #login{
 	background-color: #0060a8;
 	border-collapse: collapse;
+	width:100%;
 	margin: auto;
-
 }
 #busses{
 	background-color: #0060a8;
@@ -65,22 +85,14 @@ a{
 	border-collapse: collapse;
 	width: 100%;
 }
-td {
-	padding: 10px 10px 10px 10px;
-	border-style: solid;
-	border-width: 6px 0px 0px 0px;
-	border-color: black;
-}
-td#buttonbox{
-	padding: 0px;
-}
 #logo{
 	width: auto;
 	max-width: 70%;
 }
-#logo_container{
-	text-align: center;
+td#buttonbox{
+	padding: 0px;
 }
+
 .nav{
 	color: white;
 	font-size: 30px;
@@ -154,10 +166,10 @@ td#buttonbox{
 	text-align: center;
 	font-size: 25px;
 	font-weight: 500;
-    cursor:pointer;
+	cursor:pointer;
 }
 #searchbutton:hover{
-    color:black;
+	color:black;
 }
 #disclaimer{
 	color:white;
@@ -172,19 +184,23 @@ td#buttonbox{
 	font-size:20px;
 }
 #userscroll {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color:white;
-    background-color: #0060a8;
-    overflow-y:scroll;
-    border-collapse: collapse;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color:white;
+	background-color: #0060a8;
+	overflow-y:scroll;
+	border-collapse: collapse;
 }
 #map{
 	width:auto;
 	height:900px;
 }
+/*Media Requests */ 
 @media screen and (max-width: 1050px){
+	html, body{
+		display: block !important;
+	}
 	.right{
 		width: 100% !important;
 		height: 500px !important;
@@ -192,7 +208,7 @@ td#buttonbox{
 		float: left !important;
 		margin: auto;
 	}
-	.logsign_cont{
+	.left{
 		width: 100% !important;
 		height:auto !important;
 		padding-bottom:30px;
@@ -200,9 +216,7 @@ td#buttonbox{
 		float: left !important;
 		margin: auto;
 	}
-	html, body{
-		display: block !important;
-	}
+
 	#map{
 		width: 100%;
 		height: 500px;
