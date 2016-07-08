@@ -3,16 +3,14 @@
 		<div id="logo_container">
 			<%= image_tag("/logo.png", :alt => "tracklink logo", :id => "logo") %>
 		</div>
-		<div id="nav_cont">
+		<div id="navigation_container">
 			<%= link_to "Index", root_path, :class => "nav" %>
 			<% if logged_in? %>
-				<%#= link_to "Busses", '#', :class => "nav" %>
 				<% if admin? %>
 					<%= link_to "Users", users_path, :class => "nav" %>
 				<% end %>
 				<%= link_to "History", history_path, :class => "nav" %>
 				<%= link_to "Settings", current_user, :class => "nav"  %>
-				<%#= link_to "Settings", '#', :class => "nav"  %>
 				<%= link_to "Logout", logout_path, method: "delete", :class => "nav"%>
 			<% else %>
 				<%= link_to "Login", login_path, :class => "nav"  %>
@@ -36,11 +34,11 @@
 		<div id="histscroll">
 			<table id="bushist">	
 				<tr>
-					<td id="bushistnum">145
+					<td id="bus_number_history">145
 					</td>
-					<td id="businfo">Somewhere to Somewhere Else
+					<td id="bus_route_info">Somewhere to Somewhere Else
 					</td>
-					<td id="businfo">Hist Info Here
+					<td id="bus_route_info">Hist Info Here
 					</td>
 				</tr>
 				<tr>
@@ -61,36 +59,11 @@
 					<% end %>
 				</tr>		
 				<tr>
-					<td id="bushistnum">145
+					<td id="bus_number_history">145
 					</td>
-					<td id="businfo">Somewhere to Somewhere Else
+					<td id="bus_route_info">Somewhere to Somewhere Else
 					</td>
-					<td id="businfo">Hist Info Here
-					</td>
-				</tr>
-				<tr>
-					<% if logged_in? %>
-						<td id="histbutton">Reverse
-						</td>
-						<td id="histbutton">Show
-						</td>
-						<td id="histbutton">Favorite
-						</td>	                    	
-					<% else %>
-						<td id="histbutton" align="right">Reverse
-						</td>
-						<td id="histbutton">Show
-						</td>
-						<td id="histbutton">
-						</td>
-					<% end %>
-				</tr>
-				<tr>
-					<td id="bushistnum">145
-					</td>
-					<td id="businfo">Somewhere to Somewhere Else
-					</td>
-					<td id="businfo">Hist Info Here
+					<td id="bus_route_info">Hist Info Here
 					</td>
 				</tr>
 				<tr>
@@ -111,36 +84,11 @@
 					<% end %>
 				</tr>
 				<tr>
-					<td id="bushistnum">145
+					<td id="bus_number_history">145
 					</td>
-					<td id="businfo">Somewhere to Somewhere Else
+					<td id="bus_route_info">Somewhere to Somewhere Else
 					</td>
-					<td id="businfo">Hist Info Here
-					</td>
-				</tr>
-				<tr>
-					<% if logged_in? %>
-						<td id="histbutton">Reverse
-						</td>
-						<td id="histbutton">Show
-						</td>
-						<td id="histbutton">Favorite
-						</td>	                    	
-					<% else %>
-						<td id="histbutton" align="right">Reverse
-						</td>
-						<td id="histbutton">Show
-						</td>
-						<td id="histbutton">
-						</td>
-					<% end %>
-				</tr>
-				<tr>
-					<td id="bushistnum">145
-					</td>
-					<td id="businfo">Somewhere to Somewhere Else
-					</td>
-					<td id="businfo">Hist Info Here
+					<td id="bus_route_info">Hist Info Here
 					</td>
 				</tr>
 				<tr>
@@ -161,36 +109,11 @@
 					<% end %>
 				</tr>
 				<tr>
-					<td id="bushistnum">145
+					<td id="bus_number_history">145
 					</td>
-					<td id="businfo">Somewhere to Somewhere Else
+					<td id="bus_route_info">Somewhere to Somewhere Else
 					</td>
-					<td id="businfo">Hist Info Here
-					</td>
-				</tr>
-				<tr>
-					<% if logged_in? %>
-						<td id="histbutton">Reverse
-						</td>
-						<td id="histbutton">Show
-						</td>
-						<td id="histbutton">Favorite
-						</td>	                    	
-					<% else %>
-						<td id="histbutton" align="right">Reverse
-						</td>
-						<td id="histbutton">Show
-						</td>
-						<td id="histbutton">
-						</td>
-					<% end %>
-				</tr>
-				<tr>
-					<td id="bushistnum">145
-					</td>
-					<td id="businfo">Somewhere to Somewhere Else
-					</td>
-					<td id="businfo">Hist Info Here
+					<td id="bus_route_info">Hist Info Here
 					</td>
 				</tr>
 				<tr>
@@ -211,11 +134,11 @@
 					<% end %>
 				</tr>
 				<tr>
-					<td id="bushistnum">145
+					<td id="bus_number_history">145
 					</td>
-					<td id="businfo">Somewhere to Somewhere Else
+					<td id="bus_route_info">Somewhere to Somewhere Else
 					</td>
-					<td id="businfo">Hist Info Here
+					<td id="bus_route_info">Hist Info Here
 					</td>
 				</tr>
 				<tr>
@@ -236,11 +159,86 @@
 					<% end %>
 				</tr>
 				<tr>
-					<td id="bushistnum">145
+					<td id="bus_number_history">145
 					</td>
-					<td id="businfo">Somewhere to Somewhere Else
+					<td id="bus_route_info">Somewhere to Somewhere Else
 					</td>
-					<td id="businfo">Hist Info Here
+					<td id="bus_route_info">Hist Info Here
+					</td>
+				</tr>
+				<tr>
+					<% if logged_in? %>
+						<td id="histbutton">Reverse
+						</td>
+						<td id="histbutton">Show
+						</td>
+						<td id="histbutton">Favorite
+						</td>	                    	
+					<% else %>
+						<td id="histbutton" align="right">Reverse
+						</td>
+						<td id="histbutton">Show
+						</td>
+						<td id="histbutton">
+						</td>
+					<% end %>
+				</tr>
+				<tr>
+					<td id="bus_number_history">145
+					</td>
+					<td id="bus_route_info">Somewhere to Somewhere Else
+					</td>
+					<td id="bus_route_info">Hist Info Here
+					</td>
+				</tr>
+				<tr>
+					<% if logged_in? %>
+						<td id="histbutton">Reverse
+						</td>
+						<td id="histbutton">Show
+						</td>
+						<td id="histbutton">Favorite
+						</td>	                    	
+					<% else %>
+						<td id="histbutton" align="right">Reverse
+						</td>
+						<td id="histbutton">Show
+						</td>
+						<td id="histbutton">
+						</td>
+					<% end %>
+				</tr>
+				<tr>
+					<td id="bus_number_history">145
+					</td>
+					<td id="bus_route_info">Somewhere to Somewhere Else
+					</td>
+					<td id="bus_route_info">Hist Info Here
+					</td>
+				</tr>
+				<tr>
+					<% if logged_in? %>
+						<td id="histbutton">Reverse
+						</td>
+						<td id="histbutton">Show
+						</td>
+						<td id="histbutton">Favorite
+						</td>	                    	
+					<% else %>
+						<td id="histbutton" align="right">Reverse
+						</td>
+						<td id="histbutton">Show
+						</td>
+						<td id="histbutton">
+						</td>
+					<% end %>
+				</tr>
+				<tr>
+					<td id="bus_number_history">145
+					</td>
+					<td id="bus_route_info">Somewhere to Somewhere Else
+					</td>
+					<td id="bus_route_info">Hist Info Here
 					</td>
 				</tr>
 				<tr>
