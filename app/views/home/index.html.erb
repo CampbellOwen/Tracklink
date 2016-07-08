@@ -1,113 +1,199 @@
-<div class="logsign_cont">
-	<div id="spacer">
-	</div>
-	<div id="logo_container">
-		<%= image_tag("/logo.png", :alt => "tracklink logo", :id => "logo") %>
-	</div>
-	<div id="nav_cont">
-		<%= link_to "Index", root_path, :class => "nav" %>
-		<% if logged_in? %>
-			<%#= link_to "Busses", '#', :class => "nav" %>
-			<% if admin? %>
-				<%= link_to "Users", users_path, :class => "nav" %>
-			<% end %>
-			<%= link_to "History", history_path, :class => "nav" %>
-			<%#= link_to "Profile", current_user, :class => "nav"  %>
-			<%#= link_to "Settings", '#', :class => "nav"  %>
-			<%= link_to "Logout", logout_path, method: "delete", :class => "nav"%>
-		<% else %>
-			<%= link_to "Login", login_path, :class => "nav"  %>
-			<%= link_to "Signup", signup_path, :class => "nav" %>
-		<% end %>
-	</div>
-	<div id="searchbox">
-		<table id="busses">
-			<tr>
-				<td id="search">
-					Enter Stop
-				</td>
-				<td id="searchbutton">
-					Search
-				</td>
-			</tr>
-		</table>
-	</div>
-	<div id="busscroll">
-		<table id="busses">
-							
-			<tr>
-				<td id="busnum">145
-				</td>
-				<td id="businfo" colspan="3"> SFU Bay 2
-					<br>Production Way Station
-				</td>
-			</tr>
-			<tr>
-				<% if logged_in? %>
-					<td id="reverse">Select
-					</td>
-					<td id="reverse">Reverse
-					</td>
-					<td id="reverse">Favorite
-					</td>          
-					<td id="reverse">
-					</td>         	
-				<% else %>
-					<td id="reverse" align="right">Reverse
-					</td>
-					<td id="reverse">Show
-					</td>
-					<td id="reverse">
-					</td>
-					<td id="reverse">
-					</td>	
-				<% end %>
-			</tr>
-		</table>
-		<div id="latlonginfo"><br>Current Lat/Long (debugging): </div>
-		<div id="latlong"></div>
-		<div id="disclaimer">
-		<br>Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
+
+<div id="content">
+	<div class="logsign_cont">
+		<div id="logo_container">
+			<%= image_tag("/logo.png", :alt => "tracklink logo", :id => "logo") %>
 		</div>
-		<div id="info"><br>On the map above, the red marker will initially show your location. To the left, a list of bus lines that stop nearby will be populated according to this location. You are free to drag the marker around anywhere you wish to see bus lines in different locations.</div>
+		<div id="nav_cont">
+			<%= link_to "Index", root_path, :class => "nav" %>
+			<% if logged_in? %>
+				<%#= link_to "Busses", '#', :class => "nav" %>
+				<% if admin? %>
+					<%= link_to "Users", users_path, :class => "nav" %>
+				<% end %>
+				<%= link_to "History", history_path, :class => "nav" %>
+				<%#= link_to "Profile", current_user, :class => "nav"  %>
+				<%#= link_to "Settings", '#', :class => "nav"  %>
+				<%= link_to "Logout", logout_path, method: "delete", :class => "nav"%>
+			<% else %>
+				<%= link_to "Login", login_path, :class => "nav"  %>
+				<%= link_to "Signup", signup_path, :class => "nav" %>
+			<% end %>
+		</div>
+		<div id="searchbox">
+			<table id="busses">
+				<tr>
+					<td id="search">
+						Enter Stop
+					</td>
+					<td id="searchbutton">
+						Search
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="busscroll">
+			<table id="busses">				
+				<tr>
+					<td id="busnum">145
+					</td>
+					<td id="businfo" colspan="3"> SFU Bay 2
+						<br>Production Way Station
+					</td>
+				</tr>
+				<tr>
+					<% if logged_in? %>
+						<td id="reverse">Select
+						</td>
+						<td id="reverse">Reverse
+						</td>
+						<td id="reverse">Favorite
+						</td>          
+						<td id="reverse">
+						</td>         	
+					<% else %>
+						<td id="reverse" align="right">Reverse
+						</td>
+						<td id="reverse">Show
+						</td>
+						<td id="reverse">
+						</td>
+						<td id="reverse">
+						</td>	
+					<% end %>
+				</tr>
+				<tr>
+					<td id="busnum">145
+					</td>
+					<td id="businfo" colspan="3"> SFU Bay 2
+						<br>Production Way Station
+					</td>
+				</tr>
+				<tr>
+					<% if logged_in? %>
+						<td id="reverse">Select
+						</td>
+						<td id="reverse">Reverse
+						</td>
+						<td id="reverse">Favorite
+						</td>          
+						<td id="reverse">
+						</td>         	
+					<% else %>
+						<td id="reverse" align="right">Reverse
+						</td>
+						<td id="reverse">Show
+						</td>
+						<td id="reverse">
+						</td>
+						<td id="reverse">
+						</td>	
+					<% end %>
+				</tr>
+				<tr>
+					<td id="busnum">145
+					</td>
+					<td id="businfo" colspan="3"> SFU Bay 2
+						<br>Production Way Station
+					</td>
+				</tr>
+				<tr>
+					<% if logged_in? %>
+						<td id="reverse">Select
+						</td>
+						<td id="reverse">Reverse
+						</td>
+						<td id="reverse">Favorite
+						</td>          
+						<td id="reverse">
+						</td>         	
+					<% else %>
+						<td id="reverse" align="right">Reverse
+						</td>
+						<td id="reverse">Show
+						</td>
+						<td id="reverse">
+						</td>
+						<td id="reverse">
+						</td>	
+					<% end %>
+				</tr>
+				<tr>
+					<td id="busnum">145
+					</td>
+					<td id="businfo" colspan="3"> SFU Bay 2
+						<br>Production Way Station
+					</td>
+				</tr>
+				<tr>
+					<% if logged_in? %>
+						<td id="reverse">Select
+						</td>
+						<td id="reverse">Reverse
+						</td>
+						<td id="reverse">Favorite
+						</td>          
+						<td id="reverse">
+						</td>         	
+					<% else %>
+						<td id="reverse" align="right">Reverse
+						</td>
+						<td id="reverse">Show
+						</td>
+						<td id="reverse">
+						</td>
+						<td id="reverse">
+						</td>	
+					<% end %>
+				</tr>
+			</table>
+		</div>
+		<div id="explan-debug">
+			<div id="latlonginfo"><br>Current Lat/Long (debugging): </div>
+			<div id="latlong"></div>
+			<div id="disclaimer">
+			<br>Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
+			</div>
+			<div id="info"><br>On the map above, the red marker will initially show your location. To the left, a list of bus lines that stop nearby will be populated according to this location. You are free to drag the marker around anywhere you wish to see bus lines in different locations.</div>
+		</div>
+
 	</div>
+	<div class="right">
+		<div id="map"></div>
+		<script>
+		    function initMap() {
+			    var map = new google.maps.Map(document.getElementById('map'), {
+			        center: {lat: 49.27846087175229, lng: -122.9129836081861},
+			        zoom: 15
+			    });
 
-</div>
-<div class="right">
-	<div id="map"></div>
-	<script>
-	    function initMap() {
-		    var map = new google.maps.Map(document.getElementById('map'), {
-		        center: {lat: 49.27846087175229, lng: -122.9129836081861},
-		        zoom: 15
-		    });
+	    		map.addListener('center_changed', function(){
+	    			document.getElementById('latlong').innerHTML = map.getCenter();
+	    		});
+			    if (navigator.geolocation) {
+		          	navigator.geolocation.getCurrentPosition(function(position) {
+		            	var pos = {
+		              		lat: position.coords.latitude,
+		              		lng: position.coords.longitude
+		            	};
+		            	//document.getElementById('latlong').innerHTML = pos.lat + ", " + pos.lng;
+		            	map.setCenter(pos);
+		          	}, function() {
+		          		document.getElementById('latlong').innerHTML = map.getCenter();
+		          	});
+		        } else {
+		          	// Browser doesn't support Geolocation
 
-    		map.addListener('center_changed', function(){
-    			document.getElementById('latlong').innerHTML = map.getCenter();
-    		});
-		    if (navigator.geolocation) {
-	          	navigator.geolocation.getCurrentPosition(function(position) {
-	            	var pos = {
-	              		lat: position.coords.latitude,
-	              		lng: position.coords.longitude
-	            	};
-	            	//document.getElementById('latlong').innerHTML = pos.lat + ", " + pos.lng;
-	            	map.setCenter(pos);
-	          	}, function() {
-	          		document.getElementById('latlong').innerHTML = map.getCenter();
-	          	});
-	        } else {
-	          	// Browser doesn't support Geolocation
-
-	        }
-		    var marker = new google.maps.Marker({
-        		map: map,
-        		icon: 'reticle.png'
-    		});
-    		marker.bindTo('position', map, 'center');
-	    }
-    </script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_5saOsQDUS9U1RJJUsYI3qsZB8aCxGZc&callback=initMap"
-    async defer>
-	</script>
+		        }
+			    var marker = new google.maps.Marker({
+	        		map: map,
+	        		icon: 'reticle.png'
+	    		});
+	    		marker.bindTo('position', map, 'center');
+		    }
+	    </script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_5saOsQDUS9U1RJJUsYI3qsZB8aCxGZc&callback=initMap"
+	    async defer>
+		</script>
+	</div>
 </div>
