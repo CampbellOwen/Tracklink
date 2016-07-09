@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  StopNo: 1
+  Latitude: 9.99
+  Longitude: 9.99
+  City: MyString
+  AtStreet: MyString
+  OnStreet: MyString
+
+two:
+  Name: MyString
+  StopNo: 1
+  Latitude: 9.99
+  Longitude: 9.99
+  City: MyString
+  AtStreet: MyString
+  OnStreet: MyString
