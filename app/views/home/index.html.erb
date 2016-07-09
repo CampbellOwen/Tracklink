@@ -151,6 +151,7 @@
 		<div id="explanation_left">
 			<div id="lat_long_info"><br>Current Lat/Long (debugging): </div>
 			<div id="lat_long"></div>
+			<div id="routes_ex"></div>
 			<div id="translink_disclaimer">
 			<br>Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
 			</div>
@@ -160,40 +161,8 @@
 	</div>
 	<div class="right">
 		<div id="map"></div>
-		<script>
-		    function initMap() {
-			    var map = new google.maps.Map(document.getElementById('map'), {
-			        center: {lat: 49.27846087175229, lng: -122.9129836081861},
-			        zoom: 15
-			    });
-
-	    		map.addListener('center_changed', function(){
-	    			document.getElementById('lat_long').innerHTML = map.getCenter();
-	    		});
-			    if (navigator.geolocation) {
-		          	navigator.geolocation.getCurrentPosition(function(position) {
-		            	var pos = {
-		              		lat: position.coords.latitude,
-		              		lng: position.coords.longitude
-		            	};
-		            	//document.getElementById('latlong').innerHTML = pos.lat + ", " + pos.lng;
-		            	map.setCenter(pos);
-		          	}, function() {
-		          		document.getElementById('lat_long').innerHTML = map.getCenter();
-		          	});
-		        } else {
-		          	// Browser doesn't support Geolocation
-
-		        }
-			    var marker = new google.maps.Marker({
-	        		map: map,
-	        		icon: 'reticle.png'
-	    		});
-	    		marker.bindTo('position', map, 'center');
-		    }
-	    </script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_5saOsQDUS9U1RJJUsYI3qsZB8aCxGZc&callback=initMap"
-	    async defer>
-		</script>
 	</div>
 </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_5saOsQDUS9U1RJJUsYI3qsZB8aCxGZc&callback=initMap"
+	    async defer>
+</script>
