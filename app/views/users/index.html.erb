@@ -34,10 +34,10 @@
 				<% @users.each do |user| %>
 					<tr>
 						<td><%= user.email %></td>
-						<td><%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 						<td><%= user.admin? ? "Admin" : "User" %></td>
-						<td><%= button_to "Promote to Admin",:controller => "users", :action => "promote", :id => user.id %></td>
-						<td><%= button_to "Demote to User",:controller => "users", :action => "demote", :id => user.id %></td>
+						<td><%= button_to "Delete", user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+						<td><%= button_to "Make Admin",:controller => "users", :action => "promote", :id => user.id %></td>
+						<td><%= button_to "Make User",:controller => "users", :action => "demote", :id => user.id %></td>
 					</tr>
 				<% end %>
 			</table>
