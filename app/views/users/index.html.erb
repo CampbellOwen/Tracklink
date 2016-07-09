@@ -38,6 +38,12 @@
 						<td><%= button_to "Delete", user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 						<td><%= button_to "Make Admin",:controller => "users", :action => "promote", :id => user.id %></td>
 						<td><%= button_to "Make User",:controller => "users", :action => "demote", :id => user.id %></td>
+
+						<% if admin? %>
+							<td><%= button_to "Make User",:controller => "users", :action => "demote", :id => user.id %></td>
+						<% else %>
+							<td><%= button_to "Make Admin",:controller => "users", :action => "promote", :id => user.id %></td>
+						<% end %>
 					</tr>
 				<% end %>
 			</table>
