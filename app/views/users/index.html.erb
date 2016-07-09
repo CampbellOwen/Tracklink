@@ -1,9 +1,9 @@
 <div class="content">
 	<div class="left">
-		<div id="logo_container">
+		<div class="logo_container">
 			<%= link_to image_tag("/logo.png", :alt => "tracklink logo", :id => "logo"), root_path %>
 		</div>
-		<div id="navigation_container">
+		<div class="navigation_container">
 			<% if logged_in? %>
 				<%= link_to "Index", root_path, :class => "nav" %>
 				<%= link_to "Users", users_path, :class => "nav" %>
@@ -17,20 +17,20 @@
 		</div>
 	</div>
 	<div class="right">
-		<div id="searchbox-hist">
-			<table id="busses">
+		<div id="search_box_route">
+			<table id="user_table">
 				<tr>
-					<td id="search">
+					<td id="dummy_search_field">
 						Enter User
 					</td>
-					<td id="searchbutton">
+					<td id="dummy_search_button">
 						Search
 					</td>
 				</tr>
 			</table>
 		</div>
-		<div id="histscroll">
-			<table id="bushist">  
+		<div id="user_scroll">
+			<table id="user_table">  
 				<% @users.each do |user| %>
 					<tr>
 						<td><%= user.email %></td>

@@ -1,9 +1,9 @@
 <div class="content">
 	<div class="left">
-		<div id="logo_container">
+		<div class="logo_container">
 			<%= image_tag("/logo.png", :alt => "tracklink logo", :id => "logo") %>
 		</div>
-		<div id="navigation_container">
+		<div class="navigation_container">
 			<%= link_to "Index", root_path, :class => "nav" %>
 			<% if logged_in? %>
 				<% if admin? %>
@@ -17,20 +17,20 @@
 				<%= link_to "Signup", signup_path, :class => "nav" %>
 			<% end %>
 		</div>
-		<div id="searchbox">
-			<table id="busses">
+		<div id="search_box">
+			<table id="bus_table">
 				<tr>
-					<td id="search">
+					<td id="dummy_search_field">
 						Enter Stop
 					</td>
-					<td id="searchbutton">
+					<td id="dummy_search_button">
 						Search
 					</td>
 				</tr>
 			</table>
 		</div>
-		<div id="busscroll">
-			<table id="busses">				
+		<div id="bus_scroll">
+			<table id="bus_table">				
 				<tr>
 					<td id="bus_number_left">145
 					</td>
@@ -49,9 +49,9 @@
 						<td id="dummy_route_buttons">
 						</td>         	
 					<% else %>
-						<td id="dummy_route_buttons" align="right">Reverse
+						<td id="dummy_route_buttons">Select
 						</td>
-						<td id="dummy_route_buttons">Show
+						<td id="dummy_route_buttons">Reverse
 						</td>
 						<td id="dummy_route_buttons">
 						</td>
@@ -146,8 +146,8 @@
 			</table>
 		</div>
 		<div id="explanation_left">
-			<div id="latlonginfo"><br>Current Lat/Long (debugging): </div>
-			<div id="latlong"></div>
+			<div id="lat_long_info"><br>Current Lat/Long (debugging): </div>
+			<div id="lat_long"></div>
 			<div id="translink_disclaimer">
 			<br>Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
 			</div>
@@ -165,7 +165,7 @@
 			    });
 
 	    		map.addListener('center_changed', function(){
-	    			document.getElementById('latlong').innerHTML = map.getCenter();
+	    			document.getElementById('lat_long').innerHTML = map.getCenter();
 	    		});
 			    if (navigator.geolocation) {
 		          	navigator.geolocation.getCurrentPosition(function(position) {
@@ -176,7 +176,7 @@
 		            	//document.getElementById('latlong').innerHTML = pos.lat + ", " + pos.lng;
 		            	map.setCenter(pos);
 		          	}, function() {
-		          		document.getElementById('latlong').innerHTML = map.getCenter();
+		          		document.getElementById('lat_long').innerHTML = map.getCenter();
 		          	});
 		        } else {
 		          	// Browser doesn't support Geolocation

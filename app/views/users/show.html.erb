@@ -1,9 +1,9 @@
 <div class="content">
 	<div class="left">
-		<div id="logo_container">
+		<div class="logo_container">
 			<%= link_to image_tag("/logo.png", :alt => "tracklink logo", :id => "logo"), root_path %>
 		</div>
-		<div id="navigation_container">
+		<div class="navigation_container">
 			<%= link_to "Index", root_path, :class => "nav" %>
 			<% if logged_in? %>
 				<% if admin? %>
@@ -17,7 +17,7 @@
 				<%= link_to "Signup", signup_path, :class => "nav" %>
 			<% end %>
 		</div>
-		<table id="bushist">
+		<table id="user_table">
 			<tr>
 				<td><%= @user.email %></td>
 				<td><%= @user.admin? ? "Admin" : "Standard User" %></td>

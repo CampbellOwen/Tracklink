@@ -1,9 +1,9 @@
 <div class="content">
 	<div class="left">
-		<div id="logo_container">
+		<div class="logo_container">
 			<%= image_tag("/logo.png", :alt => "tracklink logo", :id => "logo") %>
 		</div>
-		<div id="navigation_container">
+		<div class="navigation_container">
 			<%= link_to "Index", root_path, :class => "nav" %>
 			<% if logged_in? %>
 				<% if admin? %>
@@ -19,20 +19,20 @@
 		</div>
 	</div>
 	<div class="right">
-		<div id="searchbox-hist">
-			<table id="busses">
+		<div id="search_box_hist">
+			<table id="history_table">
 				<tr>
-					<td id="search">
+					<td id="dummy_search_field">
 						Enter Route
 					</td>
-					<td id="searchbutton">
+					<td id="dummy_search_button">
 						Search
 					</td>
 				</tr>
 			</table>
 		</div>
-		<div id="histscroll">
-			<table id="bushist">	
+		<div id="hist_scroll">
+			<table id="history_table">	
 				<tr>
 					<td id="bus_number_history">145
 					</td>

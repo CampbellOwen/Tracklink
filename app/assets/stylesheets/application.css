@@ -44,13 +44,12 @@
 		margin: auto;
 	}
 /* Navigation */
-	#navigation_container{
+	.logo_container, .navigation_container{
 		text-align: center;
+	}
+	.navigation_container{
 		word-spacing:20px;
 		padding-bottom: 20px;
-	}
-	#logo_container{
-		text-align: center;
 	}
 	#logo{
 		width: auto;
@@ -82,14 +81,14 @@
 		color: white;
 		font-size:15px;
 	}
-	#dummy_route_buttons{
-		font-size: 18px;
-		background-color: white;
-		color: #0060a8;
-	}
-	#latlong, #latlonginfo{
+	#lat_long, #lat_long_info{
 		color:red;
 		font-size:20px;
+	}
+	#dummy_route_buttons{
+		font-size: 20px;
+		background-color: white;
+		color: #0060a8;
 	}
 	#map{
 		width:auto;
@@ -105,14 +104,13 @@
 	.reg_field{
 		width:80%;
 	}
-	#searchbox{
+	#search_box, #search_box_hist, #search_box_route{
 		width: auto;
+	}
+	#search_box{
 		margin-right: 20px;
 	}
-	#searchbox-hist{
-		width: auto;
-	}
-	#search{
+	#dummy_search_field{
 		background-color: white;
 		color: black;
 		margin: auto;
@@ -143,7 +141,7 @@
 		background-color: white;
 		color: #0060a8;
 	}
-	#searchbutton{
+	#dummy_search_button{
 		background-color: #0060a8;
 		color: white;
 		text-align: center;
@@ -155,18 +153,19 @@
 		color:black;
 	}
 /* Scroll Containers */
-	#busscroll{
+	#bus_scroll{
 		overflow-y: auto;
 		width: auto;
 		max-height: 400px;
 		margin-right: 20px;
 	}
-	#histscroll{
+	#hist_scroll, #user_scroll{
 		overflow-y: auto;
 		width: auto;
 		max-height: 900px;
 	}
-	#userscroll {
+	/*
+	#user_scroll {
 		font-family: 'Roboto', sans-serif;
 		font-weight: 500;
 		font-size: 20px;
@@ -174,18 +173,13 @@
 		background-color: #0060a8;
 		overflow-y:scroll;
 		border-collapse: collapse;
-	}
+	}*/
 /* Table Containers */
-	#busses{
+	#bus_table, #user_table, #history_table{
 		background-color: #0060a8;
 		border-collapse: collapse;
 		width: 100%;
 		margin: auto;
-	}
-	#bushist{
-		background-color: #0060a8;
-		border-collapse: collapse;
-		width: 100%;
 	}
 /*Media Requests */ 
 	@media screen and (max-width: 1050px){
