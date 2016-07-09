@@ -1,5 +1,5 @@
 <div class="content">
-	<div class="left">
+	<div class="mid">
 		<div class="logo_container">
 			<%= link_to image_tag("/logo.png", :alt => "tracklink logo", :id => "logo"), root_path %>
 		</div>
@@ -17,6 +17,8 @@
 				<%= link_to "Signup", signup_path, :class => "nav" %>
 			<% end %>
 		</div>
+	</div>
+	<div class="mid">
 		<table id="user_table">
 			<tr>
 				<td><%= @user.email %></td>
