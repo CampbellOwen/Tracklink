@@ -167,7 +167,7 @@
 	#hist_scroll, #user_scroll{
 		overflow-y: auto;
 		width: auto;
-		max-height: 900px;
+		max-height: 600px;
 	}
 	/*
 	#user_scroll {
