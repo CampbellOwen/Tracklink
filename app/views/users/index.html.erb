@@ -39,7 +39,7 @@
 						<td><%= button_to "Make Admin",:controller => "users", :action => "promote", :id => user.id %></td>
 						<td><%= button_to "Make User",:controller => "users", :action => "demote", :id => user.id %></td>
 
-						<% if user.admin? %>
+						<% if user.admin %>
 							<td><%= button_to "Make User",:controller => "users", :action => "demote", :id => user.id %></td>
 						<% else %>
 							<td><%= button_to "Make Admin",:controller => "users", :action => "promote", :id => user.id %></td>
