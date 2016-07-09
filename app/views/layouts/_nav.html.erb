@@ -8,7 +8,7 @@
 			<% if admin? %>
 				<%= link_to "Users", users_path, :class => "nav" %>
 			<% end %>
-			<%= link_to "History", history_path, :class => "nav" %>
+			<%#= link_to "History", history_path, :class => "nav" %>
 			<%= link_to "Settings", current_user, :class => "nav"  %>
 			<%= link_to "Logout", logout_path, method: "delete", :class => "nav"%>
 		<% else %>
