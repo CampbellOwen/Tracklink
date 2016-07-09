@@ -1,0 +1,16 @@
+<tr>
+	<td id="bus_number_history">145</td>
+	<td id="bus_route_info">Somewhere to Somewhere Else</td>
+	<td id="bus_route_info">Hist Info Here</td>
+</tr>
+<tr>
+	<% if logged_in? %>
+		<td id="histbutton">Reverse</td>
+		<td id="histbutton">Show</td>
+		<td id="histbutton">Favorite</td>	                    	
+	<% else %>
+		<td id="histbutton" align="right">Reverse<td>
+		<td id="histbutton">Show<td>
+		<td id="histbutton"><td>
+	<% end %>
+</tr>		
