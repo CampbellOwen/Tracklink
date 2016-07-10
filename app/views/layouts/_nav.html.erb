@@ -1,9 +1,9 @@
 <div class="mid">
 	<div class="logo_container">
-		<%= image_tag("/logo.png", :alt => "tracklink logo", :id => "logo") %>
+		<%= link_to image_tag("/logo.png", :alt => "tracklink logo/index button", :id => "logo"), root_path, :class => "nav"  %>
 	</div>
 	<div class="navigation_container">
-		<%= link_to "Index", root_path, :class => "nav" %>
+		<%#= link_to "Index", root_path, :class => "nav" %>
 		<% if logged_in? %>
 			<% if admin? %>
 				<%= link_to "Users", users_path, :class => "nav" %>

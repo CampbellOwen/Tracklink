@@ -67,7 +67,7 @@
 		font-weight: 500;
 	}
 	.nav:hover, .nav:active{
-		color: #0060a8;
+		color: #A8000C;
 	}
 /* Informational Texts & Containers */
 	.alert {
@@ -86,6 +86,14 @@
 		border-color: black;
 		text-align: center;
 		padding: 10px 10px 10px 10px;
+		cursor:pointer;
+	}
+	#bus_route_info:hover{
+		background-color: #A8000C;
+	}
+	#bus_route_info_sel{
+		background-color: #A8000C;
+		padding: 10px 0px 0px 0px;
 	}
 	#bus_times, #bus_times_in{
 		font-size: 15px;
@@ -93,7 +101,7 @@
 		color: black;
 		border-style: solid;
 		border-width: 5px 0px 0px 0px;
-		border-color: #004F8A;
+		border-color: #A8000C;
 		background-color: white;
 		text-align: center;
 		display: inline-block;
@@ -101,16 +109,10 @@
 		width: 33%;
 	}
 	#bus_times_in{
-		border-style: solid;
 		border-width: 5px 1px 0px 1px;
-		border-color: #004F8A;
 	}
 	#bus_times_num{
 		font-size: 30px;
-	}
-	#bus_route_info_sel{
-		background-color: #004F8A;
-		padding: 10px 0px 0px 0px;
 	}
 	#route_spacer{
 		padding: 3px;
@@ -128,7 +130,7 @@
 		font-size:15px;
 	}
 	#lat_long, #lat_long_info, #routes_ex{
-		color:red;
+		color: #A8000C;
 		font-size:15px;
 	}
 	#map{
@@ -196,7 +198,7 @@
 		border-width: 0px 0px 0px 0px;
 	}
 	#dummy_search_button:hover, #histbutton:hover, #dummy_route_buttons:hover{
-		color:black;
+		background-color:#A8000C;
 	}
 	.reg_button:hover{
 		color: black;
