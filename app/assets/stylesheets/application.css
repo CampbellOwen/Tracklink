@@ -85,18 +85,25 @@
 		border-width: 1px 0px 0px 1px;
 		border-color: black;
 		text-align: center;
+		padding: 10px 0px 0px 0px;
 	}
-	#bus_times{
+	#bus_times, #bus_times_in{
 		font-size: 15px;
-		padding: 7px;
+		padding: 7px 0px 7px 0px;
 		color: black;
 		border-style: solid;
-		border-width: 1px 1px 1px 1px;
-		border-color: black;
+		border-width: 5px 0px 0px 0px;
+		border-color: #004F8A;
 		background-color: white;
 		text-align: center;
 		display: inline-block;
 		font-weight: 500;
+		width: 33%;
+	}
+	#bus_times_in{
+		border-style: solid;
+		border-width: 5px 1px 0px 1px;
+		border-color: #004F8A;
 	}
 	#bus_times_num{
 		font-size: 30px;
