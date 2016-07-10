@@ -85,7 +85,7 @@
 		border-width: 1px 0px 0px 1px;
 		border-color: black;
 		text-align: center;
-		padding: 10px 0px 0px 0px;
+		padding: 10px 10px 10px 10px;
 	}
 	#bus_times, #bus_times_in{
 		font-size: 15px;
@@ -110,6 +110,7 @@
 	}
 	#bus_route_info_sel{
 		background-color: #004F8A;
+		padding: 10px 0px 0px 0px;
 	}
 	#route_spacer{
 		padding: 3px;
