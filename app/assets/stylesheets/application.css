@@ -75,10 +75,41 @@
 	}
 	#bus_number_left, #bus_number_history{
 		font-size: 30px;
+		border-width: 1px 0px 0px 0px;
+		text-align: center;
 	}
-	#bus_route_info{
+	#bus_route_info, #bus_route_info_sel{
 		font-size: 20px;
 		color: black;
+		border-style: solid;
+		border-width: 1px 0px 0px 1px;
+		border-color: black;
+		text-align: center;
+	}
+	#bus_times{
+		font-size: 15px;
+		padding: 7px;
+		color: black;
+		border-style: solid;
+		border-width: 1px 1px 1px 1px;
+		border-color: black;
+		background-color: white;
+		text-align: center;
+		display: inline-block;
+		font-weight: 500;
+	}
+	#bus_times_num{
+		font-size: 30px;
+	}
+	#bus_route_info_sel{
+		background-color: #004F8A;
+	}
+	#route_spacer{
+		padding: 3px;
+		border-style: solid;
+		border-width: 0px 0px 0px 0px;
+		border-color: black;
+		background-color: black;
 	}
 	#explanation_left{
 		width: auto;

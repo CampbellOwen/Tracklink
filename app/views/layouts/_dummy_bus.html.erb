@@ -1,20 +1,11 @@
 <tr>
-	<td id="bus_number_left">145</td>
-	<td id="bus_route_info" colspan="3"> 
-		SFU Bay 2
-		<br>Production Way Station
-	</td>
+	<td id="route_spacer" colspan="2"></td>
 </tr>
 <tr>
-	<% if logged_in? %>
-		<td id="dummy_route_buttons">Select</td>
-		<td id="dummy_route_buttons">Reverse</td>
-		<td id="dummy_route_buttons">Favorite</td>          
-		<td id="dummy_route_buttons"></td>         	
-	<% else %>
-		<td id="dummy_route_buttons">Select</td>
-		<td id="dummy_route_buttons">Reverse</td>
-		<td id="dummy_route_buttons"></td>
-		<td id="dummy_route_buttons"></td>	
-	<% end %>
+	<td rowspan = "2" id="bus_number_left">145</td>
+	<td id="bus_route_info">SFU Bay 2 to Production Way Station</td>
 </tr>
+<tr>
+	<td id="bus_route_info">Production Way Station to SFU Bay 2</td>
+</tr>
+
