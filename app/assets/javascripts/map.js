@@ -12,11 +12,23 @@ function getRoutes(lat_long){
 	   	if($xml.find("Stop").length == 0){
 	   		$("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
 	   	}
+	   	var routesUnique = new Array();
 	   	$xml.find("Stop").each( function() {
 	      	var stop = $(this).find("StopNo");
-	       	console.log(stop.text());
-	       	//$("#routes_ex").append(stop.text() + "<br>");
-	       	$("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "2" id="bus_number_left">XXX@<br>' + stop.text() + '</td><td id="bus_route_info">SFU Bay 2 to Production Way Station</td></tr><tr><td id="bus_route_info">Production Way Station to SFU Bay 2</td></tr>');
+	      	var lati = $(this).find("Latitude");
+	      	var longi = $(this).find("Longitude");
+	      	var routes = $(this).find("Routes");
+	      	var routesSplit = routes.text().split(', ');
+	       	console.log('At' + stop.text() + ': ' + routes.text());
+	       	for(var i=0; i<routesSplit.length; i++){
+	       		if(routesSplit[i] != '' && routesUnique.indexOf(routesSplit[i]) == -1){
+	       			$("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "2" id="bus_number_left">' + routesSplit[i] + '@<br>' + stop.text() + '</td><td id="bus_route_info">SFU Bay 2 to Production Way Station</td></tr><tr><td id="bus_route_info">Production Way Station to SFU Bay 2</td></tr>');
+	       			routesUnique.push(routesSplit[i]);
+	       		}
+	       	}
+	      	
+	      	
+	       	
 	    });
 });
 }
