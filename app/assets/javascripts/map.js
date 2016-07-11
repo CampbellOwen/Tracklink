@@ -8,8 +8,13 @@ function getRoutes(lat_long){
 	   	var xml = $.parseXML(data.results[0]);
 	   	$xml = $(xml);
 	   	$("#routes_ex").html("<b>Stops Nearby:</b><br>");
+
 	   	$xml.find("Stop").each( function() {
 	      	var stop = $(this).find("StopNo");
+            $.get("/home/stop", {StopNo: stop.text()}).success(function(data) {
+                console.log("Success");
+                console.log(data)
+            });
 	       	console.log(stop.text());
 	       	$("#routes_ex").append(stop.text() + "<br>");
    		});

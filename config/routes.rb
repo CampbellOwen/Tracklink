@@ -12,6 +12,11 @@ Rails.application.routes.draw do
   post      'login'  => 'sessions#create'
   delete    'logout' => 'sessions#destroy'
   resources :users
+  resources :home do
+      collection do
+          get :stop
+      end
+  end
   post      'users/promote' => 'users#promote'
   post      'users/demote' => 'users#demote'
 
