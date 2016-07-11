@@ -2,12 +2,21 @@ function getRoutes(lat_long){
 	var lat = lat_long.lat().toFixed(6);
 	var lng = lat_long.lng().toFixed(6);
 	var url = "http://api.translink.ca/rttiapi/v1/stops?apikey=QUprTm0ALxtTt4npEjl6&lat=" + lat + "&long=" + lng;
-	//var req = new XMLHttpRequest();
-	//req.open("GET", url, false);
-	//xhr.send();
-	var out = "hello";
-	document.getElementById('routes_ex').innerHTML = url;
+	document.getElementById('debug1').innerHTML = url;
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', url, true);
+
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState == 4 && xhr.status == 200){
+			var response = JSON.parse(xhr.responseText);
+			document.getElementById('routes_ex').innerHTML = response.StopNo[0];
+		}
+	}
+	xhr.send();
 }
+
+
+
 function initMap() {
 	var map = new google.maps.Map(document.getElementById('map'), {
 		center: {lat: 49.27846087175229, lng: -122.9129836081861}, 
