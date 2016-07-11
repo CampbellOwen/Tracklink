@@ -226,7 +226,7 @@
 		border-collapse: collapse;
 	}*/
 /* Table Containers */
-	#bus_table, #user_table, #history_table{
+	#bus_table, #user_table, #history_table, #bus_table_search{
 		background-color: #0060a8;
 		border-collapse: collapse;
 		width: 100%;
