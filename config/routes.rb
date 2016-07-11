@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   resources :home do
       collection do
           get :stop
+          get :line
       end
   end
   post      'users/promote' => 'users#promote'
