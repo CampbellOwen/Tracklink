@@ -1,3 +1,4 @@
+var accum = 0;
 function getRoutes(lat_long){
 	var lat = lat_long.lat().toFixed(6);
 	var lng = lat_long.lng().toFixed(6);
@@ -22,7 +23,27 @@ function getRoutes(lat_long){
 	       	console.log('At' + stop.text() + ': ' + routes.text());
 	       	for(var i=0; i<routesSplit.length; i++){
 	       		if(routesSplit[i] != '' && routesUnique.indexOf(routesSplit[i]) == -1){
-	       			$("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "2" id="bus_number_left">' + routesSplit[i] + '@<br>' + stop.text() + '</td><td id="bus_route_info">SFU Bay 2 to Production Way Station</td></tr><tr><td id="bus_route_info">Production Way Station to SFU Bay 2</td></tr>');
+                    (function(accum_local){
+	       			$("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "2" id="bus_number_left">' + routesSplit[i] + '@<br>' + stop.text() + '</td><td class="bus' + accum_local +'" id="bus_route_info">SFU Bay 2 to Production Way Station</td></tr><tr><td class="bus'+accum_local+'" id="bus_route_info">Production Way Station to SFU Bay 2</td></tr>');
+                    $.get("/home/line", {RouteNo: routesSplit[i]}).success(function(data) { 
+                        var x = 0;
+                        $(".bus"+accum_local).each(function(){
+                            if (x < data.length){
+                                $(this).text(data[x].Destination);  
+                            }
+                            else if (data.length === 0){
+                                $(this).text("Undefined");
+                            }
+                            else{
+                                $(this).text("One Way");
+                            }
+                            x = x+1;
+                        });
+                    }).fail(function(){
+                        alert("Falied");
+                    });
+                    })(accum);
+                    accum = accum+1;
 	       			routesUnique.push(routesSplit[i]);
 	       		}
 	       	}

@@ -10,7 +10,7 @@ class HomeController < ApplicationController
         respond_with(@stop)
     end
     def line
-        @line = Line.find_by(RouteNo: params[:RouteNo])
+        @line = Line.where(:RouteNo => params[:RouteNo])
         respond_with(@line)
     end
     def history
