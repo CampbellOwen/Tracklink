@@ -36,9 +36,6 @@ function getRoutes(lat_long){
 					}
 	       		}
 	       	}
-	      	
-	      	
-	       	
 	    });
 });
 }
