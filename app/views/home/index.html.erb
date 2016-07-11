@@ -3,7 +3,7 @@
 	<div class="left">
 
 		<div id="search_box">
-			<table id="bus_table">
+			<table id="bus_table_search">
 				<tr>
 					<td id="dummy_search_field">
 						Enter Stop
@@ -15,11 +15,12 @@
 			</table>
 		</div>
 		<div id="bus_scroll">
-			<table id="bus_table">	
-				<%= render 'layouts/dummy_selected' %>
-				<% for i in 1..5 do %>
-					<%= render 'layouts/dummy_bus' %>
-				<% end %>			
+			<table id="bus_table">
+				<tr><td rowspan = "2" id="bus_number_left">No busses nearby, please move the cursor</td></tr>	
+				<%#= render 'layouts/dummy_selected' %>
+				<%# for i in 1..5 do %>
+					<%#= render 'layouts/dummy_bus' %>
+				<%# end %>			
 			</table>
 		</div>
 		<div id="explanation_left">
