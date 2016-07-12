@@ -34,9 +34,11 @@ function getRoutes(map, lat_long){
                        success: function(data) {
                             var dir = data.Name.split(" ")[0];
 
-                            if (stopsUnique.indexOf(data.Route+data.Destination) < 0 && map.getCenter() == lat_long) {
-                                $("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "1" id="bus_number_left">' + data.Route + '</td><td id="bus_route_info">' + data.StopNo + ': Leaving ' + data.Name +' towards<br>' + data.Destination +' at '+data.NextBus+'</td></tr>');
+                            if (data.Destination != "N/A"){
+                                if (stopsUnique.indexOf(data.Route+data.Destination) < 0 && map.getCenter() == lat_long) {
+                                    $("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "1" id="bus_number_left">' + data.Route + '</td><td id="bus_route_info">' + data.StopNo + ': Leaving ' + data.Name +' towards<br>' + data.Destination +' at '+data.NextBus+'</td></tr>');
                                 stopsUnique.push(data.Route+data.Destination)
+                                }
                             }
                        }
                    });

@@ -3,8 +3,23 @@ module ApiHelper
         url = 'http://api.translink.ca/rttiapi/v1/stops/'+stop.StopNo.to_s+'/estimates?apikey=QUprTm0ALxtTt4npEjl6&count=1&routeNo='+route
         response = HTTParty.get(url, :headers => {'Accept' => 'application/json'})
         response_json = JSON.parse(response.body)
-        dest = response_json[0]["Schedules"][0]["Destination"]
-        return dest
+#        if (response_json != nil &&  response_json[0] == nil && response_json["Message"] == nil)
+#            if (response_json[0]["Schedules"] != nil)
+#                dest = response_json[0]["Schedules"][0]["Destination"]
+#                puts "DEBUG: DESTINATION " + dest
+#                return dest
+#            else
+#                return "N/A"
+#            end
+#        else
+#            return "N/A"
+#        end
+        begin
+            dest = response_json[0]["Schedules"][0]["Destination"]
+            return dest
+        rescue
+            return "N/A"
+        end
     end
 
     def getStops (lat, long)
@@ -27,7 +42,16 @@ module ApiHelper
         end
         response = HTTParty.get(url, :headers => {"Accept" => 'application/json'})
         estimate_data = JSON.parse(response.body)
-        puts estimate_data[0]["Schedules"][0]["ExpectedLeaveTime"]
-        return estimate_data[0]["Schedules"][0]["ExpectedLeaveTime"]
+#        if (estimate_data != nil && estimate_data["Message"] == nil)
+#            return estimate_data[0]["Schedules"][0]["ExpectedLeaveTime"].split(' ')[0]
+#        else
+#           return "N/A"
+#        end
+        begin
+            return estimate_data[0]["Schedules"][0]["ExpectedLeaveTime"].split(' ')[0]
+        rescue
+            return "N/A"
+        end
+
     end
 end

@@ -17,6 +17,7 @@ Rails.application.routes.draw do
           get :stop
           get :line
           get :estimate
+          get :test
       end
   end
   post      'users/promote' => 'users#promote'
