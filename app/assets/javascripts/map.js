@@ -5,7 +5,7 @@ function getRoutes(lat_long){
 	var url = "http://api.translink.ca/rttiapi/v1/stops?apikey=QUprTm0ALxtTt4npEjl6&lat=" + lat + "&long=" + lng; 
 	//document.getElementById('debug1').innerHTML = url;
     $.get("/api/stop", {lat: lat, long: lng}).success(function(stops){
-        console.log(stops)
+        //console.log(stops)
 	   	$("#bus_table").html('');
         if ( stops.Message != null) {
 	   		$("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
@@ -15,7 +15,7 @@ function getRoutes(lat_long){
             for (var i = 0; i < stops.length; i++) {
                var routeSplit = stops[i].Routes.split(", ");
                for (var j = 0; j < routeSplit.length; j++) {
-                   console.log(routeSplit[j] + " " + stops[i].StopNo);
+                   //console.log(routeSplit[j] + " " + stops[i].StopNo);
                    $.ajax({
                        url: "/api/stop",
                        data: {RouteNo: routeSplit[j], StopNo: stops[i].StopNo},
@@ -93,7 +93,14 @@ function initMap() {
 	});
 	map.addListener('center_changed', function(){
 		//document.getElementById('lat_long').innerHTML = map.getCenter();
-		getRoutes(map.getCenter());
+        var oldPos = map.getCenter();
+        var id = setTimeout(function() {
+            if (map.getCenter() === oldPos) {
+                console.log("GETTING ROUTES");
+                getRoutes(map.getCenter());
+            }
+        }, 500);
+		//getRoutes(map.getCenter());
 	});
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(function(position) {
@@ -102,7 +109,14 @@ function initMap() {
 		}, 
 		function() {
 			//document.getElementById('lat_long').innerHTML = map.getCenter();
-			getRoutes(map.getCenter());
+            var oldPos = map.getCenter();
+            var id = setTimeout(function() {
+                if (map.getCenter() === oldPos) {
+                    console.log("GETTING ROUTES");
+                    getRoutes(map.getCenter());
+                }
+            }, 500);
+			//getRoutes(map.getCenter());
 			//api me
 		});
 	}
