@@ -1,4 +1,7 @@
-var accum = 0;
+function retrieving()
+{
+    $("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">Retrieving, please wait.</td></tr>');
+}
 function getRoutes(lat_long){
 	var lat = lat_long.lat().toFixed(6);
 	var lng = lat_long.lng().toFixed(6);
@@ -22,7 +25,7 @@ function getRoutes(lat_long){
                        dataType: 'json',
                        success: function(data) {
                             var stop_route = data;
-                            if (stopsUnique.indexOf(data.Route) == -1) {
+                            if (stopsUnique.indexOf(data.Route) === -1) {
                                 $("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "1" id="bus_number_left">' + data.Route + '</td><td id="bus_route_info">' + data.StopNo + ': ' + data.Name +' to<br>' + data.Destination +' at '+data.NextBus+'</td></tr>');
                                 stopsUnique.push(data.Route)
                             }
@@ -93,6 +96,7 @@ function initMap() {
 	});
 	map.addListener('center_changed', function(){
 		//document.getElementById('lat_long').innerHTML = map.getCenter();
+        retrieving();
         var oldPos = map.getCenter();
         var id = setTimeout(function() {
             if (map.getCenter() === oldPos) {
