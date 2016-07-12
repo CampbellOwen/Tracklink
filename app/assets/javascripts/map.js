@@ -124,7 +124,7 @@ function initMap() {
 		}, 
 		function() {
 			//document.getElementById('lat_long').innerHTML = map.getCenter();
-            getRoutes(map.getCenter());
+            getRoutes(map, map.getCenter());
 			//api me
 		});
 	}
