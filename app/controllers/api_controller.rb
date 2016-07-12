@@ -5,7 +5,10 @@ class ApiController < ApplicationController
     
     def stop
         @stop = Stop.find_by(StopNo: params[:StopNo])
-        if (params[:RouteNo] != nil)
+        if (params[:lat] != nil && params[:long] != nil)
+            response = getStops(params[:lat], params[:long])
+            respond_with(response)
+        elsif (params[:RouteNo] != nil)
             my_hash = {
                 :id             => @stop.id,
                 :Name           => @stop.Name,
@@ -15,7 +18,7 @@ class ApiController < ApplicationController
                 :City           => @stop.City,
                 :AtStreet       => @stop.AtStreet,
                 :OnStreet       => @stop.OnStreet,
-                :Routes         => @stop.Routes,
+                :Route          => params[:RouteNo],
                 :Destination    => getDestination(@stop, params[:RouteNo]),
                 :NextBus        => stopEstimate(@stop.StopNo.to_s, params[:RouteNo]).split(' ')[0]
             }

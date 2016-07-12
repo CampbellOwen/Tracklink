@@ -7,6 +7,15 @@ module ApiHelper
         return dest
     end
 
+    def getStops (lat, long)
+
+        url = "http://api.translink.ca/rttiapi/v1/stops?apikey=QUprTm0ALxtTt4npEjl6&lat=" + lat + "&long=" + long; 
+        response = HTTParty.get(url, :headers => {'Accept' => 'application/JSON'})
+        stops_data = JSON.parse(response.body)
+        return stops_data
+
+    end
+
     def getOrigin(stop, route)
         puts stop.Name
     end
