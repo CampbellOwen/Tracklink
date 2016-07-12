@@ -13,6 +13,9 @@ class ApiController < ApplicationController
             respond_with(response)
         elsif (params[:RouteNo] != nil)
             puts "DEBUG: CRASH BEFORE?"
+            if (@stop == nil)
+                    return
+            end 
             my_hash = {
                 :id             => @stop.id,
                 :Name           => @stop.Name,

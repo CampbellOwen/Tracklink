@@ -19,8 +19,9 @@ class UsersController < ApplicationController
   def index
     if !admin?
         redirect_to root_path
+    else
+        @users = User.all
     end
-    @users = User.all
   end
 
   def show
