@@ -7,6 +7,7 @@ function getRoutes(lat_long){
 	var lng = lat_long.lng().toFixed(6);
 	var url = "http://api.translink.ca/rttiapi/v1/stops?apikey=QUprTm0ALxtTt4npEjl6&lat=" + lat + "&long=" + lng; 
 	//document.getElementById('debug1').innerHTML = url;
+    $("#bus_table").html('');
     $.get("/api/stop", {lat: lat, long: lng}).success(function(stops){
         //console.log(stops)
 	   	$("#bus_table").html('');
@@ -14,6 +15,7 @@ function getRoutes(lat_long){
 	   		$("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
         }
         else {
+            $("#bus_table").html('');
             var stopsUnique = new Array();
             for (var i = 0; i < stops.length; i++) {
                var routeSplit = stops[i].Routes.split(", ");
@@ -24,9 +26,9 @@ function getRoutes(lat_long){
                        data: {RouteNo: routeSplit[j], StopNo: stops[i].StopNo},
                        dataType: 'json',
                        success: function(data) {
-                            var stop_route = data;
-                            if (stopsUnique.indexOf(data.Route) === -1) {
-                                $("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "1" id="bus_number_left">' + data.Route + '</td><td id="bus_route_info">' + data.StopNo + ': ' + data.Name +' to<br>' + data.Destination +' at '+data.NextBus+'</td></tr>');
+                            var dir = data.Name.split(" ")[0];
+                            if (stopsUnique.indexOf(data.Route) < 0) {
+                                $("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "1" id="bus_number_left">' + data.Route + '</td><td id="bus_route_info">' + data.StopNo + ': Leaving ' + data.Name +' towards<br>' + data.Destination +' at '+data.NextBus+'</td></tr>');
                                 stopsUnique.push(data.Route)
                             }
                        }
