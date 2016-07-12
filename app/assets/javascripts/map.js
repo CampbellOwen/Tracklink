@@ -14,37 +14,27 @@ function getRoutes(lat_long){
 	   		$("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
 	   	}
 	   	var routesUnique = new Array();
+	   	var stopsUnique = new Array();
 	   	$xml.find("Stop").each( function() {
 	      	var stop = $(this).find("StopNo");
 	      	var lati = $(this).find("Latitude");
 	      	var longi = $(this).find("Longitude");
 	      	var routes = $(this).find("Routes");
+	      	var locName = $(this).find("Name");
+	      	var dir = locName.text().split(' ', 1);
+	 		var splitName = locName.text().substr(3); 
 	      	var routesSplit = routes.text().split(', ');
-	       	console.log('At' + stop.text() + ': ' + routes.text());
 	       	for(var i=0; i<routesSplit.length; i++){
-	       		if(routesSplit[i] != '' && routesUnique.indexOf(routesSplit[i]) == -1){
-                    (function(accum_local){
-	       			$("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "2" id="bus_number_left">' + routesSplit[i] + '@<br>' + stop.text() + '</td><td class="bus' + accum_local +'" id="bus_route_info">SFU Bay 2 to Production Way Station</td></tr><tr><td class="bus'+accum_local+'" id="bus_route_info">Production Way Station to SFU Bay 2</td></tr>');
-                    $.get("/home/line", {RouteNo: routesSplit[i]}).success(function(data) { 
-                        var x = 0;
-                        $(".bus"+accum_local).each(function(){
-                            if (x < data.length){
-                                $(this).text(data[x].Destination);  
-                            }
-                            else if (data.length === 0){
-                                $(this).text("Undefined");
-                            }
-                            else{
-                                $(this).text("One Way");
-                            }
-                            x = x+1;
-                        });
-                    }).fail(function(){
-                        alert("Falied");
-                    });
-                    })(accum);
-                    accum = accum+1;
-	       			routesUnique.push(routesSplit[i]);
+	       		if( routesSplit[i] != ''){
+	       			if(stopsUnique.indexOf(splitName) != -1){
+						$("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "1" id="bus_number_left">' + routesSplit[i] + '</td><td id="bus_route_info">' + stop.text() + ': ' + locName.text() +'<br>Placeholder 2 to 1</td></tr>');
+		       			routesUnique.push(routesSplit[i]);
+		       			stopsUnique.push(splitName);
+					}else if(routesUnique.indexOf(routesSplit[i]) == -1){
+	       				$("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "1" id="bus_number_left">' + routesSplit[i] + '</td><td id="bus_route_info">' + stop.text() + ': ' + locName.text() +'<br>Placeholder 1 to 2</td></tr>');
+		       			routesUnique.push(routesSplit[i]);
+		       			stopsUnique.push(splitName);
+					}
 	       		}
 	       	}
 	    });
