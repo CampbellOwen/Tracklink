@@ -115,14 +115,7 @@ function initMap() {
 		}, 
 		function() {
 			//document.getElementById('lat_long').innerHTML = map.getCenter();
-            var oldPos = map.getCenter();
-            var id = setTimeout(function() {
-                if (map.getCenter() === oldPos) {
-                    console.log("GETTING ROUTES");
-                    getRoutes(map.getCenter());
-                }
-            }, 500);
-			//getRoutes(map.getCenter());
+            getRoutes(map.getCenter());
 			//api me
 		});
 	}
