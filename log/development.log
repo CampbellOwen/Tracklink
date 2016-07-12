@@ -4221,3 +4221,2397 @@ Processing by ApiController#stop as */*
   Parameters: {"StopNo"=>"54912", "RouteNo"=>"312"}
   [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
 Completed 200 OK in 428ms (Views: 0.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2016-07-11 21:35:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (16.6ms)
+  Rendered home/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 329ms (Views: 316.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/stop?lat=49.183130&long=-122.884504" for ::1 at 2016-07-11 21:35:17 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.183130", "long"=>"-122.884504"}
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1[0m
+Completed 200 OK in 5690ms (Views: 1.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/stop?lat=49.183130&long=-122.884290" for ::1 at 2016-07-11 21:35:23 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.183130", "long"=>"-122.884290"}
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1
+Completed 200 OK in 1101ms (Views: 16.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55061" for ::1 at 2016-07-11 21:35:24 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55061"}
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55061]]
+Completed 200 OK in 7672ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55079" for ::1 at 2016-07-11 21:35:31 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55079"}
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55079]]
+Completed 200 OK in 2432ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55078" for ::1 at 2016-07-11 21:35:34 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55078"}
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55078]]
+Completed 200 OK in 4730ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55060" for ::1 at 2016-07-11 21:35:38 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55060"}
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55060]]
+Completed 200 OK in 5017ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55062" for ::1 at 2016-07-11 21:35:44 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55062"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55062]]
+Completed 200 OK in 194ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54912" for ::1 at 2016-07-11 21:35:44 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54912"}
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 200 OK in 493ms (Views: 0.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54912" for ::1 at 2016-07-11 21:35:44 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54912"}
+  [1m[36mStop Load (0.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54912]]
+Completed 200 OK in 230ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55080" for ::1 at 2016-07-11 21:35:44 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55080"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55080]]
+Completed 200 OK in 200ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54919" for ::1 at 2016-07-11 21:35:45 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54919"}
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54919]]
+Completed 200 OK in 219ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54912" for ::1 at 2016-07-11 21:35:45 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54912"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 200 OK in 232ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55080" for ::1 at 2016-07-11 21:35:45 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55080"}
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55080]]
+Completed 200 OK in 191ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54919" for ::1 at 2016-07-11 21:35:45 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54919"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54919]]
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.8ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55060" for ::1 at 2016-07-11 21:35:46 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55060"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55060]]
+Completed 200 OK in 598ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54912" for ::1 at 2016-07-11 21:35:46 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54912"}
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.1ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55079" for ::1 at 2016-07-11 21:35:46 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55079"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55079]]
+Completed 200 OK in 203ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55062" for ::1 at 2016-07-11 21:35:47 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55062"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55062]]
+Completed 200 OK in 258ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54911" for ::1 at 2016-07-11 21:35:47 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54911"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 200 OK in 194ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54919" for ::1 at 2016-07-11 21:35:47 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54919"}
+  [1m[35mStop Load (3.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54919]]
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 3.9ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.0ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54911" for ::1 at 2016-07-11 21:35:47 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54911"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 500 Internal Server Error in 442ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.9ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54919" for ::1 at 2016-07-11 21:35:48 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54919"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54919]]
+Completed 200 OK in 192ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55061" for ::1 at 2016-07-11 21:35:48 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55061"}
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55061]]
+Completed 200 OK in 190ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54912" for ::1 at 2016-07-11 21:35:48 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54912"}
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 200 OK in 185ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55078" for ::1 at 2016-07-11 21:35:48 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55078"}
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55078]]
+Completed 200 OK in 491ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54912" for ::1 at 2016-07-11 21:35:49 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54912"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (16.8ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54911" for ::1 at 2016-07-11 21:35:49 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54911"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 200 OK in 216ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54919" for ::1 at 2016-07-11 21:35:49 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54919"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54919]]
+Completed 200 OK in 228ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54911" for ::1 at 2016-07-11 21:35:49 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54911"}
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 200 OK in 185ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54911" for ::1 at 2016-07-11 21:35:50 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54911"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54911]]
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (19.5ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54919" for ::1 at 2016-07-11 21:35:50 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54919"}
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54919]]
+Completed 200 OK in 213ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54911" for ::1 at 2016-07-11 21:35:50 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54911"}
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54911]]
+Completed 200 OK in 181ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stop?lat=49.177772&long=-122.889096" for ::1 at 2016-07-11 21:36:58 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.177772", "long"=>"-122.889096"}
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1[0m
+Completed 200 OK in 762ms (Views: 3.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54910" for ::1 at 2016-07-11 21:36:59 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54910"}
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54910]]
+Completed 200 OK in 205ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54910" for ::1 at 2016-07-11 21:36:59 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54910"}
+  [1m[36mStop Load (1.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54910]]
+Completed 200 OK in 198ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54909" for ::1 at 2016-07-11 21:36:59 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54909"}
+  [1m[35mStop Load (3.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54909]]
+Completed 200 OK in 531ms (Views: 0.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54909" for ::1 at 2016-07-11 21:37:00 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54909"}
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54909]]
+Completed 200 OK in 434ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55201" for ::1 at 2016-07-11 21:37:00 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55201"}
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55201]]
+Completed 200 OK in 201ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54920" for ::1 at 2016-07-11 21:37:00 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54920"}
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54920]]
+Completed 200 OK in 196ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54920" for ::1 at 2016-07-11 21:37:00 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54920"}
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54920]]
+Completed 200 OK in 186ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55006" for ::1 at 2016-07-11 21:37:01 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55006"}
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55006]]
+Completed 200 OK in 206ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54978" for ::1 at 2016-07-11 21:37:01 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54978"}
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54978]]
+Completed 200 OK in 591ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54978" for ::1 at 2016-07-11 21:37:01 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54978"}
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54978]]
+Completed 200 OK in 201ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54911" for ::1 at 2016-07-11 21:37:02 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54911"}
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54911]]
+Completed 200 OK in 181ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54911" for ::1 at 2016-07-11 21:37:02 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54911"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 200 OK in 221ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54911" for ::1 at 2016-07-11 21:37:02 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54911"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54911]]
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (15.9ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54908" for ::1 at 2016-07-11 21:37:02 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54908"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54908]]
+Completed 200 OK in 1157ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54908" for ::1 at 2016-07-11 21:37:03 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54908"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54908]]
+Completed 200 OK in 237ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54919" for ::1 at 2016-07-11 21:37:04 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54919"}
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54919]]
+Completed 200 OK in 887ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54919" for ::1 at 2016-07-11 21:37:05 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54919"}
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54919]]
+Completed 200 OK in 505ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54910" for ::1 at 2016-07-11 21:37:05 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54910"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54910]]
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.5ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54909" for ::1 at 2016-07-11 21:37:05 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54909"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54909]]
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (16.1ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54920" for ::1 at 2016-07-11 21:37:05 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54920"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54920]]
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.4ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54978" for ::1 at 2016-07-11 21:37:06 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54978"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54978]]
+Completed 500 Internal Server Error in 1341ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.9ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54908" for ::1 at 2016-07-11 21:37:07 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54908"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54908]]
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (16.5ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54919" for ::1 at 2016-07-11 21:37:07 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54919"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54919]]
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (5.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (18.7ms)
+
+
+Started GET "/api/stop?lat=49.177519&long=-122.887122" for ::1 at 2016-07-11 21:37:08 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.177519", "long"=>"-122.887122"}
+  [1m[36mStop Load (1.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1[0m
+Completed 200 OK in 524ms (Views: 1.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/stop?lat=49.171739&long=-122.901413" for ::1 at 2016-07-11 21:37:08 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.171739", "long"=>"-122.901413"}
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1
+Completed 200 OK in 161ms (Views: 1.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/stop?lat=49.169383&long=-122.889697" for ::1 at 2016-07-11 21:37:08 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.169383", "long"=>"-122.889697"}
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1[0m
+Completed 200 OK in 445ms (Views: 1.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55006" for ::1 at 2016-07-11 21:37:09 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55006"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55006]]
+Completed 200 OK in 188ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54909" for ::1 at 2016-07-11 21:37:09 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54909"}
+  [1m[36mStop Load (1.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54909]]
+Completed 200 OK in 198ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54909" for ::1 at 2016-07-11 21:37:09 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54909"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54909]]
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.1ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54910" for ::1 at 2016-07-11 21:37:09 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54910"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54910]]
+Completed 200 OK in 185ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54910" for ::1 at 2016-07-11 21:37:09 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54910"}
+  [1m[35mStop Load (2.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54910]]
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 2.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.7ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54978" for ::1 at 2016-07-11 21:37:10 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54978"}
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54978]]
+Completed 200 OK in 183ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54978" for ::1 at 2016-07-11 21:37:10 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54978"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54978]]
+Completed 500 Internal Server Error in 502ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.1ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55201" for ::1 at 2016-07-11 21:37:10 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55201"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55201]]
+Completed 200 OK in 224ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54920" for ::1 at 2016-07-11 21:37:11 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54920"}
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54920]]
+Completed 200 OK in 194ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54920" for ::1 at 2016-07-11 21:37:11 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54920"}
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54920]]
+Completed 200 OK in 577ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54920" for ::1 at 2016-07-11 21:37:11 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54920"}
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54920]]
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 1.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.3ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54911" for ::1 at 2016-07-11 21:37:12 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54911"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 200 OK in 188ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54909" for ::1 at 2016-07-11 21:37:12 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54909"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54909]]
+Completed 200 OK in 835ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54910" for ::1 at 2016-07-11 21:37:13 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54910"}
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54910]]
+Completed 200 OK in 191ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54978" for ::1 at 2016-07-11 21:37:13 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54978"}
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54978]]
+Completed 200 OK in 537ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/stop?RouteNo=&StopNo=55005" for ::1 at 2016-07-11 21:37:13 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"", "StopNo"=>"55005"}
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55005]]
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.1ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54911" for ::1 at 2016-07-11 21:37:14 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54911"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54911]]
+Completed 200 OK in 193ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54911" for ::1 at 2016-07-11 21:37:14 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54911"}
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 1.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=61647" for ::1 at 2016-07-11 21:37:14 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"61647"}
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 61647]]
+Completed 200 OK in 187ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55059" for ::1 at 2016-07-11 21:37:14 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55059"}
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55059]]
+Completed 200 OK in 224ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55057" for ::1 at 2016-07-11 21:37:14 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55057"}
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55057]]
+Completed 200 OK in 200ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=55057" for ::1 at 2016-07-11 21:37:15 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"55057"}
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55057]]
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.0ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55083" for ::1 at 2016-07-11 21:37:15 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55083"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55083]]
+Completed 200 OK in 210ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=55083" for ::1 at 2016-07-11 21:37:15 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"55083"}
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55083]]
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 1.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.3ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55058" for ::1 at 2016-07-11 21:37:15 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55058"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55058]]
+Completed 200 OK in 235ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55056" for ::1 at 2016-07-11 21:37:16 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55056"}
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55056]]
+Completed 200 OK in 258ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=55056" for ::1 at 2016-07-11 21:37:16 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"55056"}
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55056]]
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 1.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.5ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55084" for ::1 at 2016-07-11 21:37:16 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55084"}
+  [1m[36mStop Load (0.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55084]]
+Completed 200 OK in 234ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=55084" for ::1 at 2016-07-11 21:37:16 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"55084"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55084]]
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (15.0ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54903" for ::1 at 2016-07-11 21:37:16 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54903"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54903]]
+Completed 200 OK in 191ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54924" for ::1 at 2016-07-11 21:37:17 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54924"}
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54924]]
+Completed 200 OK in 196ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54925" for ::1 at 2016-07-11 21:37:17 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54925"}
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54925]]
+Completed 200 OK in 205ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54904" for ::1 at 2016-07-11 21:37:17 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54904"}
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54904]]
+Completed 200 OK in 200ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55055" for ::1 at 2016-07-11 21:37:17 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55055"}
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55055]]
+Completed 200 OK in 193ms (Views: 0.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=55055" for ::1 at 2016-07-11 21:37:17 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"55055"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55055]]
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.9ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55082" for ::1 at 2016-07-11 21:37:18 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55082"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55082]]
+Completed 200 OK in 210ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=55082" for ::1 at 2016-07-11 21:37:18 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"55082"}
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55082]]
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.0ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=55058" for ::1 at 2016-07-11 21:37:18 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"55058"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55058]]
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.7ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54976" for ::1 at 2016-07-11 21:37:18 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54976"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54976]]
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.8ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54976" for ::1 at 2016-07-11 21:37:18 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54976"}
+  [1m[36mStop Load (0.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54976]]
+Completed 200 OK in 203ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54976" for ::1 at 2016-07-11 21:37:19 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54976"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54976]]
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.7ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55203" for ::1 at 2016-07-11 21:37:19 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55203"}
+  [1m[36mStop Load (0.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55203]]
+Completed 200 OK in 192ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=55203" for ::1 at 2016-07-11 21:37:19 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"55203"}
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55203]]
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.9ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=55013" for ::1 at 2016-07-11 21:37:19 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"55013"}
+  [1m[36mStop Load (0.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55013]]
+Completed 200 OK in 186ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=55013" for ::1 at 2016-07-11 21:37:19 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"55013"}
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55013]]
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.1ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54974" for ::1 at 2016-07-11 21:37:20 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54974"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54974]]
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.7ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54974" for ::1 at 2016-07-11 21:37:20 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54974"}
+  [1m[35mStop Load (0.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54974]]
+Completed 200 OK in 541ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54974" for ::1 at 2016-07-11 21:37:20 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54974"}
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54974]]
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 1.3ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (15.0ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55202" for ::1 at 2016-07-11 21:37:21 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55202"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55202]]
+Completed 200 OK in 213ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=55014" for ::1 at 2016-07-11 21:37:21 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"55014"}
+  [1m[36mStop Load (2.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55014]]
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 2.3ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.7ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55014" for ::1 at 2016-07-11 21:37:21 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55014"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55014]]
+Completed 200 OK in 196ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=55014" for ::1 at 2016-07-11 21:37:21 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"55014"}
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55014]]
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.7ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=55012" for ::1 at 2016-07-11 21:37:21 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"55012"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55012]]
+Completed 200 OK in 223ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=55012" for ::1 at 2016-07-11 21:37:22 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"55012"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55012]]
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.6ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54977" for ::1 at 2016-07-11 21:37:22 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54977"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54977]]
+Completed 200 OK in 186ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54977" for ::1 at 2016-07-11 21:37:22 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54977"}
+  [1m[36mStop Load (1.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54977]]
+Completed 200 OK in 189ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54977" for ::1 at 2016-07-11 21:37:22 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54977"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54977]]
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.9ms)
+
+
+Started GET "/api/stop?lat=49.169383&long=-122.889911" for ::1 at 2016-07-11 21:37:27 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.169383", "long"=>"-122.889911"}
+  [1m[36mStop Load (1.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1[0m
+Completed 200 OK in 119ms (Views: 2.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54976" for ::1 at 2016-07-11 21:37:28 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54976"}
+  [1m[35mStop Load (2.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54976]]
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 2.9ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (15.7ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54976" for ::1 at 2016-07-11 21:37:28 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54976"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54976]]
+Completed 200 OK in 562ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54976" for ::1 at 2016-07-11 21:37:28 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54976"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54976]]
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.5ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55203" for ::1 at 2016-07-11 21:37:28 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55203"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55203]]
+Completed 200 OK in 194ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=55203" for ::1 at 2016-07-11 21:37:29 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"55203"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55203]]
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (20.5ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=55013" for ::1 at 2016-07-11 21:37:29 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"55013"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55013]]
+Completed 200 OK in 178ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=55013" for ::1 at 2016-07-11 21:37:29 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"55013"}
+  [1m[35mStop Load (0.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55013]]
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (15.7ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54974" for ::1 at 2016-07-11 21:37:29 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54974"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54974]]
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.0ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54974" for ::1 at 2016-07-11 21:37:29 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54974"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54974]]
+Completed 200 OK in 198ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54974" for ::1 at 2016-07-11 21:37:30 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54974"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54974]]
+Completed 500 Internal Server Error in 438ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (21.9ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55202" for ::1 at 2016-07-11 21:37:30 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55202"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55202]]
+Completed 200 OK in 420ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=55014" for ::1 at 2016-07-11 21:37:31 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"55014"}
+  [1m[36mStop Load (0.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55014]]
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.8ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55014" for ::1 at 2016-07-11 21:37:31 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55014"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55014]]
+Completed 200 OK in 202ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=55014" for ::1 at 2016-07-11 21:37:31 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"55014"}
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55014]]
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 1.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.0ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=55012" for ::1 at 2016-07-11 21:37:31 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"55012"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55012]]
+Completed 200 OK in 191ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=55012" for ::1 at 2016-07-11 21:37:31 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"55012"}
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55012]]
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 1.3ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.3ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54977" for ::1 at 2016-07-11 21:37:31 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54977"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54977]]
+Completed 200 OK in 178ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54977" for ::1 at 2016-07-11 21:37:32 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54977"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54977]]
+Completed 200 OK in 181ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54977" for ::1 at 2016-07-11 21:37:32 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54977"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54977]]
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.4ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54977" for ::1 at 2016-07-11 21:41:06 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54977"}
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54977]]
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.1ms)
+
+
+Started GET "/" for ::1 at 2016-07-11 21:43:26 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 73ms (Views: 72.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/stop?lat=49.169383&long=-122.889697" for ::1 at 2016-07-11 21:43:26 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.169383", "long"=>"-122.889697"}
+  [1m[36mStop Load (1.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1[0m
+Completed 200 OK in 130ms (Views: 0.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-1230bbefd6bf9c3466c116c087618e8209be5329cea9c817e1591e2f0c2336e8.css?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/map.self-4e3d0049f8bb81466382d04d46b4f24846c821a7d270c93ba2153291f5b0bea1.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/map.self-4e3d0049f8bb81466382d04d46b4f24846c821a7d270c93ba2153291f5b0bea1.js?body=1" for ::1 at 2016-07-11 21:43:26 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 21:43:27 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 21:43:27 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 21:43:27 -0700
+
+
+Started GET "/api/stop?lat=49.183130&long=-122.884504" for ::1 at 2016-07-11 21:43:27 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.183130", "long"=>"-122.884504"}
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1
+Completed 200 OK in 436ms (Views: 2.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55061" for ::1 at 2016-07-11 21:43:28 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55061"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55061]]
+Completed 200 OK in 189ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55079" for ::1 at 2016-07-11 21:43:28 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55079"}
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55079]]
+Completed 200 OK in 201ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55060" for ::1 at 2016-07-11 21:43:28 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55060"}
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55060]]
+Completed 200 OK in 232ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55062" for ::1 at 2016-07-11 21:43:28 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55062"}
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55062]]
+Completed 200 OK in 187ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55078" for ::1 at 2016-07-11 21:43:29 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55078"}
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55078]]
+Completed 200 OK in 225ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54912" for ::1 at 2016-07-11 21:43:29 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54912"}
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 200 OK in 224ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54912" for ::1 at 2016-07-11 21:43:29 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54912"}
+  [1m[36mStop Load (6.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54912]]
+Completed 200 OK in 197ms (Views: 0.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=55080" for ::1 at 2016-07-11 21:43:29 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"55080"}
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55080]]
+Completed 200 OK in 199ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54919" for ::1 at 2016-07-11 21:43:30 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54919"}
+  [1m[36mStop Load (1.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54919]]
+Completed 200 OK in 206ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54911" for ::1 at 2016-07-11 21:43:30 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54911"}
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54911]]
+Completed 200 OK in 189ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54911" for ::1 at 2016-07-11 21:43:30 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54911"}
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 200 OK in 189ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54912" for ::1 at 2016-07-11 21:43:30 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54912"}
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 1.2ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.7ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54919" for ::1 at 2016-07-11 21:43:30 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54919"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54919]]
+Completed 200 OK in 181ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54919" for ::1 at 2016-07-11 21:43:31 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54919"}
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54919]]
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.1ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54911" for ::1 at 2016-07-11 21:43:31 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54911"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.2ms)
+
+
+Started GET "/api/stop?lat=49.175836&long=-122.892787" for ::1 at 2016-07-11 21:44:04 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.175836", "long"=>"-122.892787"}
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1
+Completed 200 OK in 130ms (Views: 3.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54920" for ::1 at 2016-07-11 21:44:05 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54920"}
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54920]]
+Completed 200 OK in 255ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54920" for ::1 at 2016-07-11 21:44:05 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54920"}
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54920]]
+Completed 200 OK in 197ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54909" for ::1 at 2016-07-11 21:44:05 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54909"}
+  [1m[36mStop Load (1.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54909]]
+Completed 200 OK in 542ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54908" for ::1 at 2016-07-11 21:44:06 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54908"}
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54908]]
+Completed 200 OK in 345ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55201" for ::1 at 2016-07-11 21:44:06 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55201"}
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55201]]
+Completed 200 OK in 187ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54909" for ::1 at 2016-07-11 21:44:06 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54909"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54909]]
+Completed 200 OK in 182ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54910" for ::1 at 2016-07-11 21:44:06 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54910"}
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54910]]
+Completed 200 OK in 202ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54910" for ::1 at 2016-07-11 21:44:07 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54910"}
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54910]]
+Completed 200 OK in 191ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54921" for ::1 at 2016-07-11 21:44:07 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54921"}
+  [1m[36mStop Load (1.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54921]]
+Completed 200 OK in 290ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54921" for ::1 at 2016-07-11 21:44:07 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54921"}
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54921]]
+Completed 200 OK in 215ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54977" for ::1 at 2016-07-11 21:44:07 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54977"}
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54977]]
+Completed 200 OK in 254ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54977" for ::1 at 2016-07-11 21:44:08 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54977"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54977]]
+Completed 200 OK in 191ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55202" for ::1 at 2016-07-11 21:44:08 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55202"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55202]]
+Completed 200 OK in 207ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54920" for ::1 at 2016-07-11 21:44:08 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54920"}
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54920]]
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.2ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54908" for ::1 at 2016-07-11 21:44:08 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54908"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54908]]
+Completed 200 OK in 191ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54908" for ::1 at 2016-07-11 21:44:08 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54908"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54908]]
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.9ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54909" for ::1 at 2016-07-11 21:44:09 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54909"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54909]]
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.5ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54910" for ::1 at 2016-07-11 21:44:09 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54910"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54910]]
+Completed 500 Internal Server Error in 340ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.9ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54921" for ::1 at 2016-07-11 21:44:09 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54921"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54921]]
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.4ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54977" for ::1 at 2016-07-11 21:44:09 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54977"}
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54977]]
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.2ms)
+
+
+Started GET "/api/stop?lat=49.179791&long=-122.892787" for ::1 at 2016-07-11 21:44:42 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.179791", "long"=>"-122.892787"}
+  [1m[36mStop Load (2.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1[0m
+Completed 200 OK in 543ms (Views: 3.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54911" for ::1 at 2016-07-11 21:44:43 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54911"}
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54911]]
+Completed 200 OK in 195ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54911" for ::1 at 2016-07-11 21:44:43 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54911"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 200 OK in 233ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54910" for ::1 at 2016-07-11 21:44:43 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54910"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54910]]
+Completed 200 OK in 214ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54919" for ::1 at 2016-07-11 21:44:43 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54919"}
+  [1m[36mStop Load (1.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54919]]
+Completed 200 OK in 197ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54910" for ::1 at 2016-07-11 21:44:43 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54910"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54910]]
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.5ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54910" for ::1 at 2016-07-11 21:44:44 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54910"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54910]]
+Completed 200 OK in 188ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54920" for ::1 at 2016-07-11 21:44:44 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54920"}
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54920]]
+Completed 200 OK in 188ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54920" for ::1 at 2016-07-11 21:44:44 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54920"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54920]]
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.5ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54908" for ::1 at 2016-07-11 21:44:44 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54908"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54908]]
+Completed 200 OK in 188ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54908" for ::1 at 2016-07-11 21:44:44 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54908"}
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54908]]
+Completed 200 OK in 196ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54908" for ::1 at 2016-07-11 21:44:45 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54908"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54908]]
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.1ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54909" for ::1 at 2016-07-11 21:44:45 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54909"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54909]]
+Completed 200 OK in 559ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54909" for ::1 at 2016-07-11 21:44:45 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54909"}
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54909]]
+Completed 200 OK in 391ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54909" for ::1 at 2016-07-11 21:44:46 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54909"}
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54909]]
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 1.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (25.6ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54921" for ::1 at 2016-07-11 21:44:46 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54921"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54921]]
+Completed 200 OK in 189ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54921" for ::1 at 2016-07-11 21:44:46 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54921"}
+  [1m[36mStop Load (2.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54921]]
+Completed 200 OK in 205ms (Views: 0.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54921" for ::1 at 2016-07-11 21:44:46 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54921"}
+  [1m[35mStop Load (2.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54921]]
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 2.1ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.1ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54912" for ::1 at 2016-07-11 21:44:47 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54912"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54912]]
+Completed 200 OK in 230ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54911" for ::1 at 2016-07-11 21:44:47 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54911"}
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54911]]
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 1.7ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.8ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54919" for ::1 at 2016-07-11 21:44:47 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54919"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54919]]
+Completed 200 OK in 194ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54919" for ::1 at 2016-07-11 21:44:47 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54919"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54919]]
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.5ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55201" for ::1 at 2016-07-11 21:44:47 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55201"}
+  [1m[36mStop Load (3.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55201]]
+Completed 200 OK in 191ms (Views: 0.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54920" for ::1 at 2016-07-11 21:44:48 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54920"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54920]]
+Completed 200 OK in 188ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54912" for ::1 at 2016-07-11 21:44:48 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54912"}
+  [1m[36mStop Load (1.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54912]]
+Completed 200 OK in 192ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54912" for ::1 at 2016-07-11 21:44:48 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54912"}
+  [1m[35mStop Load (2.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 2.9ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.1ms)
+
+
+Started GET "/api/stop?lat=49.179791&long=-122.893001" for ::1 at 2016-07-11 21:45:57 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"lat"=>"49.179791", "long"=>"-122.893001"}
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" IS NULL LIMIT 1[0m
+Completed 200 OK in 113ms (Views: 0.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54911" for ::1 at 2016-07-11 21:45:57 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54911"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54911]]
+Completed 200 OK in 196ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54911" for ::1 at 2016-07-11 21:45:57 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54911"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 200 OK in 188ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54919" for ::1 at 2016-07-11 21:45:57 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54919"}
+  [1m[35mStop Load (2.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54919]]
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 2.2ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.4ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54911" for ::1 at 2016-07-11 21:45:57 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54911"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54911]]
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.3ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54919" for ::1 at 2016-07-11 21:45:58 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54919"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54919]]
+Completed 200 OK in 319ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54919" for ::1 at 2016-07-11 21:45:58 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54919"}
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54919]]
+Completed 200 OK in 196ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54910" for ::1 at 2016-07-11 21:45:58 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54910"}
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54910]]
+Completed 200 OK in 223ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54910" for ::1 at 2016-07-11 21:45:58 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54910"}
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54910]]
+Completed 200 OK in 190ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54910" for ::1 at 2016-07-11 21:45:59 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54910"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54910]]
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.9ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=55201" for ::1 at 2016-07-11 21:45:59 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"55201"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55201]]
+Completed 200 OK in 191ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54920" for ::1 at 2016-07-11 21:45:59 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54920"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54920]]
+Completed 200 OK in 194ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54920" for ::1 at 2016-07-11 21:45:59 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54920"}
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54920]]
+Completed 200 OK in 471ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54920" for ::1 at 2016-07-11 21:46:00 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54920"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54920]]
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.4ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54908" for ::1 at 2016-07-11 21:46:00 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54908"}
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54908]]
+Completed 200 OK in 189ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54908" for ::1 at 2016-07-11 21:46:00 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54908"}
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54908]]
+Completed 200 OK in 188ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54908" for ::1 at 2016-07-11 21:46:00 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54908"}
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54908]]
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 1.3ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.2ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54921" for ::1 at 2016-07-11 21:46:00 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54921"}
+  [1m[35mStop Load (0.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54921]]
+Completed 200 OK in 199ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54921" for ::1 at 2016-07-11 21:46:01 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54921"}
+  [1m[36mStop Load (2.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54921]]
+Completed 200 OK in 200ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54921" for ::1 at 2016-07-11 21:46:01 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54921"}
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54921]]
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 1.8ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.4ms)
+
+
+Started GET "/api/stop?RouteNo=314&StopNo=54909" for ::1 at 2016-07-11 21:46:01 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"314", "StopNo"=>"54909"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54909]]
+Completed 200 OK in 600ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/stop?RouteNo=316&StopNo=54909" for ::1 at 2016-07-11 21:46:02 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"316", "StopNo"=>"54909"}
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54909]]
+Completed 200 OK in 208ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54909" for ::1 at 2016-07-11 21:46:02 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54909"}
+  [1m[36mStop Load (3.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54909]]
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 3.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.2ms)
+
+
+Started GET "/api/stop?RouteNo=312&StopNo=54912" for ::1 at 2016-07-11 21:46:02 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"312", "StopNo"=>"54912"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 200 OK in 207ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stop?RouteNo=319&StopNo=54912" for ::1 at 2016-07-11 21:46:02 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"319", "StopNo"=>"54912"}
+  [1m[36mStop Load (2.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54912]]
+Completed 200 OK in 186ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/stop?RouteNo=391&StopNo=54912" for ::1 at 2016-07-11 21:46:03 -0700
+Processing by ApiController#stop as JSON
+  Parameters: {"RouteNo"=>"391", "StopNo"=>"54912"}
+  [1m[35mStop Load (2.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 2.4ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.2ms)
+
+
+Started GET "/api/stop?RouteNo=329&StopNo=54977" for ::1 at 2016-07-11 21:46:03 -0700
+Processing by ApiController#stop as */*
+  Parameters: {"RouteNo"=>"329", "StopNo"=>"54977"}
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54977]]
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/helpers/api_helper.rb:6:in `getDestination'
+  app/controllers/api_controller.rb:22:in `stop'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.6ms)

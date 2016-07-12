@@ -2,10 +2,13 @@ function retrieving()
 {
     $("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">Retrieving, please wait.</td></tr>');
 }
-function getRoutes(lat_long){
+function getRoutes(map, lat_long){
 	var lat = lat_long.lat().toFixed(6);
 	var lng = lat_long.lng().toFixed(6);
 	var url = "http://api.translink.ca/rttiapi/v1/stops?apikey=QUprTm0ALxtTt4npEjl6&lat=" + lat + "&long=" + lng; 
+    if (map.getCenter() != lat_long) {
+        return;
+    }
 	//document.getElementById('debug1').innerHTML = url;
     $("#bus_table").html('');
     $.get("/api/stop", {lat: lat, long: lng}).success(function(stops){
@@ -15,21 +18,25 @@ function getRoutes(lat_long){
 	   		$("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
         }
         else {
-            $("#bus_table").html('');
+            $("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">Retrieving, please wait.</td></tr>');
             var stopsUnique = new Array();
             for (var i = 0; i < stops.length; i++) {
                var routeSplit = stops[i].Routes.split(", ");
                for (var j = 0; j < routeSplit.length; j++) {
                    //console.log(routeSplit[j] + " " + stops[i].StopNo);
+                    if (stopsUnique.length === 0) {
+                        $("#bus_table").html('');
+                    }
                    $.ajax({
                        url: "/api/stop",
                        data: {RouteNo: routeSplit[j], StopNo: stops[i].StopNo},
                        dataType: 'json',
                        success: function(data) {
                             var dir = data.Name.split(" ")[0];
-                            if (stopsUnique.indexOf(data.Route) < 0) {
+
+                            if (stopsUnique.indexOf(data.Route+data.Destination) < 0 && map.getCenter() == lat_long) {
                                 $("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "1" id="bus_number_left">' + data.Route + '</td><td id="bus_route_info">' + data.StopNo + ': Leaving ' + data.Name +' towards<br>' + data.Destination +' at '+data.NextBus+'</td></tr>');
-                                stopsUnique.push(data.Route)
+                                stopsUnique.push(data.Route+data.Destination)
                             }
                        }
                    });
@@ -100,12 +107,12 @@ function initMap() {
 		//document.getElementById('lat_long').innerHTML = map.getCenter();
         retrieving();
         var oldPos = map.getCenter();
-        var id = setTimeout(function() {
-            if (map.getCenter() === oldPos) {
-                console.log("GETTING ROUTES");
-                getRoutes(map.getCenter());
-            }
-        }, 500);
+            var id = setTimeout(function() {
+                if (map.getCenter() === oldPos) {
+                    console.log("GETTING ROUTES");
+                    getRoutes(map, map.getCenter());
+                }
+            }, 500);
 		//getRoutes(map.getCenter());
 	});
 	if (navigator.geolocation) {
