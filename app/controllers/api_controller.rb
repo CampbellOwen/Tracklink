@@ -6,13 +6,21 @@ class ApiController < ApplicationController
     def test
         respond_with(stopEstimate(params[:StopNo], params[:RouteNo]))
     end
+
+    def location
+        if (params[:lat] == nil || params[:long] == nil)
+            respond_with("404")
+        end
+
+        stops = getStops(params[:lat], params[:long])
+    end
+
     def stop
         @stop = Stop.find_by(StopNo: params[:StopNo])
         if (params[:lat] != nil && params[:long] != nil)
             response = getStops(params[:lat], params[:long])
             respond_with(response)
         elsif (params[:RouteNo] != nil)
-            puts "DEBUG: CRASH BEFORE?"
             if (@stop == nil)
                     return
             end 
@@ -29,7 +37,6 @@ class ApiController < ApplicationController
                 :Destination    => getDestination(@stop, params[:RouteNo]),
                 :NextBus        => stopEstimate(@stop.StopNo.to_s, params[:RouteNo])
             }
-            puts "DEBUG: CRASH AFTER?"
             response = JSON.generate(my_hash)
             respond_with(response)
         else
