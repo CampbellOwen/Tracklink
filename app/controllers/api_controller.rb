@@ -13,41 +13,45 @@ class ApiController < ApplicationController
             return
         end
 
-            return_info = []
-            routesDone = []
+        return_info = []
+        routesDone = []
 
-            stops = getStops(params[:lat], params[:long])
+        stops = getStops(params[:lat], params[:long])
 
-            stops.each do |stop|
-                routes = stop["Routes"].split(", ")
-                dbStop = Stop.find_by(StopNo: stop["StopNo"])
-                routes.each do |route|
-                    routeHash = {}
-                    dest, time = getDestinationAndEstimate(stop["StopNo"], route)
-                    if ((route + dest).in?routesDone)
-                        next
-                    end
-
-                    routesDone << (route+dest)
-
-                    routeHash.store(:id, dbStop.id)
-                    routeHash.store(:Name, dbStop.Name)
-                    routeHash.store(:StopNo, dbStop.StopNo)
-                    routeHash.store(:Latitude, dbStop.Latitude)
-                    routeHash.store(:Longitude, dbStop.Longitude)
-                    routeHash.store(:City, dbStop.City)
-                    routeHash.store(:AtStreet, dbStop.AtStreet)
-                    routeHash.store(:OnStreet, dbStop.OnStreet)
-                    routeHash.store(:Route, route)
-                    routeHash.store(:Destination, dest)
-                    routeHash.store(:NextBus, time)
-
-                    return_info << routeHash
-
+        stops.each do |stop|
+            routes = stop["Routes"].split(", ")
+            dbStop = Stop.find_by(StopNo: stop["StopNo"])
+            routes.each do |route|
+                routeHash = {}
+                dest, time = getDestinationAndEstimate(stop["StopNo"], route)
+                if ((route + dest).in?routesDone)
+                    next
                 end
-            end
-        response = JSON.generate(return_info)
 
+                routesDone << (route+dest)
+
+                routeHash.store(:id, dbStop.id)
+                routeHash.store(:Name, dbStop.Name)
+                routeHash.store(:StopNo, dbStop.StopNo)
+                routeHash.store(:Latitude, dbStop.Latitude)
+                routeHash.store(:Longitude, dbStop.Longitude)
+                routeHash.store(:City, dbStop.City)
+                routeHash.store(:AtStreet, dbStop.AtStreet)
+                routeHash.store(:OnStreet, dbStop.OnStreet)
+                routeHash.store(:Route, route)
+                routeHash.store(:Destination, dest)
+                routeHash.store(:NextBus, time)
+
+                return_info << routeHash
+
+            end
+        end
+
+
+        
+        sorted = return_info.sort_by { |route| route[:Route].to_i }
+
+        response = JSON.generate(sorted)
 
         respond_with(response)
         return
