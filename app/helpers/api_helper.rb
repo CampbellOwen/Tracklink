@@ -1,11 +1,24 @@
 module ApiHelper
     def getDestination(stop, route)
-        url = 'http://api.translink.ca/rttiapi/v1/stops/'+stop.StopNo.to_s+'/estimates?apikey=QUprTm0ALxtTt4npEjl6&count=1&routeNo='+route
+        url = 'http://api.translink.ca/rttiapi/v1/stops/'+stop.to_s+'/estimates?apikey=QUprTm0ALxtTt4npEjl6&count=1&routeNo='+route
         response = HTTParty.get(url, :headers => {'Accept' => 'application/json'})
         response_json = JSON.parse(response.body)
         begin
             dest = response_json[0]["Schedules"][0]["Destination"]
             return dest
+        rescue
+            return "N/A"
+        end
+    end
+
+    def getDestinationAndEstimate(stop, route)
+        url = 'http://api.translink.ca/rttiapi/v1/stops/'+stop.to_s+'/estimates?apikey=QUprTm0ALxtTt4npEjl6&count=1&routeNo='+route
+        response = HTTParty.get(url, :headers => {'Accept' => 'application/json'})
+        response_json = JSON.parse(response.body)
+        begin
+            dest = response_json[0]["Schedules"][0]["Destination"]
+            time = response_json[0]["Schedules"][0]["ExpectedLeaveTime"].split(' ')[0]
+            return dest, time
         rescue
             return "N/A"
         end

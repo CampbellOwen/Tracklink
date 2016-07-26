@@ -10,9 +10,48 @@ class ApiController < ApplicationController
     def location
         if (params[:lat] == nil || params[:long] == nil)
             respond_with("404")
+            return
         end
 
-        stops = getStops(params[:lat], params[:long])
+            return_info = []
+            routesDone = {}
+
+            stops = getStops(params[:lat], params[:long])
+
+            stops.each do |stop|
+                routes = stop["Routes"].split(", ")
+                dbStop = Stop.find_by(StopNo: stop["StopNo"])
+                routes.each do |route|
+                    routeHash = {}
+                    dest, time = getDestinationAndEstimate(stop["StopNo"], route)
+                    if (routesDone[route] == dest)
+                        next
+                    end
+
+                    routesDone.store(route, dest)
+
+                    routeHash.store(:id, dbStop.id)
+                    routeHash.store(:Name, dbStop.Name)
+                    routeHash.store(:StopNo, dbStop.StopNo)
+                    routeHash.store(:Latitude, dbStop.Latitude)
+                    routeHash.store(:Longitude, dbStop.Longitude)
+                    routeHash.store(:City, dbStop.City)
+                    routeHash.store(:AtStreet, dbStop.AtStreet)
+                    routeHash.store(:OnStreet, dbStop.OnStreet)
+                    routeHash.store(:Route, route)
+                    routeHash.store(:Destination, dest)
+                    routeHash.store(:NextBus, time)
+
+                    return_info << routeHash
+
+                end
+            end
+        response = JSON.generate(return_info)
+
+
+        respond_with(response)
+        return
+
     end
 
     def stop
@@ -34,7 +73,7 @@ class ApiController < ApplicationController
                 :AtStreet       => @stop.AtStreet,
                 :OnStreet       => @stop.OnStreet,
                 :Route          => params[:RouteNo],
-                :Destination    => getDestination(@stop, params[:RouteNo]),
+                :Destination    => getDestination(@stop.StopNo, params[:RouteNo]),
                 :NextBus        => stopEstimate(@stop.StopNo.to_s, params[:RouteNo])
             }
             response = JSON.generate(my_hash)
