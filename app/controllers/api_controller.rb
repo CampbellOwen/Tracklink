@@ -24,7 +24,7 @@ class ApiController < ApplicationController
             routes.each do |route|
                 routeHash = {}
                 dest, time = getDestinationAndEstimate(stop["StopNo"], route)
-                if ((route + dest).in?routesDone)
+                if ((route + dest).in?routesDone or dest == nil or dest == "N/A")
                     next
                 end
 
