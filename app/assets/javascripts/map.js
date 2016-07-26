@@ -10,7 +10,7 @@ function getRoutes(map, lat_long){
         return;
     }
 	//document.getElementById('debug1').innerHTML = url;
-    $("#bus_table").html('');
+    /*
     $.get("/api/stop", {lat: lat, long: lng}).success(function(stops){
         //console.log(stops)
 	   	$("#bus_table").html('');
@@ -43,6 +43,19 @@ function getRoutes(map, lat_long){
                        }
                    });
                }
+            }
+        }
+    });
+    */
+    $.get("/api/location", {lat: lat, long: lng}).success(function(routes){
+        if (routes.length == 0) {
+	   		$("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
+        }
+        else {
+            console.log("HELLO");
+            $("#bus_table").html('');
+            for (var i = 0; i < routes.length; i++) {
+                $("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr><td rowspan = "1" id="bus_number_left">' + routes[i].Route + '</td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr>');
             }
         }
     });
