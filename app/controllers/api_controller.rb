@@ -14,7 +14,7 @@ class ApiController < ApplicationController
         end
 
             return_info = []
-            routesDone = {}
+            routesDone = []
 
             stops = getStops(params[:lat], params[:long])
 
@@ -24,11 +24,11 @@ class ApiController < ApplicationController
                 routes.each do |route|
                     routeHash = {}
                     dest, time = getDestinationAndEstimate(stop["StopNo"], route)
-                    if (routesDone[route] == dest)
+                    if ((route + dest).in?routesDone)
                         next
                     end
 
-                    routesDone.store(route, dest)
+                    routesDone << (route+dest)
 
                     routeHash.store(:id, dbStop.id)
                     routeHash.store(:Name, dbStop.Name)
@@ -55,7 +55,7 @@ class ApiController < ApplicationController
     end
 
     def stop
-        @stop = Stop.find_by(StopNo: params[:StopNo])
+        @stop = Stop.find_by(StopNo: params[:StonNo])
         if (params[:lat] != nil && params[:long] != nil)
             response = getStops(params[:lat], params[:long])
             respond_with(response)
