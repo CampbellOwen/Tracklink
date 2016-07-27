@@ -19,6 +19,7 @@ Rails.application.routes.draw do
           get :estimate
           get :test
           get :location
+          get :getCoor
       end
   end
   post      'users/promote' => 'users#promote'
