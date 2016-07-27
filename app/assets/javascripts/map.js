@@ -1,3 +1,13 @@
+var markers = []
+
+function clearMarkers()
+{
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(null);
+    }
+    markers = []
+}
+
 function retrieving()
 {
     $("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">Retrieving, please wait.</td></tr>');
@@ -9,6 +19,24 @@ function highlightStop(tablerow)
 
     stopno = innerhtml.slice(0,innerhtml.indexOf(":"))
 
+    clearMarkers();
+
+    $.get("/api/getCoor", {stop: stopno}).success(function(result) {
+        console.log(result.lat);
+        console.log(result.long);
+
+        var lat_long = {lat: parseFloat(result.lat), lng: parseFloat(result.long)};
+        console.log(lat_long);
+        var marker = new google.maps.Marker({
+            position: lat_long,
+            map: map,
+            icon: 'reticle.png'
+        });
+
+        markers.push(marker);
+
+    });
+
     console.log(stopno);
 }
 
@@ -18,6 +46,7 @@ function getRoutes(map, lat_long){
     if (map.getCenter() != lat_long) {
         return;
     }
+    clearMarkers();
     $.get("/api/location", {lat: lat, long: lng}).success(function(routes){
         if (routes.length == 0) {
 	   		$("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
@@ -33,7 +62,7 @@ function getRoutes(map, lat_long){
 }
 
 function initMap() {
-	var map = new google.maps.Map(document.getElementById('map'), {
+	window.map = new google.maps.Map(document.getElementById('map'), {
 		center: {lat: 49.27846087175229, lng: -122.9129836081861}, 
 		zoom: 15
 	});

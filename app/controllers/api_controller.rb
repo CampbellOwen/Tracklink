@@ -19,7 +19,7 @@ class ApiController < ApplicationController
             :lat  => stop.Latitude.to_s,
             :long => stop.Longitude.to_s
         }
-        return_with(JSON.generate(lat_long));
+        respond_with(JSON.generate(lat_long));
     end
 
     def location
