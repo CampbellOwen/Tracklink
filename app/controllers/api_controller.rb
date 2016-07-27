@@ -7,6 +7,21 @@ class ApiController < ApplicationController
         respond_with(stopEstimate(params[:StopNo], params[:RouteNo]))
     end
 
+    def getCoor
+        if (params[:stop] == nil)
+            respond_with("404")
+            return
+        end
+
+        stop = Stop.find_by(StopNo: params[:stop])
+
+        lat_long = {
+            :lat  => stop.Latitude.to_s,
+            :long => stop.Longitude.to_s
+        }
+        return_with(JSON.generate(lat_long));
+    end
+
     def location
         if (params[:lat] == nil || params[:long] == nil)
             respond_with("404")

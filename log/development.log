@@ -24409,3 +24409,4 @@ Processing by ApiController#location as */*
   [1m[35mStop Load (3.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 50772]]
   [1m[36mStop Load (2.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 51197]]
 Completed 200 OK in 4058ms (Views: 0.2ms | ActiveRecord: 50.1ms)
+  [1m[36mStop Load (2.4ms)[0m  [1mSELECT  "stops".* FROM "stops"  ORDER BY "stops"."id" ASC LIMIT 1[0m
