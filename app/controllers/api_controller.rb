@@ -3,8 +3,31 @@ class ApiController < ApplicationController
     require 'json'
     respond_to :json, :html
     
-    def test
-        respond_with(stopEstimate(params[:StopNo], params[:RouteNo]))
+    def kmz
+        if (params[:stop] == nil || params[:route] == nil)
+                respond_with("404")
+                return
+        end
+
+        url = "http://api.translink.ca/rttiapi/v1/routes?apikey=QUprTm0ALxtTt4npEjl6&stopNo=" + params[:stop]
+        response = HTTParty.get(url, :headers => {"Accept" => "application/json"})
+        response_json = JSON.parse(response.body)
+
+        begin
+            response_json.each do |line|
+                if (line["RouteNo"].to_i == params[:route].to_i)
+
+                    puts line["Patterns"][0]["RouteMap"]["Href"]
+                    respond_with(line["Patterns"][0]["RouteMap"]["Href"])
+                    return
+                end
+            end
+            respond_with("404")
+            return
+        rescue
+            respond_with("404")
+            return
+        end
     end
 
     def getCoor

@@ -20,6 +20,7 @@ Rails.application.routes.draw do
           get :test
           get :location
           get :getCoor
+          get :kmz
       end
   end
   post      'users/promote' => 'users#promote'

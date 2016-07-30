@@ -22,11 +22,8 @@ function highlightStop(tablerow)
     clearMarkers();
 
     $.get("/api/getCoor", {stop: stopno}).success(function(result) {
-        console.log(result.lat);
-        console.log(result.long);
-
         var lat_long = {lat: parseFloat(result.lat), lng: parseFloat(result.long)};
-        console.log(lat_long);
+
         var marker = new google.maps.Marker({
             position: lat_long,
             map: map,
@@ -36,8 +33,9 @@ function highlightStop(tablerow)
         markers.push(marker);
 
     });
+    //Highlight Route
 
-    console.log(stopno);
+
 }
 
 function getRoutes(map, lat_long){
@@ -52,7 +50,6 @@ function getRoutes(map, lat_long){
 	   		$("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
         }
         else {
-            console.log("HELLO");
             $("#bus_table").html('');
             for (var i = 0; i < routes.length; i++) {
                 $("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr onclick="highlightStop(this)"><td rowspan = "1" id="bus_number_left">' + routes[i].Route + '</td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr>');
@@ -84,9 +81,7 @@ function initMap() {
 			map.setCenter(pos);
 		}, 
 		function() {
-			//document.getElementById('lat_long').innerHTML = map.getCenter();
             getRoutes(map, map.getCenter());
-			//api me
 		});
 	}
 	var marker = new google.maps.Marker({
