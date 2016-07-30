@@ -1,4 +1,5 @@
-var markers = []
+var markers = [];
+var routeLines = [];
 
 function clearMarkers()
 {
@@ -6,6 +7,11 @@ function clearMarkers()
         markers[i].setMap(null);
     }
     markers = []
+
+    for (var i = 0; i < routeLines.length; i++) {
+        routeLines[i].setMap(null);
+    }
+    routeLines = []
 }
 
 function retrieving()
@@ -48,6 +54,8 @@ function highlightStop(tablerow)
                               map: map,
                               preserveViewport: true
                           });
+
+        routeLines.push(kmzLayer);
     });
 }
 
@@ -57,7 +65,8 @@ function getRoutes(map, lat_long){
     if (map.getCenter() != lat_long) {
         return;
     }
-    clearMarkers();
+    $("#bus_table").html('');
+    retrieving();
     $.get("/api/location", {lat: lat, long: lng}).success(function(routes){
         if (routes.length == 0) {
 	   		$("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
