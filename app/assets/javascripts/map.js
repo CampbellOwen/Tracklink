@@ -17,6 +17,7 @@ function highlightStop(tablerow)
 {
     innerhtml = tablerow.children[1].innerHTML;
 
+    route = tablerow.children[0].innerHTML;
     stopno = innerhtml.slice(0,innerhtml.indexOf(":"))
 
     clearMarkers();
@@ -35,7 +36,19 @@ function highlightStop(tablerow)
     });
     //Highlight Route
 
+    $.get("/api/kmz", {stop: stopno, route:route}).success( function(result) {
+        console.log(result[0]);
+        kmzurl = result[0];
 
+
+        var kmzLayer = new google.maps.KmlLayer(
+                          kmzurl,
+                          {
+                              suppressInfoWindows: true,
+                              map: map,
+                              preserveViewport: true
+                          });
+    });
 }
 
 function getRoutes(map, lat_long){

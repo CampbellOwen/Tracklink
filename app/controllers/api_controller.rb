@@ -18,7 +18,9 @@ class ApiController < ApplicationController
                 if (line["RouteNo"].to_i == params[:route].to_i)
 
                     puts line["Patterns"][0]["RouteMap"]["Href"]
-                    respond_with(line["Patterns"][0]["RouteMap"]["Href"])
+                    response_arr = []
+                    response_arr << line["Patterns"][0]["RouteMap"]["Href"]
+                    respond_with(JSON.generate(response_arr))
                     return
                 end
             end
