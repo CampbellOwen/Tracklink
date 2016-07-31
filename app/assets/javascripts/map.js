@@ -1,5 +1,6 @@
 var markers = [];
 var routeLines = [];
+var ajaxCalls = [];
 
 function clearMarkers()
 {
@@ -12,6 +13,15 @@ function clearMarkers()
         routeLines[i].setMap(null);
     }
     routeLines = []
+}
+
+function abortCalls()
+{
+    for (var i = 0; i < ajaxCalls.length; i++) {
+        console.log(ajaxCalls[i]);
+        ajaxCalls[i].abort();
+    }
+    ajaxCalls = []
 }
 
 function retrieving()
@@ -28,7 +38,7 @@ function highlightStop(tablerow)
 
     clearMarkers();
 
-    $.get("/api/getCoor", {stop: stopno}).success(function(result) {
+    ajaxCalls.push($.get("/api/getCoor", {stop: stopno}).success(function(result) {
         var lat_long = {lat: parseFloat(result.lat), lng: parseFloat(result.long)};
 
         var marker = new google.maps.Marker({
@@ -39,10 +49,10 @@ function highlightStop(tablerow)
 
         markers.push(marker);
 
-    });
+    }));
+    
     //Highlight Route
-
-    $.get("/api/kmz", {stop: stopno, route:route}).success( function(result) {
+    ajaxCalls.push($.get("/api/kmz", {stop: stopno, route:route}).success( function(result) {
         console.log(result[0]);
         kmzurl = result[0];
 
@@ -56,7 +66,7 @@ function highlightStop(tablerow)
                           });
 
         routeLines.push(kmzLayer);
-    });
+    }));
 }
 
 function getRoutes(map, lat_long){
@@ -65,9 +75,10 @@ function getRoutes(map, lat_long){
     if (map.getCenter() != lat_long) {
         return;
     }
+    abortCalls();
     $("#bus_table").html('');
     retrieving();
-    $.get("/api/location", {lat: lat, long: lng}).success(function(routes){
+    ajaxCalls.push($.get("/api/location", {lat: lat, long: lng}).success(function(routes){
         if (routes.length == 0) {
 	   		$("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
         }
@@ -77,7 +88,7 @@ function getRoutes(map, lat_long){
                 $("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr onclick="highlightStop(this)"><td rowspan = "1" id="bus_number_left">' + routes[i].Route + '</td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr>');
             }
         }
-    });
+    }));
 }
 
 function initMap() {
