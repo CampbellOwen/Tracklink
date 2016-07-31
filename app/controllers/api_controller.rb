@@ -89,7 +89,7 @@ class ApiController < ApplicationController
 
 
         
-        sorted = return_info.sort_by { |route| route[:Route].to_i }
+        sorted = return_info.sort_by { |route| route[:Route] }
 
         response = JSON.generate(sorted)
 
