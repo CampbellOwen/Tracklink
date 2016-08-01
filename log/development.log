@@ -30143,3 +30143,2815 @@ Processing by ApiController#location as */*
   [1m[35mStop Load (6.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
   [1m[36mStop Load (3.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
 Completed 200 OK in 1065ms (Views: 0.7ms | ActiveRecord: 23.6ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866921" for 127.0.0.1 at 2016-07-31 18:23:18 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866921"}
+  [1m[35mStop Load (6.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (2.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (2.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1513ms (Views: 0.6ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 18:23:19 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (4.7ms)
+  Rendered home/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 239ms (Views: 236.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-a09ed755aed62a4e26ce7654d63ea8c4d219755c9e19b0234768c27c480a1569.css?body=1" for 127.0.0.1 at 2016-07-31 18:23:20 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:20 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:20 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:20 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:20 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:20 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:20 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:20 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 18:23:22 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (2.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (2.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (3.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (4.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1201ms (Views: 0.1ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866781" for 127.0.0.1 at 2016-07-31 18:23:23 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866781"}
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (2.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1227ms (Views: 0.1ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/api/location?lat=49.200826&long=-122.868289" for 127.0.0.1 at 2016-07-31 18:23:25 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200826", "long"=>"-122.868289"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+Completed 200 OK in 881ms (Views: 0.1ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 18:23:46 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered home/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 128ms (Views: 126.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-c64ed5b7242cb652d4dc1efe9b9dcf344c516c0ae8fabea4db1d08c372abfc09.css?body=1" for 127.0.0.1 at 2016-07-31 18:23:46 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:46 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:46 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:46 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:46 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:46 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:46 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:46 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 18:23:48 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[36mStop Load (2.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (2.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (3.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (2.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1529ms (Views: 0.1ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 18:23:55 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.3ms)
+  Rendered home/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 152ms (Views: 149.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-69f42d01380d34900a91a3069c51723a89ffad79ccfaea385d689c9eb3521db3.css?body=1" for 127.0.0.1 at 2016-07-31 18:23:56 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:56 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:56 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:56 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:56 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:56 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:56 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 18:23:56 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 18:23:57 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[36mStop Load (2.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (5.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (1.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1104ms (Views: 0.3ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 18:24:08 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (7.8ms)
+  Rendered home/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 166ms (Views: 159.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 18:24:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 18:24:09 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:24:09 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 18:24:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 18:24:09 -0700
+
+
+Started GET "/assets/application.self-7a17e2dc40d53208c262d4b9df3f51facd4c50d21d2750503e267b0fcae242de.css?body=1" for 127.0.0.1 at 2016-07-31 18:24:09 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:24:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 18:24:09 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 18:24:09 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 18:24:11 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (2.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (3.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (2.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (4.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (4.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (2.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1146ms (Views: 0.2ms | ActiveRecord: 21.5ms)
+
+
+Started GET "/api/location?lat=49.199424&long=-122.865296" for 127.0.0.1 at 2016-07-31 18:24:16 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.199424", "long"=>"-122.865296"}
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (5.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (2.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (2.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55783]]
+  [1m[36mStop Load (5.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+Completed 200 OK in 1320ms (Views: 0.2ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-07-31 18:50:35 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered users/show.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 123ms (Views: 99.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 18:50:36 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 18:50:37 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (1.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (4.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1458ms (Views: 0.1ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/api/location?lat=49.198835&long=-122.864915" for 127.0.0.1 at 2016-07-31 18:50:43 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.198835", "long"=>"-122.864915"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+  [1m[36mStop Load (3.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55783]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55813]]
+Completed 200 OK in 1725ms (Views: 0.1ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/api/getCoor?stop=55785" for 127.0.0.1 at 2016-07-31 18:50:46 -0700
+Processing by ApiController#getCoor as */*
+  Parameters: {"stop"=>"55785"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/kmz?stop=55785&route=C73" for 127.0.0.1 at 2016-07-31 18:50:46 -0700
+Processing by ApiController#kmz as */*
+  Parameters: {"stop"=>"55785", "route"=>"C73"}
+Completed 200 OK in 223ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/getCoor?stop=55811" for 127.0.0.1 at 2016-07-31 18:50:47 -0700
+Processing by ApiController#getCoor as */*
+  Parameters: {"stop"=>"55811"}
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/kmz?stop=55811&route=C73" for 127.0.0.1 at 2016-07-31 18:50:47 -0700
+Processing by ApiController#kmz as */*
+  Parameters: {"stop"=>"55811", "route"=>"C73"}
+Completed 200 OK in 280ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/kmz?stop=55785&route=C73" for 127.0.0.1 at 2016-07-31 18:50:48 -0700
+Processing by ApiController#kmz as */*
+  Parameters: {"stop"=>"55785", "route"=>"C73"}
+Completed 200 OK in 330ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/getCoor?stop=55785" for 127.0.0.1 at 2016-07-31 18:50:48 -0700
+Processing by ApiController#getCoor as */*
+  Parameters: {"stop"=>"55785"}
+  [1m[35mStop Load (5.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/getCoor?stop=55811" for 127.0.0.1 at 2016-07-31 18:50:49 -0700
+Processing by ApiController#getCoor as */*
+  Parameters: {"stop"=>"55811"}
+  [1m[36mStop Load (2.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/kmz?stop=55811&route=C73" for 127.0.0.1 at 2016-07-31 18:50:49 -0700
+Processing by ApiController#kmz as */*
+  Parameters: {"stop"=>"55811", "route"=>"C73"}
+Completed 200 OK in 153ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/location?lat=49.198765&long=-122.864089" for 127.0.0.1 at 2016-07-31 18:50:51 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.198765", "long"=>"-122.864089"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+  [1m[36mStop Load (2.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55783]]
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55813]]
+Completed 200 OK in 3808ms (Views: 0.1ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/api/location?lat=49.198849&long=-122.861707" for 127.0.0.1 at 2016-07-31 18:50:55 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.198849", "long"=>"-122.861707"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (1.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55809]]
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (2.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55787]]
+  [1m[35mStop Load (2.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+Completed 200 OK in 1315ms (Views: 0.5ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/api/getCoor?stop=55786" for 127.0.0.1 at 2016-07-31 18:50:57 -0700
+Processing by ApiController#getCoor as */*
+  Parameters: {"stop"=>"55786"}
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/kmz?stop=55786&route=C73" for 127.0.0.1 at 2016-07-31 18:50:57 -0700
+Processing by ApiController#kmz as */*
+  Parameters: {"stop"=>"55786", "route"=>"C73"}
+Completed 200 OK in 168ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/kmz?stop=55810&route=C73" for 127.0.0.1 at 2016-07-31 18:50:58 -0700
+Processing by ApiController#kmz as */*
+  Parameters: {"stop"=>"55810", "route"=>"C73"}
+Completed 200 OK in 185ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/getCoor?stop=55810" for 127.0.0.1 at 2016-07-31 18:50:58 -0700
+Processing by ApiController#getCoor as */*
+  Parameters: {"stop"=>"55810"}
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/getCoor?stop=55786" for 127.0.0.1 at 2016-07-31 18:50:59 -0700
+Processing by ApiController#getCoor as */*
+  Parameters: {"stop"=>"55786"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/kmz?stop=55786&route=C73" for 127.0.0.1 at 2016-07-31 18:50:59 -0700
+Processing by ApiController#kmz as */*
+  Parameters: {"stop"=>"55786", "route"=>"C73"}
+Completed 200 OK in 184ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 20:57:07 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (7.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (143.2ms)
+  Rendered home/index.html.erb within layouts/application (262.5ms)
+Completed 200 OK in 1667ms (Views: 1453.9ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/assets/application.self-5ea7c94ed3c6b4c6e0476859df80e8b6ddb49de1176190e1393335a27f0060de.css?body=1" for 127.0.0.1 at 2016-07-31 20:57:10 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 20:57:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 20:57:11 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:57:11 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:57:11 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 20:57:11 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 20:57:11 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:57:11 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 20:57:11 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 20:57:14 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (14.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (3.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (9.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (4.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (27.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (2.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 2077ms (Views: 0.2ms | ActiveRecord: 61.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 20:58:23 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (5.6ms)
+  Rendered home/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 472ms (Views: 459.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-ce89d6b986c4baaf081b54afeba1de81b9d2f2f5f97dd223e29a820239ac9d60.css?body=1" for 127.0.0.1 at 2016-07-31 20:58:24 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 20:58:24 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:58:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 20:58:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 20:58:24 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 20:58:24 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:58:24 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:58:24 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 20:58:24 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 20:58:26 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (4.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (3.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (2.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (3.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1749ms (Views: 0.2ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 20:59:14 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (7.2ms)
+  Rendered home/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 164ms (Views: 158.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-52fa1121ec323612f2b20ebed421eae4b530bce4f2748574e909c4b071432af1.css?body=1" for 127.0.0.1 at 2016-07-31 20:59:14 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:15 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:15 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:15 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:15 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:15 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 20:59:16 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (2.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (2.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (2.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1418ms (Views: 0.2ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 20:59:46 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (10.9ms)
+  Rendered home/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 228ms (Views: 223.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:47 -0700
+
+
+Started GET "/assets/application.self-2a24907578d4b563329d66afea55cda4ee16f1c0d13b65c47e844df49658cfe4.css?body=1" for 127.0.0.1 at 2016-07-31 20:59:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:47 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:47 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:47 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:47 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:47 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 20:59:47 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 20:59:49 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (2.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (2.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1093ms (Views: 0.1ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:00:21 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (5.3ms)
+  Rendered home/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 309ms (Views: 296.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-0817cac3b071d9a57e537f1695e7697e1daa42f001b27f11ff90c0bde409ea0c.css?body=1" for 127.0.0.1 at 2016-07-31 21:00:22 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:22 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:22 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:22 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:22 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:22 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:22 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:00:24 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (2.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (2.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (2.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (3.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (3.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (6.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1462ms (Views: 0.3ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:00:42 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (6.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (11.5ms)
+  Rendered home/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 291ms (Views: 283.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/application.self-fdceb17d320a81ad31583a009c54683e6c97c95f3c3ce39886b18c89b14d1879.css?body=1" for 127.0.0.1 at 2016-07-31 21:00:43 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:43 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:43 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:43 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:43 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:43 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:43 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:00:43 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:00:45 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (2.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (7.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1241ms (Views: 0.2ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:01:11 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (25.9ms)
+  Rendered home/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 216ms (Views: 209.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-bed77fa1b8cce9be528f08b25bb70ba723b82c305dbc88bba1625c87b05bf739.css?body=1" for 127.0.0.1 at 2016-07-31 21:01:11 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:11 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:11 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:11 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:12 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:12 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:12 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:12 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:01:13 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (4.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (3.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (3.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (7.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1709ms (Views: 0.2ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:01:19 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (6.6ms)
+  Rendered home/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 238ms (Views: 231.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:19 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:19 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:19 -0700
+
+
+Started GET "/assets/application.self-fdceb17d320a81ad31583a009c54683e6c97c95f3c3ce39886b18c89b14d1879.css?body=1" for 127.0.0.1 at 2016-07-31 21:01:20 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:20 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:20 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:20 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:20 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:01:21 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (4.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (3.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (3.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (2.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1649ms (Views: 0.3ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:01:41 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (8.4ms)
+  Rendered home/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 172ms (Views: 168.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-41b5ca2767c7512d9481606e16ccf09561149ee795812917a8661d1a620f4429.css?body=1" for 127.0.0.1 at 2016-07-31 21:01:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:41 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:41 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:41 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:42 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:42 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:42 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:42 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:01:42 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:01:43 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (2.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (4.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (5.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (2.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1769ms (Views: 0.2ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:02:25 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (4.8ms)
+  Rendered home/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 177ms (Views: 170.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c70dd31450a99e095b694f5a60cc720bcbfe6530baf5e52466b2ca6ad76b81de.css?body=1" for 127.0.0.1 at 2016-07-31 21:02:25 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:02:25 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:02:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:02:25 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:02:25 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:02:25 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:02:26 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:02:26 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:02:26 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:02:27 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (3.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (2.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (3.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1733ms (Views: 0.2ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:03:01 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (15.8ms)
+  Rendered home/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 379ms (Views: 373.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-efb0621d3034a79834a81a5d89aa47b7b820e999457ec23e7d30671ade8656eb.css?body=1" for 127.0.0.1 at 2016-07-31 21:03:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:02 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:02 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:02 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:02 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:02 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:02 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:02 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:02 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:03:05 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (2.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (3.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1438ms (Views: 0.2ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:03:17 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (4.5ms)
+  Rendered home/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 224ms (Views: 220.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.self-83988a42f0514c3b1349eea458a81a37e3e4a11a99f4da1cd63e3ba2d4ff4bb9.css?body=1" for 127.0.0.1 at 2016-07-31 21:03:17 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:17 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:17 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:17 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:17 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:17 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:17 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:17 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:03:19 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (4.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (3.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1374ms (Views: 0.2ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:03:41 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (4.0ms)
+  Rendered home/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 144ms (Views: 140.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-520add43dabfb57894e0fd7212b7ec208021a9bb5ea3a3aab4dec3323ac9d9b0.css?body=1" for 127.0.0.1 at 2016-07-31 21:03:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:42 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:42 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:42 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:42 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:42 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:42 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:42 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:42 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:03:44 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (4.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1124ms (Views: 0.2ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:03:55 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (8.4ms)
+  Rendered home/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 189ms (Views: 183.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:56 -0700
+
+
+Started GET "/assets/application.self-3d83d048e974df2ad7273632fe02f62f3a563ce31d0fb6473f7137fa0063fff6.css?body=1" for 127.0.0.1 at 2016-07-31 21:03:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:56 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:56 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:56 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:56 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:56 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:56 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:03:56 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:03:57 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (2.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (4.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (2.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1267ms (Views: 0.9ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:04:11 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (8.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (15.5ms)
+  Rendered home/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 410ms (Views: 400.4ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/application.self-760c0249bb8731b3b2d0945bde2b4d2a31443aa740392887ab928ca271bbaaa6.css?body=1" for 127.0.0.1 at 2016-07-31 21:04:12 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:12 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:12 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:12 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:12 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:12 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:12 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:12 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:04:13 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (4.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (5.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (2.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1917ms (Views: 0.2ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:04:34 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (13.0ms)
+  Rendered home/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 266ms (Views: 261.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:35 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:35 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:35 -0700
+
+
+Started GET "/assets/application.self-25a5952b9318aa0a4f8cb9274a313b2bb2db4274e9e14bb64f5007bc0de712e3.css?body=1" for 127.0.0.1 at 2016-07-31 21:04:35 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:35 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:35 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:35 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:35 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:35 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:04:37 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (2.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1488ms (Views: 0.1ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:04:51 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (8.9ms)
+  Rendered home/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 219ms (Views: 210.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-981b95f09ddf6e94877e4f8149341033b7b58011c6d74d2b07ef238e2262c3ea.css?body=1" for 127.0.0.1 at 2016-07-31 21:04:51 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:51 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:51 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:51 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:51 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:51 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:51 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:04:51 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:04:53 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1716ms (Views: 0.2ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:05:08 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.3ms)
+  Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 214ms (Views: 211.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-eb50d0783450f2b792775d896551168c3176c83a9367e420d07e7d394349e743.css?body=1" for 127.0.0.1 at 2016-07-31 21:05:08 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:09 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:09 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:09 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:09 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:09 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:05:10 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (4.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1435ms (Views: 0.1ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:05:47 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (6.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (10.5ms)
+  Rendered home/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 200ms (Views: 192.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/application.self-32968f13758edc7adae1196f267de44ff50eedeecda37d9b9cae1f7798644220.css?body=1" for 127.0.0.1 at 2016-07-31 21:05:47 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:47 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:47 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:47 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:48 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:48 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:05:48 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:05:51 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (5.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (3.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (3.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (4.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1908ms (Views: 0.1ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:06:01 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (17.7ms)
+  Rendered home/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 176ms (Views: 175.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-99c5bc2b4175dcd01239f420aebd82427a9ffca214fe7053e60cf8dd00996400.css?body=1" for 127.0.0.1 at 2016-07-31 21:06:01 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:01 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:01 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:01 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:01 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:01 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:06:03 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (2.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (4.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (4.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (7.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 2232ms (Views: 0.3ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:06:33 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (11.3ms)
+  Rendered home/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 182ms (Views: 177.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:34 -0700
+
+
+Started GET "/assets/application.self-9520646f69016237d170ac1f4304854db87c35780f71cc2e33ba67de40fae738.css?body=1" for 127.0.0.1 at 2016-07-31 21:06:34 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:34 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:34 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:34 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:34 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:34 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:34 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:34 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:06:36 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (5.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1513ms (Views: 0.3ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:06:50 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (5.8ms)
+  Rendered home/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 223ms (Views: 220.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-5042b3e7faba53811e7a0c8c8d54b03a7814a4d562d0d858f07c416841e83fd4.css?body=1" for 127.0.0.1 at 2016-07-31 21:06:50 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:50 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:50 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:50 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:50 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:50 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:06:50 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:06:52 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (2.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 4597ms (Views: 0.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:07:26 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (8.9ms)
+  Rendered home/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 177ms (Views: 170.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:27 -0700
+
+
+Started GET "/assets/application.self-d4454f71a13a972d33904c123bcf9a3e8f5cb2975325925bb737bc55a0a67a24.css?body=1" for 127.0.0.1 at 2016-07-31 21:07:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:27 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:27 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:27 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:27 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:27 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:27 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:07:29 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (2.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (6.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (2.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (4.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1587ms (Views: 1.2ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:07:59 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (5.5ms)
+  Rendered home/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 144ms (Views: 142.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-f28a8a034ac46fb709971b65f365400a998e4636e3f19df97964fa2d745da0fc.css?body=1" for 127.0.0.1 at 2016-07-31 21:07:59 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:59 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:59 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:59 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:59 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:59 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:59 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:59 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:07:59 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:08:01 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (8.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1788ms (Views: 0.1ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:08:17 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (8.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (12.7ms)
+  Rendered home/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 161ms (Views: 151.4ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/assets/application.self-29be8513f0b32da026ab89ca79bef97d8d4dc3212bba76d285ac64bba2f05056.css?body=1" for 127.0.0.1 at 2016-07-31 21:08:18 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:08:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:08:18 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:08:18 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:08:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:08:18 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:08:18 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:08:18 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:08:18 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:08:19 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (2.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (2.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (12.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1243ms (Views: 0.1ms | ActiveRecord: 22.3ms)
+
+
+Started GET "/api/location?lat=49.200826&long=-122.868343" for 127.0.0.1 at 2016-07-31 21:08:27 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200826", "long"=>"-122.868343"}
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (2.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (3.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+Completed 200 OK in 3111ms (Views: 0.1ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:09:03 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (6.3ms)
+  Rendered home/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 260ms (Views: 256.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-640bd9b3d39e02f37c975d7ac2d640582144b50c7714e81f9c45dc2abc4e23f1.css?body=1" for 127.0.0.1 at 2016-07-31 21:09:03 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:04 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:04 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:04 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:04 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:04 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:04 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:04 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:09:06 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (11.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (6.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (4.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1425ms (Views: 0.3ms | ActiveRecord: 28.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:09:20 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (4.8ms)
+  Rendered home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 182ms (Views: 180.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-a8276e4ce7ec81051eef71c6b8cd3216ff61c1ac85b52818b753c6eb7c6e8b4e.css?body=1" for 127.0.0.1 at 2016-07-31 21:09:20 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:20 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:20 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:20 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:20 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:20 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:20 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:09:20 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:09:23 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (3.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (4.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (9.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (14.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (3.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1360ms (Views: 0.9ms | ActiveRecord: 38.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:10:05 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (9.2ms)
+  Rendered home/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 326ms (Views: 317.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:06 -0700
+
+
+Started GET "/assets/application.self-033808aec95cda7aa66a8519e8f6c60f7b94a1a045b603a7e341828417db8e87.css?body=1" for 127.0.0.1 at 2016-07-31 21:10:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:06 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:06 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:06 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:06 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:06 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:06 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:10:07 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1308ms (Views: 0.2ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:10:40 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (4.2ms)
+  Rendered home/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 126ms (Views: 123.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-99f9ac57266ddfdb3a06496a384e17ae19bf4e15484f5fb93f78f3b70edcb91d.css?body=1" for 127.0.0.1 at 2016-07-31 21:10:41 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:41 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:41 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:41 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:41 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:41 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:41 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:10:41 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:10:43 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (4.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (2.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (2.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1305ms (Views: 0.2ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:11:05 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (6.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (8.5ms)
+  Rendered home/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 228ms (Views: 220.0ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/application.self-1b4a36a13f2317b081944e112ba0d5f04fdfec0803416953019b52c38248cb2b.css?body=1" for 127.0.0.1 at 2016-07-31 21:11:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:06 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:06 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:06 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:06 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:06 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:06 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:06 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:11:08 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (3.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (12.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (2.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (3.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (11.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1727ms (Views: 0.3ms | ActiveRecord: 35.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:11:50 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (7.7ms)
+  Rendered home/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 290ms (Views: 286.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-664f359ee42cb23f5ae48a99017d9c4ad7054bf3a3c8b5285d482c16783524d2.css?body=1" for 127.0.0.1 at 2016-07-31 21:11:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:50 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:51 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:51 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:51 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:51 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:51 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:11:51 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:11:54 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (3.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (2.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (3.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (3.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (4.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (3.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1485ms (Views: 0.7ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/api/location?lat=49.200826&long=-122.868407" for 127.0.0.1 at 2016-07-31 21:13:39 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200826", "long"=>"-122.868407"}
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (2.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+Completed 200 OK in 1052ms (Views: 0.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:13:42 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (4.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1219ms (Views: 0.1ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:14:21 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (7.5ms)
+  Rendered home/index.html.erb within layouts/application (89.2ms)
+Completed 200 OK in 302ms (Views: 289.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-664f359ee42cb23f5ae48a99017d9c4ad7054bf3a3c8b5285d482c16783524d2.css?body=1" for 127.0.0.1 at 2016-07-31 21:14:21 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:14:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:14:21 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:14:21 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:14:21 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:14:21 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:14:21 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:14:21 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:14:21 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:14:25 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (1.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (3.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1373ms (Views: 0.2ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:16:25 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.9ms)
+  Rendered home/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 223ms (Views: 220.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-5be6f40cbc3db48edb0f46fa02f3053b646f4660641ee996df7b92ada946a7f2.css?body=1" for 127.0.0.1 at 2016-07-31 21:16:26 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:16:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:16:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:16:26 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:16:26 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:16:26 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:16:26 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:16:26 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:16:26 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:16:29 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[36mStop Load (3.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (3.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (1.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (5.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1295ms (Views: 0.1ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/api/location?lat=49.200826&long=-122.868391" for 127.0.0.1 at 2016-07-31 21:16:51 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200826", "long"=>"-122.868391"}
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (2.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+Completed 200 OK in 1177ms (Views: 0.3ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:17:02 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (7.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (10.0ms)
+  Rendered home/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 208ms (Views: 196.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.self-664f359ee42cb23f5ae48a99017d9c4ad7054bf3a3c8b5285d482c16783524d2.css?body=1" for 127.0.0.1 at 2016-07-31 21:17:03 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:03 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:03 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:03 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:03 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:03 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:03 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:03 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866883" for 127.0.0.1 at 2016-07-31 21:17:07 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866883"}
+  [1m[36mStop Load (3.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (2.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (3.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (2.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (0.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1223ms (Views: 0.2ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/api/location?lat=49.205327&long=-122.854456" for 127.0.0.1 at 2016-07-31 21:17:09 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.205327", "long"=>"-122.854456"}
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55431]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55435]]
+  [1m[35mStop Load (3.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55109]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55152]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55151]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55110]]
+  [1m[35mStop Load (2.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55153]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55108]]
+Completed 200 OK in 1886ms (Views: 0.1ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:17:29 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (5.8ms)
+  Rendered home/index.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 340ms (Views: 336.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-c4d763cfac5587e5efcb355f67cab3a278dffb1684c7c986acd07a9ed4442d82.css?body=1" for 127.0.0.1 at 2016-07-31 21:17:29 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:29 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:29 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:29 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:29 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:17:29 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:17:31 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (5.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (2.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (5.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (4.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1488ms (Views: 0.4ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:18:03 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.9ms)
+  Rendered home/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 119ms (Views: 116.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-c4d763cfac5587e5efcb355f67cab3a278dffb1684c7c986acd07a9ed4442d82.css?body=1" for 127.0.0.1 at 2016-07-31 21:18:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:18:03 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:18:03 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:18:03 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:18:04 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:18:04 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:18:04 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:18:04 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:18:04 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:18:05 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[36mStop Load (2.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (2.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (2.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1247ms (Views: 0.1ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866873" for 127.0.0.1 at 2016-07-31 21:18:31 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866873"}
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (2.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (5.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (2.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1561ms (Views: 0.5ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.867736" for 127.0.0.1 at 2016-07-31 21:18:37 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.867736"}
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (2.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (2.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (4.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (2.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55783]]
+Completed 200 OK in 1295ms (Views: 0.1ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.869625" for 127.0.0.1 at 2016-07-31 21:18:39 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.869625"}
+  [1m[36mStop Load (1.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (2.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (0.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+Completed 200 OK in 919ms (Views: 0.3ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/api/location?lat=49.200826&long=-122.868997" for 127.0.0.1 at 2016-07-31 21:18:39 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200826", "long"=>"-122.868997"}
+  [1m[36mStop Load (2.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+Completed 200 OK in 984ms (Views: 0.2ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/api/location?lat=49.200826&long=-122.868659" for 127.0.0.1 at 2016-07-31 21:18:40 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200826", "long"=>"-122.868659"}
+  [1m[36mStop Load (2.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (4.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (3.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (3.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+Completed 200 OK in 1087ms (Views: 0.2ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/api/location?lat=49.200826&long=-122.868005" for 127.0.0.1 at 2016-07-31 21:18:42 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200826", "long"=>"-122.868005"}
+  [1m[36mStop Load (0.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (2.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (6.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (4.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1271ms (Views: 0.1ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.869383" for 127.0.0.1 at 2016-07-31 21:18:44 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.869383"}
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (2.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (3.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (2.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+Completed 200 OK in 1013ms (Views: 0.2ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:18:47 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (2.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1173ms (Views: 0.3ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:19:00 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.9ms)
+  Rendered home/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 295ms (Views: 294.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-65d6a32fed23576060755512a840899a374d314990519b32494acbc453e1a97e.css?body=1" for 127.0.0.1 at 2016-07-31 21:19:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:01 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:01 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:01 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:01 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:01 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:01 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:19:03 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (2.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (2.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (3.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (0.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (4.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1252ms (Views: 1.8ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:19:11 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (7.0ms)
+  Rendered home/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 182ms (Views: 178.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:11 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:12 -0700
+
+
+Started GET "/assets/application.self-0b638c90ae5e50b15f82ff6b1bbadaf5b355937227e18be6ed565157f0553861.css?body=1" for 127.0.0.1 at 2016-07-31 21:19:12 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:12 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:12 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:12 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:12 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:12 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:19:13 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (2.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (4.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (2.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (11.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (5.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1576ms (Views: 0.2ms | ActiveRecord: 28.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:19:22 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (19.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (20.6ms)
+  Rendered home/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 210ms (Views: 186.7ms | ActiveRecord: 19.1ms)
+
+
+Started GET "/assets/application.self-e7258078831de26b65736e1a815c89a2cc8e7b99302119cd173229f51045ed4a.css?body=1" for 127.0.0.1 at 2016-07-31 21:19:22 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:22 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:22 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:22 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:22 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:22 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:19:22 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:19:24 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (4.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (5.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (4.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1277ms (Views: 0.3ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.869383" for 127.0.0.1 at 2016-07-31 21:19:31 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.869383"}
+  [1m[36mStop Load (1.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (4.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (3.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (2.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+Completed 200 OK in 943ms (Views: 0.2ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866873" for 127.0.0.1 at 2016-07-31 21:19:34 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866873"}
+  [1m[36mStop Load (2.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (0.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1298ms (Views: 0.1ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/api/location?lat=49.278461&long=-122.913241" for 127.0.0.1 at 2016-07-31 21:19:36 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.278461", "long"=>"-122.913241"}
+  [1m[35mStop Load (2.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 51861]]
+  [1m[36mStop Load (5.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 53096]]
+  [1m[35mStop Load (11.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 52807]]
+  [1m[36mStop Load (2.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 52998]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 51862]]
+  [1m[36mStop Load (2.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 59044]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 51860]]
+Completed 200 OK in 3453ms (Views: 0.1ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/api/location?lat=49.278461&long=-122.912984" for 127.0.0.1 at 2016-07-31 21:19:40 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.278461", "long"=>"-122.912984"}
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 51861]]
+  [1m[35mStop Load (1.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 53096]]
+  [1m[36mStop Load (0.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 52807]]
+  [1m[35mStop Load (2.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 52998]]
+  [1m[36mStop Load (1.7ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 59044]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 51862]]
+  [1m[36mStop Load (1.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 51860]]
+Completed 200 OK in 3126ms (Views: 0.1ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:19:48 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (2.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1113ms (Views: 0.1ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:20:08 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (8.2ms)
+  Rendered home/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 273ms (Views: 265.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.self-1888d123ac3edf172408ef7ec2c8055455bef0a5a111c1eb5c0a7e4280e07288.css?body=1" for 127.0.0.1 at 2016-07-31 21:20:08 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:20:08 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:20:08 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:20:08 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:20:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:20:08 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:20:08 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:20:08 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:20:08 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:20:10 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (2.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1402ms (Views: 0.2ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:21:30 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (63.2ms)
+  Rendered home/index.html.erb within layouts/application (92.0ms)
+Completed 200 OK in 655ms (Views: 647.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self-127d1e5ed5ddf63d1f9cdf22cd898e98dc4940d771fffc0546b5dd00424ba12b.css?body=1" for 127.0.0.1 at 2016-07-31 21:21:31 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:21:31 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:21:32 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:21:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:21:32 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:21:32 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:21:32 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:21:32 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:21:32 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:21:35 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (3.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (0.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (2.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 2105ms (Views: 0.2ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:22:02 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (4.1ms)
+  Rendered home/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 220ms (Views: 218.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:02 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:02 -0700
+
+
+Started GET "/assets/application.self-7a14466573569e85deb30c79e64af7890a607c3ae92dad2fe130b9b3cfe534cf.css?body=1" for 127.0.0.1 at 2016-07-31 21:22:02 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:02 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:02 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:02 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:02 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:03 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:22:05 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (3.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (3.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (2.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (2.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1354ms (Views: 0.1ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:22:13 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (9.0ms)
+  Rendered home/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 190ms (Views: 181.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-3defc0572ce55e9a49be6c3d8b68ce663236027cc05360bf4089fd242b560ac3.css?body=1" for 127.0.0.1 at 2016-07-31 21:22:13 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:13 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:13 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:13 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:13 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:13 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:13 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:13 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:22:14 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (2.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (2.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.1ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (0.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (5.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1795ms (Views: 0.4ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-31 21:22:36 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (8.3ms)
+  Rendered home/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 225ms (Views: 222.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-0d9d55a7e187a38a62546176362c8642b576fef13368d727224480e1bbe3b4db.css?body=1" for 127.0.0.1 at 2016-07-31 21:22:37 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:37 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:37 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:37 -0700
+
+
+Started GET "/assets/map.self-703deab16f663654f717bf4fe3664c306fba22b1b95f7f418c9f4207bdb865bb.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:37 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:37 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:37 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-31 21:22:37 -0700
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866835" for 127.0.0.1 at 2016-07-31 21:22:38 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866835"}
+  [1m[35mStop Load (3.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (3.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (2.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55810]]
+  [1m[36mStop Load (2.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (1.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 1321ms (Views: 0.9ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866873" for 127.0.0.1 at 2016-07-31 21:22:45 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866873"}
+  [1m[36mStop Load (0.9ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55811]]
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (0.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (2.2ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55786]]
+Completed 200 OK in 1233ms (Views: 0.1ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.867613" for 127.0.0.1 at 2016-07-31 21:22:48 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.867613"}
+  [1m[35mStop Load (2.9ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (3.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.4ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (2.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55812]]
+  [1m[35mStop Load (3.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (2.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (1.3ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+  [1m[36mStop Load (2.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55783]]
+Completed 200 OK in 1608ms (Views: 0.2ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.869657" for 127.0.0.1 at 2016-07-31 21:22:50 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.869657"}
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55784]]
+  [1m[35mStop Load (3.8ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (1.0ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (2.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+Completed 200 OK in 1775ms (Views: 0.2ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/api/location?lat=49.200826&long=-122.869099" for 127.0.0.1 at 2016-07-31 21:22:53 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200826", "long"=>"-122.869099"}
+  [1m[35mStop Load (11.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 60736]]
+  [1m[36mStop Load (2.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55785]]
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (1.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.5ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+Completed 200 OK in 863ms (Views: 0.4ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/api/location?lat=49.200125&long=-122.866787" for 127.0.0.1 at 2016-07-31 21:22:54 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.200125", "long"=>"-122.866787"}
+  [1m[35mStop Load (2.0ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55785]]
+  [1m[36mStop Load (1.1ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55811]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55784]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 55810]]
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55812]]
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 60736]]
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 55786]]
+Completed 200 OK in 985ms (Views: 0.2ms | ActiveRecord: 7.4ms)

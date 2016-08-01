@@ -230,6 +230,7 @@
 		border-collapse: collapse;
 		width: 100%;
 		margin: auto;
+		visibility: hidden;
 	}
 /*Media Requests */ 
 	@media screen and (max-width: 1050px){
@@ -256,4 +257,55 @@
 		#bus_scroll, #search_box, #hist_scroll, #user_scroll{
 			margin: auto;
 		}
+		#wait{
+			height: auto;
+			padding: 20px 20px 20px 20px;
+		}
 	}
+/* Updated UI Elements */
+#line_cont{
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: auto;
+	max-height: 700px;
+	margin-right: 20px;
+}
+#line_table{
+	background-color: #0060a8;
+	border-collapse: collapse;
+	width: 100%;
+	margin: auto;
+}
+#line_table td{
+	padding: 10px 10px 10px 10px;
+	margin: 0px 0px 0px 0px;
+}
+#line_banner{
+	font-size: 25px;
+	text-align: center;
+	border-width: 0px 0px 1px 0px;
+}
+#left_line, #right_line{
+	width: 40%;
+}
+#left_line{
+	border-width: 0px 1px 1px 0px;
+}
+#right_line{
+	border-width: 0px 0px 1px 0px;
+}
+#left_line_gps, #right_line_gps, #left_line_avg, #right_line_avg{
+	text-align: center;
+}
+#left_line_gps{
+	border-width: 0px 1px 5px 0px;
+}
+#right_line_gps{
+	border-width: 0px 1px 5px 0px;
+}
+#left_line_avg{
+	border-width: 0px 1px 5px 0px;
+}
+#right_line_avg{
+	border-width: 0px 0px 5px 0px;
+}
