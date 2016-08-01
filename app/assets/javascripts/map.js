@@ -29,12 +29,17 @@ function retrieving()
     $("#bus_table").html('<tr><td id="wait">Retrieving, please wait.</td></tr>');
 }
 
-function highlightStop(tablerow)
+function highlightStop(tablerow, typ)
 {
-    innerhtml = tablerow.children[1].innerHTML;
-
-    route = tablerow.children[0].innerHTML;
-    stopno = innerhtml.slice(0,innerhtml.indexOf(":"))
+    if(typ==0){
+      innerhtml = tablerow.children[1].innerHTML;
+      route = tablerow.children[0].innerHTML;
+      stopno = innerhtml.slice(0,innerhtml.indexOf(":"))
+    }else{
+      innerhtml = tablerow.children[0].innerHTML;
+      route = tablerow.previousSibling.children[0].innerHTML;
+      stopno = innerhtml.slice(0, innerhtml.indexOf(":"))
+    }
 
     clearMarkers();
 
@@ -90,7 +95,13 @@ function getRoutes(map, lat_long){
         else {
             $("#bus_table").html('');
             for (var i = 0; i < routes.length; i++) {
-                $("#bus_table").append('<tr onclick="highlightStop(this)"><td rowspan = "1" id="bus_number_left">' + routes[i].Route + '</td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr><tr><td id="route_spacer" colspan="2"></td></tr>');
+                if(i<routes.length-1 && routes[i].Route == routes[i+1].Route){
+                  $("#bus_table").append('<tr onclick="highlightStop(this, 0)"><td rowspan="2" id="bus_number_left">' + routes[i].Route + '</td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr><tr onclick="highlightStop(this, 1)"><td id="bus_route_info">' + routes[i+1].StopNo + ': Leaving ' + routes[i+1].Name +' towards<br>' + routes[i+1].Destination +' at '+routes[i+1].NextBus+'</td></tr><tr><td id="route_spacer" colspan="2"></td></tr>');
+                  i++;
+                }else{
+                  $("#bus_table").append('<tr onclick="highlightStop(this, 0)"><td rowspan = "1" id="bus_number_left">' + routes[i].Route + '</td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr><tr><td id="route_spacer" colspan="2"></td></tr>');
+                }
+                
             }
         }
     }));
