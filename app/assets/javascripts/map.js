@@ -129,10 +129,10 @@ function initMap() {
     retrieving();
     var oldPos = map.getCenter();
     var id = setTimeout(function() {
-    if (map.getCenter() === oldPos) {
-      console.log("GETTING ROUTES");
-      getRoutes(map, oldPos);
-    }
+      if (map.getCenter() === oldPos) {
+        console.log("GETTING ROUTES");
+        getRoutes(map, oldPos);
+      }
     }, 1000);
 		//getRoutes(map.getCenter());
 	});
@@ -163,5 +163,11 @@ function initMap() {
     map: map
   });
   rad.bindTo('center', marker, 'position');
+  var refresher = setInterval(function(){
+    var curPos = map.getCenter();
+    if (map.getCenter() === curPos) {
+      console.log("REFRESHING ROUTES");
+      getRoutes(map, curPos);
+    }
+  }, 60000);
 }
-			
