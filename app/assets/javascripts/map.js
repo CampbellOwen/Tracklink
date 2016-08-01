@@ -40,11 +40,16 @@ function highlightStop(tablerow)
 
     ajaxCalls.push($.get("/api/getCoor", {stop: stopno}).success(function(result) {
         var lat_long = {lat: parseFloat(result.lat), lng: parseFloat(result.long)};
-
+        var marker = {
+          url: 'stop.png',
+          scaledSize: new google.maps.Size(50, 50),
+          origin: new google.maps.Point(0,0),
+          anchor: new google.maps.Point(25, 25)
+        };
         var marker = new google.maps.Marker({
             position: lat_long,
             map: map,
-            icon: 'reticle.png'
+            icon: marker
         });
 
         markers.push(marker);
@@ -94,7 +99,18 @@ function getRoutes(map, lat_long){
 function initMap() {
 	window.map = new google.maps.Map(document.getElementById('map'), {
 		center: {lat: 49.27846087175229, lng: -122.9129836081861}, 
-		zoom: 15
+		zoom: 17,
+    mapTypeControl: false,
+    //---
+    styles: [
+      {
+        featureType: "transit.station.bus",
+        stylers: [
+          {visibility: "off"}
+        ]
+      }
+    ]
+    //---
 	});
 	map.addListener('center_changed', function(){
 		//document.getElementById('lat_long').innerHTML = map.getCenter();
@@ -117,9 +133,15 @@ function initMap() {
             getRoutes(map, map.getCenter());
 		});
 	}
+  var icon = {
+    url: 'reticle.png',
+    scaledSize: new google.maps.Size(40, 40),
+    origin: new google.maps.Point(0,0),
+    anchor: new google.maps.Point(20, 20)
+  };
 	var marker = new google.maps.Marker({
 		map: map,
-		icon: 'reticle.png'
+		icon: icon
 	});
 	marker.bindTo('position', map, 'center');
 }
