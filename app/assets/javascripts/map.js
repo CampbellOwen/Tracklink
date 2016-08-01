@@ -26,7 +26,7 @@ function abortCalls()
 
 function retrieving()
 {
-    $("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">Retrieving, please wait.</td></tr>');
+    $("#bus_table").html('<tr><td id="bus_number_left">Retrieving, please wait.</td></tr>');
 }
 
 function highlightStop(tablerow)
@@ -85,12 +85,12 @@ function getRoutes(map, lat_long){
     retrieving();
     ajaxCalls.push($.get("/api/location", {lat: lat, long: lng}).success(function(routes){
         if (routes.length == 0) {
-	   		$("#bus_table").html('<tr><td id="route_spacer"></td></tr><tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
+	   		$("#bus_table").html('<tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
         }
         else {
             $("#bus_table").html('');
             for (var i = 0; i < routes.length; i++) {
-                $("#bus_table").append('<tr><td id="route_spacer" colspan="2"></td></tr><tr onclick="highlightStop(this)"><td rowspan = "1" id="bus_number_left">' + routes[i].Route + '</td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr>');
+                $("#bus_table").append('<tr onclick="highlightStop(this)"><td rowspan = "1" id="bus_number_left">' + routes[i].Route + '</td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr><tr><td id="route_spacer" colspan="2"></td></tr>');
             }
         }
     }));

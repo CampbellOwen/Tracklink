@@ -207,7 +207,7 @@
 	#bus_scroll{
 		overflow-y: auto;
 		width: auto;
-		max-height: 400px;
+		max-height: 700px;
 		margin-right: 20px;
 	}
 	#hist_scroll, #user_scroll{

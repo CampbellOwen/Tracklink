@@ -1,7 +1,7 @@
 <div class="content">
 	<%= render 'layouts/nav' %>
 	<div class="left">
-
+<!--
 		<div id="search_box">
 			<table id="bus_table_search">
 				<tr>
@@ -14,6 +14,7 @@
 				</tr>
 			</table>
 		</div>
+-->
 		<div id="bus_scroll">
 			<table id="bus_table">
 				<tr><td rowspan = "2" id="bus_number_left">No busses nearby, please move the cursor</td></tr>	
@@ -23,19 +24,15 @@
 				<%# end %>			
 			</table>
 		</div>
-		<div id="explanation_left">
-			<div id="lat_long"></div>
-			<div id="debug1"></div>
-			<div id="routes_ex"></div>
-			<div id="translink_disclaimer">
-			<br>Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
-			</div>
-			<div id="usage_info_left"><br>On the map above, the red marker will initially show your location. To the left, a list of bus lines that stop nearby will be populated according to this location. You are free to drag the marker around anywhere you wish to see bus lines in different locations.</div>
-		</div>
 
 	</div>
 	<div class="right">
 		<div id="map"></div>
+		<div id="explanation_left">
+			<div id="translink_disclaimer">
+			<br>Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
+			</div>
+		</div>
 	</div>
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_5saOsQDUS9U1RJJUsYI3qsZB8aCxGZc&callback=initMap"
