@@ -79,16 +79,21 @@ function highlightStop(tablerow, typ)
     }));
 }
 
-function getRoutes(map, lat_long){
+function getRoutes(map, lat_long, refresh_flag){
 	var lat = lat_long.lat().toFixed(6);
 	var lng = lat_long.lng().toFixed(6);
     if (map.getCenter() != lat_long) {
         return;
     }
     abortCalls();
-    $("#bus_table").html('');
+    if(!refresh_flag){
+      $("#bus_table").html('');
     retrieving();
+    }
     ajaxCalls.push($.get("/api/location", {lat: lat, long: lng}).success(function(routes){
+        if(refresh_flag){
+          $("#bus_table").html('');
+        }
         if (routes.length == 0) {
 	   		$("#bus_table").html('<tr><td id="wait">No busses nearby, please move the cursor</td></tr>');
         }
@@ -99,7 +104,7 @@ function getRoutes(map, lat_long){
                   $("#bus_table").append('<tr onclick="highlightStop(this, 0)"><td rowspan="2" id="bus_number_left">' + routes[i].Route + '</td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr><tr onclick="highlightStop(this, 1)"><td id="bus_route_info">' + routes[i+1].StopNo + ': Leaving ' + routes[i+1].Name +' towards<br>' + routes[i+1].Destination +' at '+routes[i+1].NextBus+'</td></tr><tr><td id="route_spacer" colspan="2"></td></tr>');
                   i++;
                 }else{
-                  $("#bus_table").append('<tr onclick="highlightStop(this, 0)"><td rowspan = "1" id="bus_number_left">' + routes[i].Route+ '<br>Feedback </td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr><tr><td id="route_spacer" colspan="2"></td></tr>');
+                  $("#bus_table").append('<tr onclick="highlightStop(this, 0)"><td rowspan = "1" id="bus_number_left">' + routes[i].Route+ '<div id="twitter-place">Send Feedback</div> </td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr><tr><td id="route_spacer" colspan="2"></td></tr>');
                 }
                 
             }
@@ -131,7 +136,7 @@ function initMap() {
     var id = setTimeout(function() {
       if (map.getCenter() === oldPos) {
         console.log("GETTING ROUTES");
-        getRoutes(map, oldPos);
+        getRoutes(map, oldPos, 0);
       }
     }, 1000);
 		//getRoutes(map.getCenter());
@@ -142,7 +147,7 @@ function initMap() {
 			map.setCenter(pos);
 		}, 
 		function() {
-            getRoutes(map, map.getCenter());
+            getRoutes(map, map.getCenter(), 0);
 		});
 	}
   var icon = {
@@ -158,7 +163,10 @@ function initMap() {
 	});
 	marker.bindTo('position', map, 'center');
   var rad = new google.maps.Circle({
-    fillColor: '#a8000c',
+    strokeColor: '#0060a8',
+    strokeOpacity: 0.9,
+    strokeWeight: 1,
+    fillColor: '#0060a8',
     radius: 500,
     map: map
   });
@@ -167,7 +175,7 @@ function initMap() {
     var curPos = map.getCenter();
     if (map.getCenter() === curPos) {
       console.log("REFRESHING ROUTES");
-      getRoutes(map, curPos);
+      getRoutes(map, curPos, 1);
     }
   }, 60000);
 }

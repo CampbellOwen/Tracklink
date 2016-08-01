@@ -116,6 +116,9 @@
 		font-weight: 500;
 		width: 33%;
 	}
+	#twitter-place{
+		font-size: 15px;
+	}
 	#bus_times_in{
 		border-width: 5px 1px 0px 1px;
 	}
