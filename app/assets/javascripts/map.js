@@ -47,9 +47,9 @@ function highlightStop(tablerow, typ)
         var lat_long = {lat: parseFloat(result.lat), lng: parseFloat(result.long)};
         var marker = {
           url: 'stop.png',
-          scaledSize: new google.maps.Size(50, 50),
+          scaledSize: new google.maps.Size(40, 49),
           origin: new google.maps.Point(0,0),
-          anchor: new google.maps.Point(25, 25)
+          anchor: new google.maps.Point(20, 49)
         };
         var marker = new google.maps.Marker({
             position: lat_long,
@@ -130,9 +130,9 @@ function initMap() {
             var id = setTimeout(function() {
                 if (map.getCenter() === oldPos) {
                     console.log("GETTING ROUTES");
-                    getRoutes(map, map.getCenter());
+                    getRoutes(map, oldPos);
                 }
-            }, 500);
+            }, 1000);
 		//getRoutes(map.getCenter());
 	});
 	if (navigator.geolocation) {
@@ -146,9 +146,9 @@ function initMap() {
 	}
   var icon = {
     url: 'reticle.png',
-    scaledSize: new google.maps.Size(40, 40),
+    scaledSize: new google.maps.Size(30, 30),
     origin: new google.maps.Point(0,0),
-    anchor: new google.maps.Point(20, 20)
+    anchor: new google.maps.Point(12, 12)
   };
 	var marker = new google.maps.Marker({
 		map: map,
