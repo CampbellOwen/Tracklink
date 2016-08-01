@@ -59,6 +59,11 @@ class ApiController < ApplicationController
 
         stops = getStops(params[:lat], params[:long])
 
+        if (stops[0] == nil)
+            respond_with("404")
+            return
+        end
+
         stopNumbers = []
         stopRouteHash = {}
 
