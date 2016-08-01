@@ -44996,3 +44996,6 @@ Started GET "/api/kmz?stop=55785&route=C73" for 127.0.0.1 at 2016-08-01 13:13:13
 Processing by ApiController#kmz as */*
   Parameters: {"stop"=>"55785", "route"=>"C73"}
 Completed 200 OK in 332ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[36mStop Load (3.2ms)[0m  [1mSELECT  "stops".* FROM "stops"  ORDER BY "stops"."id" ASC LIMIT 1[0m
+  [1m[35mLine Load (2.8ms)[0m  SELECT  "lines".* FROM "lines"  ORDER BY "lines"."id" ASC LIMIT 1
+  [1m[36mStop Load (2.4ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (54912, 54342)[0m

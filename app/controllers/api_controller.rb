@@ -59,16 +59,23 @@ class ApiController < ApplicationController
 
         stops = getStops(params[:lat], params[:long])
 
-        stops.each do |stop|
-            routes = stop["Routes"].split(", ")
-            dbStop = Stop.find_by(StopNo: stop["StopNo"])
-            routes.each do |route|
+        stopNumbers = []
+        stopRouteHash = {}
 
+        stops.each do |stop|
+            stopNumbers << stop["StopNo"].to_i
+            stopRouteHash[stop["StopNo"].to_i] = stop["Routes"].split(", ")
+        end
+
+        stopdbs = Stop.where(StopNo: stopNumbers)
+
+        stopdbs.each do |stopdb|
+            stopRouteHash[stopdb.StopNo].each do |route|
                 if (justRoutes.count(route) >= 2)
                     next
                 end
 
-                dest, time = getDestinationAndEstimate(stop["StopNo"], route)
+                dest, time = getDestinationAndEstimate(stopdb.StopNo.to_s,  route)
                 if ((route + dest).in?routesDone or dest == nil or dest == "N/A")
                     next
                 end
@@ -77,22 +84,24 @@ class ApiController < ApplicationController
                 justRoutes << route
 
                 routeHash = {}
-                routeHash.store(:id, dbStop.id)
-                routeHash.store(:Name, dbStop.Name)
-                routeHash.store(:StopNo, dbStop.StopNo)
-                routeHash.store(:Latitude, dbStop.Latitude)
-                routeHash.store(:Longitude, dbStop.Longitude)
-                routeHash.store(:City, dbStop.City)
-                routeHash.store(:AtStreet, dbStop.AtStreet)
-                routeHash.store(:OnStreet, dbStop.OnStreet)
+                routeHash.store(:id, stopdb.id)
+                routeHash.store(:Name, stopdb.Name)
+                routeHash.store(:StopNo, stopdb.StopNo)
+                routeHash.store(:Latitude, stopdb.Latitude)
+                routeHash.store(:Longitude, stopdb.Longitude)
+                routeHash.store(:City, stopdb.City)
+                routeHash.store(:AtStreet, stopdb.AtStreet)
+                routeHash.store(:OnStreet, stopdb.OnStreet)
                 routeHash.store(:Route, route)
                 routeHash.store(:Destination, dest)
                 routeHash.store(:NextBus, time)
 
                 return_info << routeHash
-
             end
         end
+
+
+        
 
 
         
