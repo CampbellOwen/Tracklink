@@ -44999,3 +44999,517 @@ Completed 200 OK in 332ms (Views: 0.3ms | ActiveRecord: 0.0ms)
   [1m[36mStop Load (3.2ms)[0m  [1mSELECT  "stops".* FROM "stops"  ORDER BY "stops"."id" ASC LIMIT 1[0m
   [1m[35mLine Load (2.8ms)[0m  SELECT  "lines".* FROM "lines"  ORDER BY "lines"."id" ASC LIMIT 1
   [1m[36mStop Load (2.4ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (54912, 54342)[0m
+  [1m[35mStop Load (6.2ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (54912, 54342)
+
+
+Started GET "/" for ::1 at 2016-08-01 14:31:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (3.7ms)
+  Rendered home/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 311ms (Views: 304.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 14:31:09 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (6.8ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 500 Internal Server Error in 10736ms (ActiveRecord: 14.7ms)
+
+SystemExit (exit):
+  (byebug):1:in `exit'
+  (byebug):1:in `rescue in process_action'
+  byebug (9.0.5) lib/byebug/helpers/eval.rb:59:in `eval'
+  byebug (9.0.5) lib/byebug/helpers/eval.rb:59:in `safe_eval'
+  byebug (9.0.5) lib/byebug/helpers/eval.rb:53:in `warning_eval'
+  byebug (9.0.5) lib/byebug/helpers/eval.rb:29:in `block in multiple_thread_eval'
+  byebug (9.0.5) lib/byebug/helpers/eval.rb:92:in `allowing_other_threads'
+  byebug (9.0.5) lib/byebug/helpers/eval.rb:29:in `multiple_thread_eval'
+  byebug (9.0.5) lib/byebug/processors/command_processor.rb:164:in `block in run_cmd'
+  byebug (9.0.5) lib/byebug/processors/command_processor.rb:169:in `safely'
+  byebug (9.0.5) lib/byebug/processors/command_processor.rb:160:in `run_cmd'
+  byebug (9.0.5) lib/byebug/processors/command_processor.rb:134:in `repl'
+  byebug (9.0.5) lib/byebug/processors/command_processor.rb:98:in `process_commands'
+  byebug (9.0.5) lib/byebug/processors/command_processor.rb:56:in `at_line'
+  byebug (9.0.5) lib/byebug/context.rb:96:in `at_line'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:31:in `rescue in process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (58.3ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (81.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 14:31:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (3.7ms)
+  Rendered home/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 238ms (Views: 230.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7a17e2dc40d53208c262d4b9df3f51facd4c50d21d2750503e267b0fcae242de.css?body=1" for ::1 at 2016-08-01 14:31:33 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 14:31:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 14:31:33 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 14:31:33 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 14:31:33 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:31:33 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:31:33 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:31:33 -0700
+
+
+Started GET "/assets/map.self-d460b583200c6a7926e713be12257423640095c2a1869ea756b7b950c1daf8f6.js?body=1" for ::1 at 2016-08-01 14:31:33 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 14:31:34 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 14:31:34 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 14:31:34 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:31:34 -0700
+
+
+Started GET "/assets/map.self-d460b583200c6a7926e713be12257423640095c2a1869ea756b7b950c1daf8f6.js?body=1" for ::1 at 2016-08-01 14:31:35 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:31:35 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:31:35 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 14:31:35 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 14:31:36 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+Completed   in 41243ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 14:32:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (3.7ms)
+  Rendered home/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 236ms (Views: 228.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 14:32:30 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (8.8ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 500 Internal Server Error in 32174ms (ActiveRecord: 17.8ms)
+
+SystemExit (exit):
+  app/controllers/api_controller.rb:75:in `block in location'
+  app/controllers/api_controller.rb:73:in `location'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (74.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.2ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (95.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 14:34:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (3.7ms)
+  Rendered home/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 232ms (Views: 224.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7a17e2dc40d53208c262d4b9df3f51facd4c50d21d2750503e267b0fcae242de.css?body=1" for ::1 at 2016-08-01 14:34:14 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 14:34:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/map.self-d460b583200c6a7926e713be12257423640095c2a1869ea756b7b950c1daf8f6.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/map.self-d460b583200c6a7926e713be12257423640095c2a1869ea756b7b950c1daf8f6.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:34:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 14:34:16 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 14:34:17 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (2.0ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 500 Internal Server Error in 64039ms (ActiveRecord: 4.3ms)
+
+SystemExit (exit):
+  app/controllers/api_controller.rb:75:in `block in location'
+  app/controllers/api_controller.rb:73:in `location'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (71.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.8ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (92.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 14:35:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (3.7ms)
+  Rendered home/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 254ms (Views: 243.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 14:35:40 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (4.8ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 500 Internal Server Error in 557ms (ActiveRecord: 9.6ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/api_controller.rb:83:in `+'
+  app/controllers/api_controller.rb:83:in `block (2 levels) in location'
+  app/controllers/api_controller.rb:77:in `each'
+  app/controllers/api_controller.rb:77:in `block in location'
+  app/controllers/api_controller.rb:73:in `location'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 14:36:19 -0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7a17e2dc40d53208c262d4b9df3f51facd4c50d21d2750503e267b0fcae242de.css?body=1" for ::1 at 2016-08-01 14:36:19 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 14:36:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 14:36:19 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 14:36:19 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:36:19 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:36:19 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:36:19 -0700
+
+
+Started GET "/assets/map.self-d460b583200c6a7926e713be12257423640095c2a1869ea756b7b950c1daf8f6.js?body=1" for ::1 at 2016-08-01 14:36:19 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 14:36:19 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 14:36:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 14:36:20 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 14:36:20 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:36:20 -0700
+
+
+Started GET "/assets/map.self-d460b583200c6a7926e713be12257423640095c2a1869ea756b7b950c1daf8f6.js?body=1" for ::1 at 2016-08-01 14:36:21 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:36:21 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:36:21 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 14:36:21 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 14:36:22 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[36mStop Load (4.8ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)[0m
+Completed 500 Internal Server Error in 900ms (ActiveRecord: 9.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/api_controller.rb:85:in `+'
+  app/controllers/api_controller.rb:85:in `block (2 levels) in location'
+  app/controllers/api_controller.rb:77:in `each'
+  app/controllers/api_controller.rb:77:in `block in location'
+  app/controllers/api_controller.rb:73:in `location'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (15.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 14:37:07 -0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7a17e2dc40d53208c262d4b9df3f51facd4c50d21d2750503e267b0fcae242de.css?body=1" for ::1 at 2016-08-01 14:37:07 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 14:37:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 14:37:07 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 14:37:07 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:37:07 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 14:37:07 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:37:07 -0700
+
+
+Started GET "/assets/map.self-d460b583200c6a7926e713be12257423640095c2a1869ea756b7b950c1daf8f6.js?body=1" for ::1 at 2016-08-01 14:37:07 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:37:07 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 14:37:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 14:37:08 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 14:37:08 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:37:08 -0700
+
+
+Started GET "/assets/map.self-d460b583200c6a7926e713be12257423640095c2a1869ea756b7b950c1daf8f6.js?body=1" for ::1 at 2016-08-01 14:37:08 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:37:08 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 14:37:08 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 14:37:08 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 14:37:10 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (2.6ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 200 OK in 1236ms (Views: 0.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/api/location?lat=49.156506&long=-122.894944" for ::1 at 2016-08-01 14:37:35 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.156506", "long"=>"-122.894944"}
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (55018, 54970, 54971, 55019, 55017, 55204, 55198, 55814, 55016, 54969, 55052)[0m
+Completed 200 OK in 1819ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/location?lat=49.149657&long=-122.866514" for ::1 at 2016-08-01 14:37:36 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.149657", "long"=>"-122.866514"}
+  [1m[35mStop Load (1.4ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (59215, 60601, 55591, 55633, 55632, 55592)
+Completed 200 OK in 718ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/location?lat=49.053676&long=-122.468494" for ::1 at 2016-08-01 14:37:38 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.053676", "long"=>"-122.468494"}
+  [1m[36mStop Load (1.3ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (57314, 57315, 57313, 57316)[0m
+Completed 200 OK in 112ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/location?lat=49.236935&long=-123.116687" for ::1 at 2016-08-01 14:37:55 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.236935", "long"=>"-123.116687"}
+  [1m[35mStop Load (1.9ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (50424, 50469, 50423, 50621, 50467, 61373, 61374, 50160, 61281, 50136, 59305, 50981, 50422, 51003, 50135, 50161)
+Completed 200 OK in 1813ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/location?lat=49.097756&long=-122.471240" for ::1 at 2016-08-01 14:37:57 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.097756", "long"=>"-122.471240"}
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of String into Integer):
+  app/controllers/api_controller.rb:66:in `[]'
+  app/controllers/api_controller.rb:66:in `block in location'
+  app/controllers/api_controller.rb:65:in `each'
+  app/controllers/api_controller.rb:65:in `location'
+
+
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/owen/.gem/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.1ms)
+
+
+Started GET "/api/location?lat=49.289810&long=-123.131793" for ::1 at 2016-08-01 14:38:03 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.289810", "long"=>"-123.131793"}
+  [1m[36mStop Load (3.5ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (50628, 51474, 50611, 58484, 58254, 50612, 51370, 50627, 54448, 58505, 51473, 50972, 50973, 50629, 50610, 51371, 51475, 50613, 50630, 50609, 51372)[0m
+Completed 200 OK in 2758ms (Views: 0.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/location?lat=49.284323&long=-123.129671" for ::1 at 2016-08-01 14:38:07 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.284323", "long"=>"-123.129671"}
+  [1m[35mStop Load (2.7ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (50614, 50626, 50613, 61508, 50625, 50615, 50050, 50637, 50636, 50049, 50051, 50627, 50046, 50047, 50974, 50029, 54447, 58704, 61759, 50612, 50638, 59420, 50045, 50028, 50624, 50052)
+Completed 200 OK in 2889ms (Views: 0.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/location?lat=49.284771&long=-123.113534" for ::1 at 2016-08-01 14:38:15 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.284771", "long"=>"-123.113534"}
+  [1m[36mStop Load (19.7ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (50978, 61394, 61393, 50408, 50096, 50852, 50930, 50034, 51374, 50095, 58313, 50078, 58204, 50409, 50077, 50189, 50040, 61917, 61692, 58202, 50639, 50035, 61925, 56469, 50962, 57964, 52711, 50526, 58003, 57944, 50097, 59831, 57959, 57960, 57963, 50079, 58001, 54828, 57966, 50407, 59832, 60993, 61519, 50931, 50033, 50094, 50188, 50036, 50190, 50076, 58321, 50032, 58267, 50080, 50410, 60980, 58893, 56558, 58504, 54445, 61032, 50191, 61031, 61662, 61363, 61364, 50976, 50530, 61293, 54606, 52712, 60826, 58002, 59558, 54444, 59525, 61871, 57893, 50043, 50081, 54473, 58266, 54830, 50187, 58065, 50037, 61870)[0m
+Completed 200 OK in 11466ms (Views: 0.2ms | ActiveRecord: 19.7ms)
+
+
+Started GET "/api/location?lat=49.281300&long=-123.124521" for ::1 at 2016-08-01 14:38:35 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.281300", "long"=>"-123.124521"}
+  [1m[35mStop Load (17.9ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (50029, 50046, 50047, 61759, 54832, 50028, 50045, 50616, 54831, 50222, 50623, 50624, 50533, 58326, 58144, 58138, 50030, 50615, 51006, 59040, 50617, 61292, 61508, 50044, 50625, 54830, 50975, 58750, 61522, 50220, 51007, 50026, 50074, 50048, 50075, 54446, 58705, 50025, 50011, 50098, 50976, 61293, 50192, 61031, 61363, 50031, 61364, 50638, 58065, 61662, 51004, 60980)
+Completed 200 OK in 7263ms (Views: 0.2ms | ActiveRecord: 17.9ms)

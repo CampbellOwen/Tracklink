@@ -11,13 +11,19 @@ module ApiHelper
         end
     end
 
-    def getDestinationAndEstimate(stop, route)
-        url = 'http://api.translink.ca/rttiapi/v1/stops/'+stop.to_s+'/estimates?apikey=QUprTm0ALxtTt4npEjl6&count=1&routeNo='+route
+    def getDestinationAndEstimate(stop)
+        url = 'http://api.translink.ca/rttiapi/v1/stops/'+stop.to_s+'/estimates?apikey=QUprTm0ALxtTt4npEjl6&count=1'
         response = HTTParty.get(url, :headers => {'Accept' => 'application/json'})
         response_json = JSON.parse(response.body)
         begin
-            dest = response_json[0]["Schedules"][0]["Destination"]
-            time = response_json[0]["Schedules"][0]["ExpectedLeaveTime"].split(' ')[0]
+            dest = {}
+            time = {}
+            response_json.each do |route|
+                dest[route["RouteNo"]] = route["Schedules"][0]["Destination"]
+                time[route["RouteNo"]] = route["Schedules"][0]["ExpectedLeaveTime"].split(' ')[0]
+            end
+            #dest = response_json[0]["Schedules"][0]["Destination"]
+            #time = response_json[0]["Schedules"][0]["ExpectedLeaveTime"].split(' ')[0]
             return dest, time
         rescue
             return "N/A"

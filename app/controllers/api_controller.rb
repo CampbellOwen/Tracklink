@@ -69,18 +69,24 @@ class ApiController < ApplicationController
 
         stopdbs = Stop.where(StopNo: stopNumbers)
 
+
         stopdbs.each do |stopdb|
+
+            dest, time = getDestinationAndEstimate(stopdb.StopNo.to_s)
+
             stopRouteHash[stopdb.StopNo].each do |route|
+                if (route == nil)
+                    next
+                end
                 if (justRoutes.count(route) >= 2)
                     next
                 end
 
-                dest, time = getDestinationAndEstimate(stopdb.StopNo.to_s,  route)
-                if ((route + dest).in?routesDone or dest == nil or dest == "N/A")
+                if (dest[route] == nil or (route + dest[route]).in?routesDone or dest[route] == nil or dest[route] == "N/A")
                     next
                 end
 
-                routesDone << (route+dest)
+                routesDone << (route+dest[route])
                 justRoutes << route
 
                 routeHash = {}
@@ -93,8 +99,8 @@ class ApiController < ApplicationController
                 routeHash.store(:AtStreet, stopdb.AtStreet)
                 routeHash.store(:OnStreet, stopdb.OnStreet)
                 routeHash.store(:Route, route)
-                routeHash.store(:Destination, dest)
-                routeHash.store(:NextBus, time)
+                routeHash.store(:Destination, dest[route])
+                routeHash.store(:NextBus, time[route])
 
                 return_info << routeHash
             end
