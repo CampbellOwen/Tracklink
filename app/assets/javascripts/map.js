@@ -26,7 +26,7 @@ function abortCalls()
 
 function retrieving()
 {
-    $("#bus_table").html('<tr><td id="bus_number_left">Retrieving, please wait.</td></tr>');
+    $("#bus_table").html('<tr><td id="wait">Retrieving, please wait.</td></tr>');
 }
 
 function highlightStop(tablerow)
@@ -85,7 +85,7 @@ function getRoutes(map, lat_long){
     retrieving();
     ajaxCalls.push($.get("/api/location", {lat: lat, long: lng}).success(function(routes){
         if (routes.length == 0) {
-	   		$("#bus_table").html('<tr><td id="bus_number_left">No busses nearby, please move the cursor</td></tr>');
+	   		$("#bus_table").html('<tr><td id="wait">No busses nearby, please move the cursor</td></tr>');
         }
         else {
             $("#bus_table").html('');

@@ -73,6 +73,14 @@
 	.alert {
 		color:white;
 	}
+	#wait{
+		font-size: 40px;
+		text-align: center;
+		height: 700px;
+		width: auto;
+		border-width: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+	}
 	#bus_number_left, #bus_number_history{
 		font-size: 30px;
 		border-width: 1px 0px 0px 0px;
@@ -128,6 +136,7 @@
 	#usage_info_left, #translink_disclaimer{
 		color: white;
 		font-size:15px;
+		padding-top: 20px;
 	}
 	#lat_long, #lat_long_info, #routes_ex, #debug1{
 		color: #A8000C;
@@ -215,16 +224,6 @@
 		width: auto;
 		max-height: 600px;
 	}
-	/*
-	#user_scroll {
-		font-family: 'Roboto', sans-serif;
-		font-weight: 500;
-		font-size: 20px;
-		color:white;
-		background-color: #0060a8;
-		overflow-y:scroll;
-		border-collapse: collapse;
-	}*/
 /* Table Containers */
 	#bus_table, #user_table, #history_table, #bus_table_search{
 		background-color: #0060a8;
