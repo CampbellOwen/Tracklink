@@ -39,4 +39,8 @@ module SessionsHelper
     def admin?
         current_user.try(:admin?)
     end
+
+    def wheelchair?
+        current_user.try(:wheelchair?)
+    end
 end
