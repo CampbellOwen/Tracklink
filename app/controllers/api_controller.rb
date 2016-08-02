@@ -2,6 +2,21 @@ class ApiController < ApplicationController
     include ApiHelper
     require 'json'
     respond_to :json, :html
+
+    def stopCoord(stopno)
+        stop = Stop.find_by("StopNo" => stopno.to_i)
+        if (stop == nil)
+            respond_with("404")
+            return
+        end
+
+        coord = {
+            :lat => stop.Latitude,
+            :long => stop.Longitude
+        }
+        respond_with(JSON.generate(coord))
+        return
+    end
     
     def kmz
         if (params[:stop] == nil || params[:route] == nil)
