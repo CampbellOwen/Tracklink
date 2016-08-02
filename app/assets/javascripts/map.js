@@ -34,7 +34,7 @@ function highlightStop(tablerow, typ)
     if(typ==0){
       innerhtml = tablerow.children[1].innerHTML;
       route = tablerow.children[0].innerHTML.substr(0, 3);
-      console.log(tablerow.children[0].innerHTML);
+      //console.log(tablerow.children[0].innerHTML);
     }else{
       innerhtml = tablerow.children[0].innerHTML;
       route = tablerow.previousSibling.children[0].innerHTML.substr(0, 3);
@@ -64,8 +64,11 @@ function highlightStop(tablerow, typ)
     }));
     
     //Highlight Route
-    ajaxCalls.push($.get("/api/kmz", {stop: stopno, route:route}).success( function(result) {
-        console.log(result[0]);
+    ajaxCalls.push($.get("/api/kmz", {stop: stopno, route: route}).success( function(result) {
+        console.log(result);
+        if (result == "404") {
+            return;
+        }
         kmzurl = result[0];
 
 
