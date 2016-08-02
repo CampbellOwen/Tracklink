@@ -29,9 +29,7 @@ class ApiController < ApplicationController
                 return
         end
 
-        puts "Passed nil check"
-
-        url = "http://api.translink.ca/rttiapi/v1/routes?apikey=QUprTm0ALxtTt4npEjl6&stopNo=" + params[:stop]
+        url = "http://api.translink.ca/rttiapi/v1/stops/"+params[:stop]+"/estimates?apikey=QUprTm0ALxtTt4npEjl6&count=1"
         response = HTTParty.get(url, :headers => {"Accept" => "application/json"})
         response_json = JSON.parse(response.body)
         puts url
@@ -39,11 +37,10 @@ class ApiController < ApplicationController
 
         begin
             response_json.each do |line|
-                if (line["RouteNo"].to_i == params[:route].to_i)
-
-                    puts line["Patterns"][0]["RouteMap"]["Href"]
+                if (line["RouteNo"] == params[:route])
+                    puts "ROUTENO MATCHED"
                     response_arr = []
-                    response_arr << line["Patterns"][0]["RouteMap"]["Href"]
+                    response_arr << line["RouteMap"]["Href"]
                     respond_with(JSON.generate(response_arr))
                     return
                 end
