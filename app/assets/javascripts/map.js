@@ -113,21 +113,36 @@ function getRoutes(map, lat_long, refresh_flag){
             $("#bus_table").html('');
             for (var i = 0; i < routes.length; i++) {
                 if(i<routes.length-1 && routes[i].Route == routes[i+1].Route){
+                  var iStat;
+                  var iiStat;
+                  if(routes[i].ScheduleStatus == "-"){
+                    iStat = "Late";
+                  }else if(routes[i].ScheduleStatus == "+"){
+                    iStat = "Early";
+                  }else{
+                    iStat = "On Time";
+                  }
+                  if(routes[i+1].ScheduleStatus == "-"){
+                    iiStat = "Late";
+                  }else if(routes[i+1].ScheduleStatus == "+"){
+                    iiStat = "Early";
+                  }else{
+                    iiStat = "On Time";
+                  }
                   $("#bus_table").append(
                     '<tr onclick="highlightStop(this, 0)">'+
                       '<td rowspan="2" id="bus_number_left">'+ 
                         routes[i].Route +
-                        '<div id="twitter-place">Send Feedback</div>' +
                       '</td>' +
                       '<td id="bus_route_info">' + 
                         'From ' + routes[i].Name + ' (' + routes[i].StopNo + ') ' +
                         '<br>towards ' + routes[i].Destination +
                       '</td>' +
+                      '<td id="bus_route_times"><div id="bus_route_times_big">' + 
+                        routes[i].ExpectedCountdown + '</div>' + 
+                      'Minutes</td>' +
                       '<td id="bus_route_times">' +
-                        routes[i].NextBus +
-                      '</td>' +
-                      '<td id="bus_route_times">' +
-                        routes[i].NextBus +
+                        iStat +
                       '</td>' +
                     '</tr>' +
                     '<tr onclick="highlightStop(this, 1)">'+
@@ -135,11 +150,11 @@ function getRoutes(map, lat_long, refresh_flag){
                         'From ' + routes[i+1].Name + ' (' + routes[i+1].StopNo + ') ' +
                         '<br>towards ' + routes[i+1].Destination +
                       '</td>' +
+                      '<td id="bus_route_times"><div id="bus_route_times_big">' + 
+                        routes[i+1].ExpectedCountdown + '</div>' + 
+                      'Minutes</td>' +
                       '<td id="bus_route_times">' +
-                        routes[i+1].NextBus +
-                      '</td>' +
-                      '<td id="bus_route_times">' +
-                        routes[i+1].NextBus +
+                        iiStat +
                       '</td>' +
                     '</tr>' +
                     '<tr>' +
@@ -147,21 +162,28 @@ function getRoutes(map, lat_long, refresh_flag){
                     '</tr>');
                   i++;
                 }else{
+                  var iStat;
+                  if(routes[i].ScheduleStatus == "-"){
+                    iStat = "Late";
+                  }else if(routes[i].ScheduleStatus == "+"){
+                    iStat = "Early";
+                  }else{
+                    iStat = "On Time";
+                  }
                   $("#bus_table").append(
                     '<tr onclick="highlightStop(this, 0)">'+
                       '<td rowspan="1" id="bus_number_left">'+ 
                         routes[i].Route +
-                        '<div id="twitter-place">Send Feedback</div>' +
                       '</td>' +
                       '<td id="bus_route_info">' + 
                         'From ' + routes[i].Name + ' (' + routes[i].StopNo + ') ' +
                         '<br>towards ' + routes[i].Destination +
                       '</td>' +
+                      '<td id="bus_route_times"><div id="bus_route_times_big">' + 
+                        routes[i].ExpectedCountdown + '</div>' + 
+                      'Minutes</td>' +
                       '<td id="bus_route_times">' +
-                        routes[i].NextBus +
-                      '</td>' +
-                      '<td id="bus_route_times">' +
-                        routes[i].NextBus +
+                        iStat +
                       '</td>' +
                     '</tr>' +
                     '<tr>' +
