@@ -81,7 +81,7 @@ class ApiController < ApplicationController
 
         stopdbs.each do |stopdb|
 
-            dest, time = getDestinationAndEstimate(stopdb.StopNo.to_s)
+            dest, time, expected_countdown, schedule_status = getDestinationAndEstimate(stopdb.StopNo.to_s)
 
             stopRouteHash[stopdb.StopNo].each do |route|
                 if (route == nil)
@@ -110,6 +110,8 @@ class ApiController < ApplicationController
                 routeHash.store(:Route, route)
                 routeHash.store(:Destination, dest[route])
                 routeHash.store(:NextBus, time[route])
+                routeHash.store(:ExpectedCountdown, expected_countdown[route])
+                routeHash.store(:ScheduleStatus, schedule_status[route])
 
                 return_info << routeHash
             end

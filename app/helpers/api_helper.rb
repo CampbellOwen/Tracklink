@@ -18,13 +18,16 @@ module ApiHelper
         begin
             dest = {}
             time = {}
+            expected_countdown = {}
+            schedule_status = {}
+
             response_json.each do |route|
                 dest[route["RouteNo"]] = route["Schedules"][0]["Destination"]
                 time[route["RouteNo"]] = route["Schedules"][0]["ExpectedLeaveTime"].split(' ')[0]
+                expected_countdown[route["RouteNo"]] = route["Schedules"][0]["ExpectedCountdown"]
+                schedule_status[route["RouteNo"]] = route["Schedules"][0]["ScheduleStatus"]
             end
-            #dest = response_json[0]["Schedules"][0]["Destination"]
-            #time = response_json[0]["Schedules"][0]["ExpectedLeaveTime"].split(' ')[0]
-            return dest, time
+            return dest, time, expected_countdown, schedule_status
         rescue
             return "N/A"
         end
