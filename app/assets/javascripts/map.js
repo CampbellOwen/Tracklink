@@ -2,6 +2,12 @@ var markers = [];
 var routeLines = [];
 var ajaxCalls = [];
 
+function refresh()
+{
+  console.log("REFRESHING ROUTES");
+  getRoutes(map, map.getCenter(), 1);
+}
+
 function clearMarkers()
 {
     for (var i = 0; i < markers.length; i++) {
@@ -34,7 +40,7 @@ function highlightStop(tablerow, typ)
     if(typ==0){
       innerhtml = tablerow.children[1].innerHTML;
       route = tablerow.children[0].innerHTML.substr(0, 3);
-      console.log(tablerow.children[0].innerHTML);
+      //console.log(tablerow.children[0].innerHTML);
     }else{
       innerhtml = tablerow.children[0].innerHTML;
       route = tablerow.previousSibling.children[0].innerHTML.substr(0, 3);
@@ -64,8 +70,11 @@ function highlightStop(tablerow, typ)
     }));
     
     //Highlight Route
-    ajaxCalls.push($.get("/api/kmz", {stop: stopno, route:route}).success( function(result) {
-        console.log(result[0]);
+    ajaxCalls.push($.get("/api/kmz", {stop: stopno, route: route}).success( function(result) {
+        console.log(result);
+        if (result == "404") {
+            return;
+        }
         kmzurl = result[0];
 
 
@@ -224,11 +233,5 @@ function initMap() {
     map: map
   });
   rad.bindTo('center', marker, 'position');
-  var refresher = setInterval(function(){
-    var curPos = map.getCenter();
-    if (map.getCenter() === curPos) {
-      console.log("REFRESHING ROUTES");
-      getRoutes(map, curPos, 1);
-    }
-  }, 60000);
+  var refresher = setInterval(refresh, 60000);
 }

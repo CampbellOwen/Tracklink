@@ -9,9 +9,13 @@ class ApiController < ApplicationController
                 return
         end
 
+        puts "Passed nil check"
+
         url = "http://api.translink.ca/rttiapi/v1/routes?apikey=QUprTm0ALxtTt4npEjl6&stopNo=" + params[:stop]
         response = HTTParty.get(url, :headers => {"Accept" => "application/json"})
         response_json = JSON.parse(response.body)
+        puts url
+        puts response_json
 
         begin
             response_json.each do |line|
