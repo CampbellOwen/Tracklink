@@ -2,6 +2,12 @@ var markers = [];
 var routeLines = [];
 var ajaxCalls = [];
 
+function refresh()
+{
+  console.log("REFRESHING ROUTES");
+  getRoutes(map, map.getCenter(), 1);
+}
+
 function clearMarkers()
 {
     for (var i = 0; i < markers.length; i++) {
@@ -227,11 +233,5 @@ function initMap() {
     map: map
   });
   rad.bindTo('center', marker, 'position');
-  var refresher = setInterval(function(){
-    var curPos = map.getCenter();
-    if (map.getCenter() === curPos) {
-      console.log("REFRESHING ROUTES");
-      getRoutes(map, curPos, 1);
-    }
-  }, 60000);
+  var refresher = setInterval(refresh, 60000);
 }
