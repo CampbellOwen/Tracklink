@@ -1,19 +1,4 @@
 module ApiHelper
-    def getStopCoord(stopno)
-        stop = Stop.find_by("StopNo" => stopno.to_i)
-        if (stop == nil)
-            respond_with("404")
-            return
-        end
-
-        coord = {
-            :lat => stop.Latitude,
-            :long => stop.Longitude
-        }
-        respond_with(JSON.generate(coord))
-        return
-    end
-
     def getDestination(stop, route)
         url = 'http://api.translink.ca/rttiapi/v1/stops/'+stop.to_s+'/estimates?apikey=QUprTm0ALxtTt4npEjl6&count=1&routeNo='+route
         response = HTTParty.get(url, :headers => {'Accept' => 'application/json'})
