@@ -2,9 +2,14 @@ var markers = [];
 var routeLines = [];
 var ajaxCalls = [];
 
-function find_stop(stopno)
+function find_stop()
 {
+    var stopno = document.getElementById("searchbox").value;
     $.get("/api/stopCoord", {stop: stopno}).success(function(data) {
+        if (data == "404") {
+            return;
+        }
+        clearMarkers();
         console.log(data["lat"]);
         console.log(data["long"]);
         var pos = {lat: parseFloat(data["lat"]), lng: parseFloat(data["long"])};
