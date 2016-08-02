@@ -114,10 +114,10 @@ function getRoutes(map, lat_long, refresh_flag){
                         'From ' + routes[i].Name + ' (' + routes[i].StopNo + ') ' +
                         '<br>towards ' + routes[i].Destination +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i].NextBus +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i].NextBus +
                       '</td>' +
                     '</tr>' +
@@ -126,10 +126,10 @@ function getRoutes(map, lat_long, refresh_flag){
                         'From ' + routes[i+1].Name + ' (' + routes[i+1].StopNo + ') ' +
                         '<br>towards ' + routes[i+1].Destination +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i+1].NextBus +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i+1].NextBus +
                       '</td>' +
                     '</tr>' +
@@ -148,10 +148,10 @@ function getRoutes(map, lat_long, refresh_flag){
                         'From ' + routes[i].Name + ' (' + routes[i].StopNo + ') ' +
                         '<br>towards ' + routes[i].Destination +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i].NextBus +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i].NextBus +
                       '</td>' +
                     '</tr>' +
