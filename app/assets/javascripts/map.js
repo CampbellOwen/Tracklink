@@ -94,7 +94,8 @@ function getRoutes(map, lat_long, refresh_flag){
         if(refresh_flag){
           $("#bus_table").html('');
         }
-        if (routes.length == 0) {
+        if (routes == "404" || routes.length == 0) {
+
 	   		$("#bus_table").html('<tr><td id="wait">No busses nearby, please move the cursor</td></tr>');
         }
         else {
