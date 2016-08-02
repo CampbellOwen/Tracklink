@@ -97,19 +97,19 @@ function getRoutes(map, lat_long, refresh_flag){
         return;
     }
     abortCalls();
+    $("#refresh-button").html('Refreshing');
     if(!refresh_flag){
       $("#bus_table").html('');
-    retrieving();
+      //retrieving();
     }
     ajaxCalls.push($.get("/api/location", {lat: lat, long: lng}).success(function(routes){
         if(refresh_flag){
           $("#bus_table").html('');
         }
+        $("#refresh-button").html('Refresh Routes');
         if (routes == "404" || routes.length == 0) {
-
-	   		$("#bus_table").html('<tr><td id="wait">No busses nearby, please move the cursor</td></tr>');
-        }
-        else {
+	   		  $("#bus_table").html('<tr><td id="wait">No busses nearby, please move the cursor</td></tr>');
+        } else {
             $("#bus_table").html('');
             for (var i = 0; i < routes.length; i++) {
                 if(i<routes.length-1 && routes[i].Route == routes[i+1].Route){
@@ -193,7 +193,7 @@ function initMap() {
 	});
 	map.addListener('center_changed', function(){
 		//document.getElementById('lat_long').innerHTML = map.getCenter();
-    retrieving();
+    //retrieving();
     var oldPos = map.getCenter();
     var id = setTimeout(function() {
       if (map.getCenter() === oldPos) {
