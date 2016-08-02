@@ -71,9 +71,11 @@ class ApiController < ApplicationController
         stopNumbers = []
         stopRouteHash = {}
 
+        distanceHash = {}
         stops.each do |stop|
             stopNumbers << stop["StopNo"].to_i
             stopRouteHash[stop["StopNo"].to_i] = stop["Routes"].split(", ")
+            distanceHash[stop["StopNo"].to_i] = stop["Distance"]
         end
 
         stopdbs = Stop.where(StopNo: stopNumbers)
@@ -112,6 +114,7 @@ class ApiController < ApplicationController
                 routeHash.store(:NextBus, time[route])
                 routeHash.store(:ExpectedCountdown, expected_countdown[route])
                 routeHash.store(:ScheduleStatus, schedule_status[route])
+                routeHash.store(:Distance, distanceHash[stopdb.StopNo])
 
                 return_info << routeHash
             end
