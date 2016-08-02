@@ -227,6 +227,10 @@ function getRoutes(map, lat_long, refresh_flag){
                 }
                 
             }
+            if ( $('#bus_table').html() == '') {
+	   		  $("#bus_table").html('<tr><td id="wait">No busses with wheelchair access nearby, please move the cursor</td></tr>');
+            }
+
         }
     }));
 }
