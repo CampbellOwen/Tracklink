@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160802034414) do
+ActiveRecord::Schema.define(version: 20160802210408) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,11 @@ ActiveRecord::Schema.define(version: 20160802034414) do
     t.boolean  "WheelchairAccess"
   end
 
+  create_table "students", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email"
     t.datetime "created_at",      null: false
@@ -53,8 +58,17 @@ ActiveRecord::Schema.define(version: 20160802034414) do
     t.string   "password_digest"
     t.string   "remember_digest"
     t.boolean  "admin"
+    t.boolean  "wheelchair"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+
+  create_table "widgets", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "stock"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

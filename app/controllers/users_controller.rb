@@ -1,5 +1,11 @@
 class UsersController < ApplicationController
 
+    def wheelchair
+        @user = User.find(params[:id])
+        @user.update_attribute(:wheelchair, !@user.wheelchair?)
+        redirect_to :action => :show, id: params[:id]
+    end
+
    def promote
        @user = User.find(params[:id])
        puts(@user.inspect)

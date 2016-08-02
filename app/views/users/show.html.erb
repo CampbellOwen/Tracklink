@@ -6,7 +6,7 @@
 				<td><%= @user.email %></td>
 				<td><%= @user.admin? ? "Admin" : "Standard User" %></td>
 				<td><%= button_to "Delete Account", @user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-                    <td><%= button_to @user.wheelchair? ? "Show All Stops" : "Only Show Wheelchai Accessible Stops",:controller => "users", :action => "wheelchair", :id => user.id %></td>
+                <td><%= button_to @user.wheelchair? ? "Show All Stops" : "Only Show Wheelchair Accessible Stops",:controller => "users", :action => "wheelchair", :id => @user.id %></td>
 			</tr>
 		</table>
 	</div>

@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   end
   post      'users/promote' => 'users#promote'
   post      'users/demote' => 'users#demote'
+  post      'users/wheelchair' => 'users#wheelchair'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
