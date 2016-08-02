@@ -125,6 +125,9 @@ function getRoutes(map, lat_long, refresh_flag){
     if (map.getCenter() != lat_long) {
         return;
     }
+    var wheelchair = document.getElementById("wheelchair").innerHTML.trim();
+    console.log(wheelchair);
+    console.log(wheelchair === "true");
     abortCalls();
     $("#refresh-button").html('Refreshing');
     if(!refresh_flag){
@@ -141,6 +144,9 @@ function getRoutes(map, lat_long, refresh_flag){
         } else {
             $("#bus_table").html('');
             for (var i = 0; i < routes.length; i++) {
+                if (wheelchair == "true" && !routes[i].Wheelchair) {
+                    continue;
+                }
                 if(i<routes.length-1 && routes[i].Route == routes[i+1].Route){
                   var iStat;
                   var iiStat;

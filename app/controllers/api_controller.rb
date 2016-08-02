@@ -97,6 +97,7 @@ class ApiController < ApplicationController
             stopNumbers << stop["StopNo"].to_i
             stopRouteHash[stop["StopNo"].to_i] = stop["Routes"].split(", ")
             distanceHash[stop["StopNo"].to_i] = stop["Distance"]
+
         end
 
         puts Time.now - start
@@ -139,7 +140,8 @@ class ApiController < ApplicationController
                 :NextBus => time[route], 
                 :ExpectedCountdown => expected_countdown[route], 
                 :ScheduleStatus => schedule_status[route], 
-                :Distance => distanceHash[stopdb.StopNo] 
+                :Distance => distanceHash[stopdb.StopNo],
+                :Wheelchair => stopdb.WheelchairAccess
                 }
 
                 return_info << routeHash
