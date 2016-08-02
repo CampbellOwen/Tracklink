@@ -44,11 +44,6 @@
 		float: right;
 		margin-right: 3%;
 	}
-	.toolbar{
-		width: auto;
-		margin: 0px 0px 20px 0px; 
-		background-color: black;
-	}
 	.mid{
 		width: 45%;
 		margin: auto;
@@ -164,16 +159,6 @@
 		width:auto;
 		height:650px;
 	}
-	#toolbar-table{
-		text-align: center;
-		background-color: black;
-		border-collapse: collapse;
-		width: 100%;
-	}
-	#toolbar-table td{
-		padding: 10px;
-		background-color: #0060a8;
-	}
 /* Forms & Form Containers */
 	#login{
 		background-color: #0060a8;
@@ -245,20 +230,37 @@
 	#dummy_search_button:hover, #histbutton:hover, #dummy_route_buttons:hover{
 		background-color:#A8000C;
 	}
-	#refresh-button{
+	#refresh-button, #btnSearch{
 		cursor:pointer;
-		border-width: 0px 10px 20px 0px;
 		border-color: black;
-		margin: 0px 20px 20px 0px;
 		width: auto;
 		background-color: #0060a8;
 		padding: 10px;
 		text-align: center;
 		font-size: 25px;
-		font-color: black;
+		color: white;
 	}
-	#refresh-button:hover{
+	#refresh-button{
+		margin: 0px 20px 20px 0px;
+		border-width: 0px 10px 20px 0px;
+	}
+	#btnSearch, #searchbox{
+		margin: 0px 0px 20px 0px;
+		border-width: 0px 0px 0px 0px;
+	}
+	#refresh-button:hover, #btnSearch:hover{
 		background-color:#A8000C;
+	}
+	#searchbox{
+		background-color : white; 
+    	border-width: 0px; 
+    	padding: 9px; 
+    	font-size: 25px;
+    	width: 60%; 
+    	outline: 1px solid white; 
+	}
+	#btnSearch{
+		width: auto;
 	}
 /* Scroll Containers */
 	#bus_scroll{
@@ -303,6 +305,10 @@
 		}
 		#bus_scroll, #search_box, #hist_scroll, #user_scroll{
 			margin: auto;
+		}
+		#refresh-button{
+			margin-left: auto;
+			margin-right: auto;
 		}
 		#wait{
 			height: auto;
