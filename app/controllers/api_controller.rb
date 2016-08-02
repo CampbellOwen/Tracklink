@@ -61,7 +61,9 @@ class ApiController < ApplicationController
         routesDone = []
         justRoutes = []
 
+        start = Time.now
         stops = getStops(params[:lat], params[:long])
+        puts Time.now - start
 
         if (stops[0] == nil)
             respond_with("404")
@@ -70,16 +72,22 @@ class ApiController < ApplicationController
 
         stopNumbers = []
         stopRouteHash = {}
-
         distanceHash = {}
+
+        start = Time.now
+
         stops.each do |stop|
             stopNumbers << stop["StopNo"].to_i
             stopRouteHash[stop["StopNo"].to_i] = stop["Routes"].split(", ")
             distanceHash[stop["StopNo"].to_i] = stop["Distance"]
         end
 
+        puts Time.now - start
+
+
         stopdbs = Stop.where(StopNo: stopNumbers)
 
+        start = Time.now
 
         stopdbs.each do |stopdb|
 
@@ -100,26 +108,28 @@ class ApiController < ApplicationController
                 routesDone << (route+dest[route])
                 justRoutes << route
 
-                routeHash = {}
-                routeHash.store(:id, stopdb.id)
-                routeHash.store(:Name, stopdb.Name)
-                routeHash.store(:StopNo, stopdb.StopNo)
-                routeHash.store(:Latitude, stopdb.Latitude)
-                routeHash.store(:Longitude, stopdb.Longitude)
-                routeHash.store(:City, stopdb.City)
-                routeHash.store(:AtStreet, stopdb.AtStreet)
-                routeHash.store(:OnStreet, stopdb.OnStreet)
-                routeHash.store(:Route, route)
-                routeHash.store(:Destination, dest[route])
-                routeHash.store(:NextBus, time[route])
-                routeHash.store(:ExpectedCountdown, expected_countdown[route])
-                routeHash.store(:ScheduleStatus, schedule_status[route])
-                routeHash.store(:Distance, distanceHash[stopdb.StopNo])
+                routeHash = {
+                :id => stopdb.id, 
+                :Name => stopdb.Name, 
+                :StopNo => stopdb.StopNo, 
+                :Latitude => stopdb.Latitude, 
+                :Longitude => stopdb.Longitude, 
+                :City => stopdb.City, 
+                :AtStreet => stopdb.AtStreet, 
+                :OnStreet => stopdb.OnStreet, 
+                :Route => route, 
+                :Destination => dest[route], 
+                :NextBus => time[route], 
+                :ExpectedCountdown => expected_countdown[route], 
+                :ScheduleStatus => schedule_status[route], 
+                :Distance => distanceHash[stopdb.StopNo] 
+                }
 
                 return_info << routeHash
             end
         end
 
+        puts Time.now - start
 
         
 

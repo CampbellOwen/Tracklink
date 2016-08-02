@@ -207,9 +207,9 @@ function initMap() {
 		navigator.geolocation.getCurrentPosition(function(position) {
 			var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
 			map.setCenter(pos);
+            getRoutes(map, map.getCenter(), 0);
 		}, 
 		function() {
-            getRoutes(map, map.getCenter(), 0);
 		});
 	}
   var icon = {
