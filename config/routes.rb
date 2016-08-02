@@ -21,6 +21,7 @@ Rails.application.routes.draw do
           get :location
           get :getCoor
           get :kmz
+          get :stopCoord
       end
   end
   post      'users/promote' => 'users#promote'
