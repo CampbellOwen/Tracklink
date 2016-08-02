@@ -97,19 +97,19 @@ function getRoutes(map, lat_long, refresh_flag){
         return;
     }
     abortCalls();
+    $("#refresh-button").html('Refreshing');
     if(!refresh_flag){
       $("#bus_table").html('');
-    retrieving();
+      //retrieving();
     }
     ajaxCalls.push($.get("/api/location", {lat: lat, long: lng}).success(function(routes){
         if(refresh_flag){
           $("#bus_table").html('');
         }
+        $("#refresh-button").html('Refresh Routes');
         if (routes == "404" || routes.length == 0) {
-
-	   		$("#bus_table").html('<tr><td id="wait">No busses nearby, please move the cursor</td></tr>');
-        }
-        else {
+	   		  $("#bus_table").html('<tr><td id="wait">No busses nearby, please move the cursor</td></tr>');
+        } else {
             $("#bus_table").html('');
             for (var i = 0; i < routes.length; i++) {
                 if(i<routes.length-1 && routes[i].Route == routes[i+1].Route){
@@ -123,10 +123,10 @@ function getRoutes(map, lat_long, refresh_flag){
                         'From ' + routes[i].Name + ' (' + routes[i].StopNo + ') ' +
                         '<br>towards ' + routes[i].Destination +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i].NextBus +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i].NextBus +
                       '</td>' +
                     '</tr>' +
@@ -135,10 +135,10 @@ function getRoutes(map, lat_long, refresh_flag){
                         'From ' + routes[i+1].Name + ' (' + routes[i+1].StopNo + ') ' +
                         '<br>towards ' + routes[i+1].Destination +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i+1].NextBus +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i+1].NextBus +
                       '</td>' +
                     '</tr>' +
@@ -157,10 +157,10 @@ function getRoutes(map, lat_long, refresh_flag){
                         'From ' + routes[i].Name + ' (' + routes[i].StopNo + ') ' +
                         '<br>towards ' + routes[i].Destination +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i].NextBus +
                       '</td>' +
-                      '<td id="bus_route_info">' +
+                      '<td id="bus_route_times">' +
                         routes[i].NextBus +
                       '</td>' +
                     '</tr>' +
@@ -193,7 +193,7 @@ function initMap() {
 	});
 	map.addListener('center_changed', function(){
 		//document.getElementById('lat_long').innerHTML = map.getCenter();
-    retrieving();
+    //retrieving();
     var oldPos = map.getCenter();
     var id = setTimeout(function() {
       if (map.getCenter() === oldPos) {
