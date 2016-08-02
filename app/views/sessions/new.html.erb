@@ -4,29 +4,21 @@
         <%= form_for(:session, url: login_path) do |f| %>
             <table id="login">
                 <tr>
-                    <td style="background-color:red;">
+                    <td style="background-color:#A8000C;">
                         Admin Creds
                     </td>
-                    <td style="background-color:red;">
+                    <td style="background-color:#A8000C;">
                         admin@admin.com<br>
                         simplepass
                     </td>
                 </tr>
                 <tr>
-                    <td style="background-color:red;">
+                    <td style="background-color:#A8000C;">
                         Standard User Creds
                     </td>
-                    <td style="background-color:red;">
+                    <td style="background-color:#A8000C;">
                         user@user.com<br>
                         simplepass
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        No Account?
-                    </td>
-                    <td>
-                        <%= link_to "Sign Up Here", signup_path %>
                     </td>
                 </tr>
                 <tr>
@@ -55,15 +47,11 @@
                         <% end %>
                     </td>
                 </tr>
-                <tr align="center" id="buttonbox">
-                    <td colspan="2">
-                        <%= f.submit "Login", :class => 'reg_button'  %>
-                    </td>
-                </tr>
                 <% flash.each do |key, value| %>
-                    <tr class="alert <%= key %>" style="background-color: red"><td colspan="2"><%= value %></td></tr>
+                    <tr class="alert <%= key %>" style="background-color: #A8000C;"><td colspan="2"><%= value %></td></tr>
                 <% end %>
             </table>
+            <%= f.submit "Login", :class => 'reg_button'  %>
         <% end %>
     </div>
 </div>

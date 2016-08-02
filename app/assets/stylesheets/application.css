@@ -14,6 +14,9 @@
 		color: black;
 		text-decoration: none;
 	}
+	a:hover{
+		color: #A8000C;
+	}
 	td {
 		padding: 10px;
 		border-style: solid;
@@ -41,6 +44,11 @@
 		float: right;
 		margin-right: 3%;
 	}
+	.toolbar{
+		width: auto;
+		margin: 0px 0px 20px 0px; 
+		background-color: black;
+	}
 	.mid{
 		width: 45%;
 		margin: auto;
@@ -61,17 +69,18 @@
 		width: auto;
 		max-width: 50%;
 	}
-	.nav{
+	#nav-button{
 		color: white;
 		font-size: 30px;
 		font-weight: 500;
 	}
-	.nav:hover, .nav:active{
+	#nav-button:hover, #nav-button:active{
 		color: #A8000C;
 	}
 /* Informational Texts & Containers */
 	.alert {
 		color:white;
+		text-align:center;
 	}
 	#wait{
 		font-size: 40px;
@@ -132,7 +141,7 @@
 		border-color: black;
 		background-color: black;
 	}
-	#explanation_left{
+	#explanation{
 		width: auto;
 		margin-right: 20px;
 	}
@@ -149,6 +158,16 @@
 		width:auto;
 		height:700px;
 	}
+	#toolbar-table{
+		text-align: center;
+		background-color: black;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	#toolbar-table td{
+		padding: 10px;
+		background-color: #0060a8;
+	}
 /* Forms & Form Containers */
 	#login{
 		background-color: #0060a8;
@@ -157,7 +176,7 @@
 		margin: auto;
 	}
 	.reg_field{
-		width:80%;
+		width:90%;
 	}
 	#search_box, #search_box_hist, #search_box_route{
 		width: auto;
@@ -186,19 +205,27 @@
 	}
 	.reg_button{
 		background-color: #0060a8;
-		color: white;
-		border: 0;
-		padding: 5px 10px 5px 10px;
+		color: black;
+		border-color: black;
+		border-width: 6px 0px 0px 0px;
+		border-collapse: collapse;
+		padding: 10px 10px 10px 10px;
 		text-align: center;
 		text-decoration: none;
 		font-weight:500;
 		font-size: 20px;
 		width: 100%;
-		height: 50px;
 		cursor:pointer;
 	}
-	td#buttonbox{
+
+	.reg_button:hover{
+		background-color:#A8000C;
+	}
+	#buttonbox{
 		padding: 0px;
+		margin: 0px 0px 0px 0px;
+		border-width: 10px 0px 0px 0px;
+		border-collapse: collapse;
 	}
 	#dummy_search_button{
 		background-color: #0060a8;
@@ -212,8 +239,20 @@
 	#dummy_search_button:hover, #histbutton:hover, #dummy_route_buttons:hover{
 		background-color:#A8000C;
 	}
-	.reg_button:hover{
-		color: black;
+	#refresh-button{
+		cursor:pointer;
+		border-width: 0px 10px 20px 0px;
+		border-color: black;
+		margin: 0px 20px 20px 0px;
+		width: auto;
+		background-color: #0060a8;
+		padding: 10px;
+		text-align: center;
+		font-size: 25px;
+		font-color: black;
+	}
+	#refresh-button:hover{
+		background-color:#A8000C;
 	}
 /* Scroll Containers */
 	#bus_scroll{

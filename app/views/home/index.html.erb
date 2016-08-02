@@ -1,8 +1,10 @@
 <div class="content">
 	<%= render 'layouts/nav' %>
-	<div class="inner">
+
 		<div class="left">
-		
+			<div id="refresh-button">
+			Refresh Routes
+			</div>		
 			<div id="bus_scroll">
 				<table id="bus_table">
 				</table>
@@ -10,14 +12,14 @@
 			
 		</div>
 		<div class="right">
+
 			<div id="map"></div>
-			<div id="explanation_left">
+			<div id="explanation">
 				<div id="translink_disclaimer">
 					Some of the data used in this product or service is provided by permission of TransLink. TransLink assumes no responsibility for the accuracy or currency of the Data used in this product or service.
 				</div>
 			</div>
 		</div>
-	</div>
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_5saOsQDUS9U1RJJUsYI3qsZB8aCxGZc&callback=initMap"
 	    async defer>

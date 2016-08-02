@@ -8,14 +8,6 @@
 		    
 			<table id="login">
 					<%= render 'shared/error_messages' %>
-					<tr>
-		                <td>
-		                    Have an Account?
-		                </td>
-		                <td>
-		                     <%= link_to "Login Here", login_path %>
-		                </td>
-		            </tr>
 		            <tr>
 		                <td>
 		                    <%= f.label :email %>
@@ -40,13 +32,8 @@
 		                    <%= f.password_field :password_confirmation, :class => 'reg_field'   %>
 		                </td>
 		            </tr>
-		            
-		            <tr align="center">
-		                <td colspan="2">
-		                    <%= f.submit "Create My Account", :class => 'reg_button' %>
-		                </td>
-		            </tr>
 		        </table>
+		        <%= f.submit "Create My Account", :class => 'reg_button' %>
 		<% end %>
 	</div>
 </div>
