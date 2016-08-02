@@ -18,6 +18,28 @@ class Stop < ActiveRecord::Base
             s.City      = stop['City']
             s.AtStreet  = stop['AtStreet']
             s.OnStreet  = stop['OnStreet']
+            s.WheelchairAccess = stop['WheelchairAccess'] == 1 ? true : false
+            routes      = stop['Routes']
+            if routes != nil and routes != " "
+                s.Routes = routes
+            end
+            s.save
+            s
+        end
+    end
+    def self.update_data_from_api
+        stop_data = JSON.parse(File.read('app/script/stops.json'))
+
+        stops = stop_data.map do |stop|
+            s = Stop.find_by("StopNo" => stop['StopNo'])
+            s.Name      = stop['Name']
+            s.StopNo    = stop['StopNo']
+            s.Latitude  = stop['Latitude']
+            s.Longitude = stop['Longitude']
+            s.City      = stop['City']
+            s.AtStreet  = stop['AtStreet']
+            s.OnStreet  = stop['OnStreet']
+            s.WheelchairAccess = stop['WheelchairAccess'] == 1 ? true : false
             routes      = stop['Routes']
             if routes != nil and routes != " "
                 s.Routes = routes
