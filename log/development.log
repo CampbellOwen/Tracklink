@@ -51628,3 +51628,712 @@ Processing by ApiController#location as */*
   Parameters: {"lat"=>"49.282448", "long"=>"-123.125495"}
   [1m[36mStop Load (3.9ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (50046, 50029, 50045, 50047, 61759, 50624, 50615, 50616, 61508, 50623, 50028, 50625, 50030, 54831, 54832, 50044, 58138, 50614, 50975, 58705, 50222, 54446, 58750, 58326, 58144, 50533, 54830, 50031, 50626, 50048, 59040, 61292, 50617, 50638, 50074, 50974, 50075, 50049, 51006, 50098)[0m
 Completed 200 OK in 4559ms (Views: 0.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/location?lat=49.282448&long=-123.125495" for ::1 at 2016-08-01 23:27:20 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.282448", "long"=>"-123.125495"}
+  [1m[35mStop Load (16.3ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (50046, 50029, 50045, 50047, 61759, 50624, 50615, 50616, 61508, 50623, 50028, 50625, 50030, 54831, 54832, 50044, 58138, 50614, 50975, 58705, 50222, 54446, 58750, 58326, 58144, 50533, 54830, 50031, 50626, 50048, 59040, 61292, 50617, 50638, 50074, 50974, 50075, 50049, 51006, 50098)
+Completed 200 OK in 4529ms (Views: 0.3ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/api/location?lat=49.282448&long=-123.125495" for ::1 at 2016-08-01 23:28:20 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.282448", "long"=>"-123.125495"}
+  [1m[36mStop Load (14.7ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (50046, 50029, 50045, 50047, 61759, 50624, 50615, 50616, 61508, 50623, 50028, 50625, 50030, 54831, 54832, 50044, 58138, 50614, 50975, 58705, 50222, 54446, 58750, 58326, 58144, 50533, 54830, 50031, 50626, 50048, 59040, 61292, 50617, 50638, 50074, 50974, 50075, 50049, 51006, 50098)[0m
+Completed 200 OK in 4589ms (Views: 0.3ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/api/stopCoord?stop=54912" for ::1 at 2016-08-01 23:29:05 -0700
+Processing by ApiController#stopCoord as */*
+  Parameters: {"stop"=>"54912"}
+  [1m[35mStop Load (0.6ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/location?lat=49.282448&long=-123.125495" for ::1 at 2016-08-01 23:29:20 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.282448", "long"=>"-123.125495"}
+  [1m[36mStop Load (14.8ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (50046, 50029, 50045, 50047, 61759, 50624, 50615, 50616, 61508, 50623, 50028, 50625, 50030, 54831, 54832, 50044, 58138, 50614, 50975, 58705, 50222, 54446, 58750, 58326, 58144, 50533, 54830, 50031, 50626, 50048, 59040, 61292, 50617, 50638, 50074, 50974, 50075, 50049, 51006, 50098)[0m
+Completed 200 OK in 4341ms (Views: 0.1ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/api/location?lat=49.282448&long=-123.125495" for ::1 at 2016-08-01 23:30:20 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.282448", "long"=>"-123.125495"}
+  [1m[35mStop Load (4.2ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (50046, 50029, 50045, 50047, 61759, 50624, 50615, 50616, 61508, 50623, 50028, 50625, 50030, 54831, 54832, 50044, 58138, 50614, 50975, 58705, 50222, 54446, 58750, 58326, 58144, 50533, 54830, 50031, 50626, 50048, 59040, 61292, 50617, 50638, 50074, 50974, 50075, 50049, 51006, 50098)
+Completed 200 OK in 4413ms (Views: 0.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/location?lat=49.282448&long=-123.125495" for ::1 at 2016-08-01 23:31:20 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.282448", "long"=>"-123.125495"}
+  [1m[36mStop Load (15.2ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (50046, 50029, 50045, 50047, 61759, 50624, 50615, 50616, 61508, 50623, 50028, 50625, 50030, 54831, 54832, 50044, 58138, 50614, 50975, 58705, 50222, 54446, 58750, 58326, 58144, 50533, 54830, 50031, 50626, 50048, 59040, 61292, 50617, 50638, 50074, 50974, 50075, 50049, 51006, 50098)[0m
+Completed 200 OK in 4307ms (Views: 0.3ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 23:31:37 -0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 91ms (Views: 90.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map.self-d1d17b438f9f456c1b60c01b6c57309625af30f0cac64a0b101d8c4799bbfbdd.js?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/application.self-e2036c998baa14eca19c813eb09768545b4682246feed59ce733140da16b1a4d.css?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:31:38 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:31:39 -0700
+
+
+Started GET "/assets/map.self-d1d17b438f9f456c1b60c01b6c57309625af30f0cac64a0b101d8c4799bbfbdd.js?body=1" for ::1 at 2016-08-01 23:31:39 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:31:39 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:31:39 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:31:39 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:31:40 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (2.6ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 200 OK in 1519ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:31:41 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[36mStop Load (2.5ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)[0m
+Completed 200 OK in 1194ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/stopCoord?stop=54912" for ::1 at 2016-08-01 23:31:48 -0700
+Processing by ApiController#stopCoord as */*
+  Parameters: {"stop"=>"54912"}
+  [1m[35mStop Load (0.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stopCoord?stop=54912" for ::1 at 2016-08-01 23:31:56 -0700
+Processing by ApiController#stopCoord as */*
+  Parameters: {"stop"=>"54912"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54912]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 23:32:19 -0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e2036c998baa14eca19c813eb09768545b4682246feed59ce733140da16b1a4d.css?body=1" for ::1 at 2016-08-01 23:32:19 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:32:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:32:19 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:32:19 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:32:19 -0700
+
+
+Started GET "/assets/map.self-86b89a8dce24f25b6159727e87893dabdd5f4f58ec15434432eb0fdc00fd027c.js?body=1" for ::1 at 2016-08-01 23:32:19 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:32:19 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:32:19 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:32:19 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:32:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:32:19 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:32:20 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:32:20 -0700
+
+
+Started GET "/assets/map.self-86b89a8dce24f25b6159727e87893dabdd5f4f58ec15434432eb0fdc00fd027c.js?body=1" for ::1 at 2016-08-01 23:32:20 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:32:20 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:32:20 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:32:20 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:32:20 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (1.6ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 200 OK in 1083ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:32:21 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[36mStop Load (1.6ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)[0m
+Completed 200 OK in 1329ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/stopCoord?stop=54912" for ::1 at 2016-08-01 23:32:23 -0700
+Processing by ApiController#stopCoord as */*
+  Parameters: {"stop"=>"54912"}
+  [1m[35mStop Load (1.5ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 23:33:09 -0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 91ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e2036c998baa14eca19c813eb09768545b4682246feed59ce733140da16b1a4d.css?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/map.self-eab6df6de0b2758cf35ac1f3281a62c90e7977db76761b2a84dd8f9907d0ca54.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/map.self-eab6df6de0b2758cf35ac1f3281a62c90e7977db76761b2a84dd8f9907d0ca54.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:33:10 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:33:10 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[36mStop Load (2.5ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)[0m
+Completed 200 OK in 1357ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:33:11 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (5.2ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 200 OK in 1237ms (Views: 0.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/stopCoord?stop=54912" for ::1 at 2016-08-01 23:33:14 -0700
+Processing by ApiController#stopCoord as */*
+  Parameters: {"stop"=>"54912"}
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54912]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 23:33:27 -0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 92ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e2036c998baa14eca19c813eb09768545b4682246feed59ce733140da16b1a4d.css?body=1" for ::1 at 2016-08-01 23:33:27 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:33:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:33:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:33:27 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:27 -0700
+
+
+Started GET "/assets/map.self-f214b7d4e58b2ba30285d929c73a60d754872b6788fbcd1c01f4a76222341f07.js?body=1" for ::1 at 2016-08-01 23:33:27 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:33:27 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:27 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:27 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:33:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:33:28 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:33:28 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:28 -0700
+
+
+Started GET "/assets/map.self-f214b7d4e58b2ba30285d929c73a60d754872b6788fbcd1c01f4a76222341f07.js?body=1" for ::1 at 2016-08-01 23:33:28 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:28 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:33:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:33:29 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:33:29 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (1.6ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 200 OK in 1182ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:33:30 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[36mStop Load (2.7ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)[0m
+Completed 200 OK in 1221ms (Views: 0.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/stopCoord?stop=54912" for ::1 at 2016-08-01 23:33:33 -0700
+Processing by ApiController#stopCoord as */*
+  Parameters: {"stop"=>"54912"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:34:29 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[36mStop Load (2.8ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)[0m
+Completed 200 OK in 1165ms (Views: 0.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 23:34:42 -0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 73ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e2036c998baa14eca19c813eb09768545b4682246feed59ce733140da16b1a4d.css?body=1" for ::1 at 2016-08-01 23:34:43 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:34:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:34:43 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:34:43 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:34:43 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:34:43 -0700
+
+
+Started GET "/assets/map.self-54b4994c1c8f166a0ac15843ed5a1f2f4499e6ffeaef0269cf708046cba04023.js?body=1" for ::1 at 2016-08-01 23:34:43 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:34:43 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:34:43 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:34:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:34:44 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:34:44 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:34:44 -0700
+
+
+Started GET "/assets/map.self-54b4994c1c8f166a0ac15843ed5a1f2f4499e6ffeaef0269cf708046cba04023.js?body=1" for ::1 at 2016-08-01 23:34:44 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:34:44 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:34:44 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:34:44 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:34:45 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (2.6ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 200 OK in 1224ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:34:46 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)[0m
+Completed 200 OK in 1618ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/stopCoord?stop=54912" for ::1 at 2016-08-01 23:34:51 -0700
+Processing by ApiController#stopCoord as */*
+  Parameters: {"stop"=>"54912"}
+  [1m[35mStop Load (0.7ms)[0m  SELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1  [["StopNo", 54912]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/location?lat=49.183180&long=-122.890010" for ::1 at 2016-08-01 23:34:53 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.183180", "long"=>"-122.890010"}
+  [1m[36mStop Load (1.2ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (54912, 54919, 54911)[0m
+Completed 200 OK in 381ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/location?lat=49.183180&long=-122.890010" for ::1 at 2016-08-01 23:35:44 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.183180", "long"=>"-122.890010"}
+  [1m[35mStop Load (1.4ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (54912, 54919, 54911)
+Completed 200 OK in 399ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 23:36:22 -0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e2036c998baa14eca19c813eb09768545b4682246feed59ce733140da16b1a4d.css?body=1" for ::1 at 2016-08-01 23:36:22 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:36:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:36:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:36:22 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:36:22 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:36:22 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:36:22 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:36:22 -0700
+
+
+Started GET "/assets/map.self-dd170832f7316618b51045c175465a44b37263fa3b88bab3fe948680ae3627ab.js?body=1" for ::1 at 2016-08-01 23:36:22 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:36:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:36:23 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:36:23 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:36:23 -0700
+
+
+Started GET "/assets/map.self-dd170832f7316618b51045c175465a44b37263fa3b88bab3fe948680ae3627ab.js?body=1" for ::1 at 2016-08-01 23:36:23 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:36:23 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:36:23 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:36:23 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:36:23 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[36mStop Load (2.7ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)[0m
+Completed 200 OK in 1594ms (Views: 0.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:36:25 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (2.7ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 200 OK in 1210ms (Views: 0.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/stopCoord?stop=54912" for ::1 at 2016-08-01 23:36:28 -0700
+Processing by ApiController#stopCoord as */*
+  Parameters: {"stop"=>"54912"}
+  [1m[36mStop Load (0.6ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54912]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/location?lat=49.183180&long=-122.890010" for ::1 at 2016-08-01 23:36:29 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.183180", "long"=>"-122.890010"}
+  [1m[35mStop Load (1.6ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (54912, 54919, 54911)
+Completed 200 OK in 396ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 23:37:01 -0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 70ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e2036c998baa14eca19c813eb09768545b4682246feed59ce733140da16b1a4d.css?body=1" for ::1 at 2016-08-01 23:37:01 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:37:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:37:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:37:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:37:01 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:01 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:01 -0700
+
+
+Started GET "/assets/map.self-10c4f3832695a51034227765742dbb7f191b6c1d5f144b6d09c44d250b7a5af6.js?body=1" for ::1 at 2016-08-01 23:37:01 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:01 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:37:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:37:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:37:02 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:02 -0700
+
+
+Started GET "/assets/map.self-10c4f3832695a51034227765742dbb7f191b6c1d5f144b6d09c44d250b7a5af6.js?body=1" for ::1 at 2016-08-01 23:37:02 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:02 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:02 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:37:02 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:37:02 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[36mStop Load (1.9ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)[0m
+Completed 200 OK in 1244ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:37:04 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (2.2ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 200 OK in 1168ms (Views: 0.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-01 23:37:06 -0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 78ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e2036c998baa14eca19c813eb09768545b4682246feed59ce733140da16b1a4d.css?body=1" for ::1 at 2016-08-01 23:37:06 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:37:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:37:06 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:37:06 -0700
+
+
+Started GET "/assets/map.self-c3f37457d92c48e1b72b61348f6278d79c33422ab28ecdb11ca6cd7a91d1c230.js?body=1" for ::1 at 2016-08-01 23:37:06 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:06 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:06 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:37:06 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-01 23:37:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-01 23:37:08 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-08-01 23:37:08 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:08 -0700
+
+
+Started GET "/assets/map.self-c3f37457d92c48e1b72b61348f6278d79c33422ab28ecdb11ca6cd7a91d1c230.js?body=1" for ::1 at 2016-08-01 23:37:08 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:08 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-01 23:37:08 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-01 23:37:08 -0700
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:37:09 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[36mStop Load (1.8ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)[0m
+Completed 200 OK in 1124ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.916266" for ::1 at 2016-08-01 23:37:10 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.916266"}
+  [1m[35mStop Load (1.6ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61571, 61570, 54930, 54898, 61568, 54899, 54931, 54929, 54963, 61569, 55025)
+Completed 200 OK in 1111ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/stopCoord?stop=54912" for ::1 at 2016-08-01 23:37:12 -0700
+Processing by ApiController#stopCoord as */*
+  Parameters: {"stop"=>"54912"}
+  [1m[36mStop Load (0.4ms)[0m  [1mSELECT  "stops".* FROM "stops" WHERE "stops"."StopNo" = $1 LIMIT 1[0m  [["StopNo", 54912]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/location?lat=49.183180&long=-122.890010" for ::1 at 2016-08-01 23:37:13 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.183180", "long"=>"-122.890010"}
+  [1m[35mStop Load (1.3ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (54912, 54919, 54911)
+Completed 200 OK in 374ms (Views: 0.2ms | ActiveRecord: 1.3ms)

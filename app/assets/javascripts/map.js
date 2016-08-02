@@ -2,6 +2,30 @@ var markers = [];
 var routeLines = [];
 var ajaxCalls = [];
 
+function find_stop(stopno)
+{
+    $.get("/api/stopCoord", {stop: stopno}).success(function(data) {
+        console.log(data["lat"]);
+        console.log(data["long"]);
+        var pos = {lat: parseFloat(data["lat"]), lng: parseFloat(data["long"])};
+        map.setCenter(pos);
+
+        var markericon = {
+          url: 'stop.png',
+          scaledSize: new google.maps.Size(40, 49),
+          origin: new google.maps.Point(0,0),
+          anchor: new google.maps.Point(20, 49)
+        };
+        var marker = new google.maps.Marker({
+            position: pos,
+            map: map,
+            icon: markericon
+        });
+
+        markers.push(marker);
+    });
+}
+
 function refresh()
 {
   console.log("REFRESHING ROUTES");
@@ -53,7 +77,7 @@ function highlightStop(tablerow, typ)
 
     ajaxCalls.push($.get("/api/getCoor", {stop: stopno}).success(function(result) {
         var lat_long = {lat: parseFloat(result.lat), lng: parseFloat(result.long)};
-        var marker = {
+        var markericon = {
           url: 'stop.png',
           scaledSize: new google.maps.Size(40, 49),
           origin: new google.maps.Point(0,0),
@@ -62,7 +86,7 @@ function highlightStop(tablerow, typ)
         var marker = new google.maps.Marker({
             position: lat_long,
             map: map,
-            icon: marker
+            icon: markericon
         });
 
         markers.push(marker);

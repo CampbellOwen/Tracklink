@@ -3,8 +3,13 @@ class ApiController < ApplicationController
     require 'json'
     respond_to :json, :html
 
-    def stopCoord(stopno)
-        stop = Stop.find_by("StopNo" => stopno.to_i)
+    def stopCoord()
+        if (params[:stop] == nil)
+            respond_with("404")
+            return
+        end
+
+        stop = Stop.find_by("StopNo" => params[:stop].to_i)
         if (stop == nil)
             respond_with("404")
             return
