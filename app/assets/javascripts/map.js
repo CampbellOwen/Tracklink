@@ -291,4 +291,5 @@ function initMap() {
   });
   rad.bindTo('center', marker, 'position');
   var refresher = setInterval(refresh, 60000);
+  getRoutes(map, map.getCenter());
 }
