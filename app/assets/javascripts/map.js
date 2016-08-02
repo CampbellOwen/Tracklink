@@ -102,10 +102,41 @@ function getRoutes(map, lat_long, refresh_flag){
             $("#bus_table").html('');
             for (var i = 0; i < routes.length; i++) {
                 if(i<routes.length-1 && routes[i].Route == routes[i+1].Route){
-                  $("#bus_table").append('<tr onclick="highlightStop(this, 0)"><td rowspan="2" id="bus_number_left">' + routes[i].Route + '</td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr><tr onclick="highlightStop(this, 1)"><td id="bus_route_info">' + routes[i+1].StopNo + ': Leaving ' + routes[i+1].Name +' towards<br>' + routes[i+1].Destination +' at '+routes[i+1].NextBus+'</td></tr><tr><td id="route_spacer" colspan="2"></td></tr>');
+                  //FIXED BELOW
+                  $("#bus_table").append(
+                    '<tr onclick="highlightStop(this, 0)">'+
+                      '<td rowspan="2" id="bus_number_left">'+ 
+                        routes[i].Route +
+                        '<div id="twitter-place">Send Feedback</div>' +
+                      '</td>' +
+                      '<td id="bus_route_info">' + 
+                        routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+
+                      '</td>' +
+                    '</tr>' +
+                    '<tr onclick="highlightStop(this, 1)">'+
+                    '<td id="bus_route_info">' + 
+                      routes[i+1].StopNo + ': Leaving ' + routes[i+1].Name +' towards<br>' + routes[i+1].Destination +' at '+routes[i+1].NextBus +
+                    '</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                      '<td id="route_spacer" colspan="2"></td>' +
+                    '</tr>');
+                  //FIXED ABOVE
                   i++;
                 }else{
-                  $("#bus_table").append('<tr onclick="highlightStop(this, 0)"><td rowspan = "1" id="bus_number_left">' + routes[i].Route+ '<div id="twitter-place">Send Feedback</div> </td><td id="bus_route_info">' + routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+'</td></tr><tr><td id="route_spacer" colspan="2"></td></tr>');
+                  $("#bus_table").append(
+                    '<tr onclick="highlightStop(this, 0)">'+
+                      '<td rowspan="1" id="bus_number_left">'+ 
+                        routes[i].Route +
+                        '<div id="twitter-place">Send Feedback</div>' +
+                      '</td>' +
+                      '<td id="bus_route_info">' + 
+                        routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+
+                      '</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                      '<td id="route_spacer" colspan="2"></td>' +
+                    '</tr>');
                 }
                 
             }
