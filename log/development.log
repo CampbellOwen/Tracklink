@@ -50446,3 +50446,52 @@ Started GET "/api/kmz?stop=54931&route=312" for ::1 at 2016-08-01 22:03:46 -0700
 Processing by ApiController#kmz as */*
   Parameters: {"stop"=>"54931", "route"=>"312"}
 Completed 200 OK in 127ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.917897" for ::1 at 2016-08-01 22:04:41 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.917897"}
+  [1m[36mStop Load (8.8ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61570, 61571, 61568, 54963, 61569, 54930, 55025, 55026, 54964, 54898, 54899, 54931, 54929)[0m
+Completed 200 OK in 1642ms (Views: 0.2ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.917897" for ::1 at 2016-08-01 22:05:41 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.917897"}
+  [1m[35mStop Load (7.7ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61570, 61571, 61568, 54963, 61569, 54930, 55025, 55026, 54964, 54898, 54899, 54931, 54929)
+Completed 200 OK in 1788ms (Views: 0.2ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.917897" for ::1 at 2016-08-01 22:06:41 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.917897"}
+  [1m[36mStop Load (8.7ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61570, 61571, 61568, 54963, 61569, 54930, 55025, 55026, 54964, 54898, 54899, 54931, 54929)[0m
+Completed 200 OK in 1336ms (Views: 0.2ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.917897" for ::1 at 2016-08-01 22:07:41 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.917897"}
+  [1m[35mStop Load (2.0ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61570, 61571, 61568, 54963, 61569, 54930, 55025, 55026, 54964, 54898, 54899, 54931, 54929)
+Completed 200 OK in 1473ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.917897" for ::1 at 2016-08-01 22:08:41 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.917897"}
+  [1m[36mStop Load (2.8ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61570, 61571, 61568, 54963, 61569, 54930, 55025, 55026, 54964, 54898, 54899, 54931, 54929)[0m
+Completed 200 OK in 1341ms (Views: 0.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.917897" for ::1 at 2016-08-01 22:09:41 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.917897"}
+  [1m[35mStop Load (4.0ms)[0m  SELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61570, 61571, 61568, 54963, 61569, 54930, 55025, 55026, 54964, 54898, 54899, 54931, 54929)
+Completed 200 OK in 1455ms (Views: 0.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/location?lat=49.161642&long=-122.917897" for ::1 at 2016-08-01 22:10:41 -0700
+Processing by ApiController#location as */*
+  Parameters: {"lat"=>"49.161642", "long"=>"-122.917897"}
+  [1m[36mStop Load (2.7ms)[0m  [1mSELECT "stops".* FROM "stops" WHERE "stops"."StopNo" IN (61570, 61571, 61568, 54963, 61569, 54930, 55025, 55026, 54964, 54898, 54899, 54931, 54929)[0m
+Completed 200 OK in 1323ms (Views: 0.1ms | ActiveRecord: 2.7ms)

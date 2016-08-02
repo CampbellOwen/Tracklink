@@ -31,7 +31,7 @@ class Stop < ActiveRecord::Base
         stop_data = JSON.parse(File.read('app/script/stops.json'))
 
         stops = stop_data.map do |stop|
-            s = Stop.find_by("StopNo" => stop['StopNo'])
+            s = Stop.where("StopNo" => stop['StopNo'])[0]
             s.Name      = stop['Name']
             s.StopNo    = stop['StopNo']
             s.Latitude  = stop['Latitude']
