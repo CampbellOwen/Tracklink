@@ -33,14 +33,16 @@ function highlightStop(tablerow, typ)
 {
     if(typ==0){
       innerhtml = tablerow.children[1].innerHTML;
-      route = tablerow.children[0].innerHTML;
-      stopno = innerhtml.slice(0,innerhtml.indexOf(":"))
+      route = tablerow.children[0].innerHTML.substr(0, 3);
+      console.log(tablerow.children[0].innerHTML);
     }else{
       innerhtml = tablerow.children[0].innerHTML;
-      route = tablerow.previousSibling.children[0].innerHTML;
-      stopno = innerhtml.slice(0, innerhtml.indexOf(":"))
+      route = tablerow.previousSibling.children[0].innerHTML.substr(0, 3);
     }
-
+    stopno = innerhtml.split(")",2)[0];
+    stopno = stopno.substr(-5);
+    console.log(route);
+    console.log(stopno);
     clearMarkers();
 
     ajaxCalls.push($.get("/api/getCoor", {stop: stopno}).success(function(result) {
@@ -102,7 +104,6 @@ function getRoutes(map, lat_long, refresh_flag){
             $("#bus_table").html('');
             for (var i = 0; i < routes.length; i++) {
                 if(i<routes.length-1 && routes[i].Route == routes[i+1].Route){
-                  //FIXED BELOW
                   $("#bus_table").append(
                     '<tr onclick="highlightStop(this, 0)">'+
                       '<td rowspan="2" id="bus_number_left">'+ 
@@ -110,18 +111,31 @@ function getRoutes(map, lat_long, refresh_flag){
                         '<div id="twitter-place">Send Feedback</div>' +
                       '</td>' +
                       '<td id="bus_route_info">' + 
-                        routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+
+                        'From ' + routes[i].Name + ' (' + routes[i].StopNo + ') ' +
+                        '<br>towards ' + routes[i].Destination +
+                      '</td>' +
+                      '<td id="bus_route_info">' +
+                        routes[i].NextBus +
+                      '</td>' +
+                      '<td id="bus_route_info">' +
+                        routes[i].NextBus +
                       '</td>' +
                     '</tr>' +
                     '<tr onclick="highlightStop(this, 1)">'+
-                    '<td id="bus_route_info">' + 
-                      routes[i+1].StopNo + ': Leaving ' + routes[i+1].Name +' towards<br>' + routes[i+1].Destination +' at '+routes[i+1].NextBus +
-                    '</td>' +
+                      '<td id="bus_route_info">' + 
+                        'From ' + routes[i+1].Name + ' (' + routes[i+1].StopNo + ') ' +
+                        '<br>towards ' + routes[i+1].Destination +
+                      '</td>' +
+                      '<td id="bus_route_info">' +
+                        routes[i+1].NextBus +
+                      '</td>' +
+                      '<td id="bus_route_info">' +
+                        routes[i+1].NextBus +
+                      '</td>' +
                     '</tr>' +
                     '<tr>' +
-                      '<td id="route_spacer" colspan="2"></td>' +
+                      '<td id="route_spacer" colspan="4"></td>' +
                     '</tr>');
-                  //FIXED ABOVE
                   i++;
                 }else{
                   $("#bus_table").append(
@@ -131,11 +145,18 @@ function getRoutes(map, lat_long, refresh_flag){
                         '<div id="twitter-place">Send Feedback</div>' +
                       '</td>' +
                       '<td id="bus_route_info">' + 
-                        routes[i].StopNo + ': Leaving ' + routes[i].Name +' towards<br>' + routes[i].Destination +' at '+routes[i].NextBus+
+                        'From ' + routes[i].Name + ' (' + routes[i].StopNo + ') ' +
+                        '<br>towards ' + routes[i].Destination +
+                      '</td>' +
+                      '<td id="bus_route_info">' +
+                        routes[i].NextBus +
+                      '</td>' +
+                      '<td id="bus_route_info">' +
+                        routes[i].NextBus +
                       '</td>' +
                     '</tr>' +
                     '<tr>' +
-                      '<td id="route_spacer" colspan="2"></td>' +
+                      '<td id="route_spacer" colspan="4"></td>' +
                     '</tr>');
                 }
                 
