@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="images/logo.png" width="25%"/>
+    <img src="public/logo.png" width="25%"/>
     <hr/>
     <h2> Project Proposal</h2>
     <h3> Group 10 | CMPT 276-D1 | Summer 2016 </h3>
@@ -29,3 +29,4 @@
 <p>
     A user with admin access can additionally view analytics related to users.
 </p>
+https://safe-refuge-98380.herokuapp.com/
